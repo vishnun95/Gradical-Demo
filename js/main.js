@@ -306,6 +306,7 @@ $(document).ready(function () {
       cursor.css({
         opacity: "1",
         transform: "scale(1)",
+        fontSize: '0px'
       });
     });
 
