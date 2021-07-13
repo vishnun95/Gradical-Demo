@@ -73,7 +73,6 @@ function check(element) {
 }
 
 function unCheck(element) {
-  return;
   switch (element) {
     case '.slideUp':
       $(".slideUp").removeClass("active");
