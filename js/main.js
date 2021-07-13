@@ -73,6 +73,7 @@ function check(element) {
 }
 
 function unCheck(element) {
+  return;
   switch (element) {
     case '.slideUp':
       $(".slideUp").removeClass("active");
@@ -162,14 +163,14 @@ window.onload = function () {
     if (typeof args.currentElements['hey'] === 'object') {
       let progress = args.currentElements['hey'].progress;
       if (progress > 0.8 && progress < 0.9 && !swiperEnded) {
-        if (args.direction === 'down') {
-          locoScroll.stop();
-          if (checkIfScrollStopped === false) {
-            lastScrollDirection = args['direction'];
-            checkIfScrollStopped = true;
-            locoScroll.scrollTo('#line1');
-          }
-        }
+//         if (args.direction === 'down') {
+//           locoScroll.stop();
+//           if (checkIfScrollStopped === false) {
+//             lastScrollDirection = args['direction'];
+//             checkIfScrollStopped = true;
+//             locoScroll.scrollTo('#line1');
+//           }
+//         }
       }
       // ouput log example: 0.34
       // gsap example : myGsapAnimation.progress(progress);
