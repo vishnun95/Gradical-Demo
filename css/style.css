@@ -1701,6 +1701,7 @@ FOOTER
   display: flex;
   justify-content: center;
   font-size: 2px;
+  font-family: FoundersGroteskMonoRegular ;
 }
 .cursor span{
   display: none;
