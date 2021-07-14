@@ -286,6 +286,11 @@ nav {
   overflow-y: hidden;
 }
 
+.careerContainer {
+  height: 450px;
+  overflow-y: hidden;
+}
+
 #description1 .slideUpParent .slideUpContainer {
   height: auto;
 }
