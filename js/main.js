@@ -5,7 +5,7 @@ var locoScroll;
 var swiperEnded = false;
 var checkIfScrollStopped = false;
 var lastScrollDirection = '';
-var baseUrl = 'http://3.7.68.64:1337';
+var baseUrl = 'https://d1rgwuzou45mfe.cloudfront.net';
 
 function check(element) {
   switch (element) {
@@ -246,7 +246,7 @@ window.onload = function () {
 
 function swiperImages() {
   $.ajax({
-    url: "http://3.7.68.64:1337/swipers",
+    url: baseUrl + "/swipers",
     type: 'GET',
     success: function (data) {
       console.log(data);
@@ -268,7 +268,7 @@ function swiperImages() {
       }
     },
     error: function (error) {
-      console.log(error);
+      customCursor();
     },
   });
 }
