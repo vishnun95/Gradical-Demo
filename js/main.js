@@ -5,6 +5,7 @@ var locoScroll;
 var swiperEnded = false;
 var checkIfScrollStopped = false;
 var lastScrollDirection = '';
+var baseUrl = 'http://3.7.68.64:1337';
 
 function check(element) {
   switch (element) {
@@ -23,6 +24,9 @@ function check(element) {
       break;
     case '#line1':
       $("#line1").addClass("activeWidth");
+      setTimeout(() => {
+        $('.card').addClass('swiperActive');
+      }, 500);
       break;
     case '#button1':
       $("#button1").addClass("scaleUp");
@@ -85,6 +89,7 @@ function unCheck(element) {
       break;
     case '#line1':
       $("#line1").removeClass("activeWidth");
+      // $('.card').removeClass('swiperActive');
       break;
     case '#button1':
       $("#button1").removeClass("scaleUp");
@@ -159,21 +164,6 @@ window.onload = function () {
 
   locoScroll.on('scroll', (args) => {
     // Get all current elements : args.currentElements
-    if (typeof args.currentElements['hey'] === 'object') {
-      let progress = args.currentElements['hey'].progress;
-      if (progress > 0.8 && progress < 0.9 && !swiperEnded) {
-        //         if (args.direction === 'down') {
-        //           locoScroll.stop();
-        //           if (checkIfScrollStopped === false) {
-        //             lastScrollDirection = args['direction'];
-        //             checkIfScrollStopped = true;
-        //             locoScroll.scrollTo('#line1');
-        //           }
-        //         }
-      }
-      // ouput log example: 0.34
-      // gsap example : myGsapAnimation.progress(progress);
-    }
     if (args.direction === 'down') {
       $('.header').addClass('moveUpHeader');
     } else {
@@ -254,14 +244,43 @@ window.onload = function () {
 
 };
 
-$(document).ready(function () {
+function swiperImages() {
+  $.ajax({
+    url: "http://3.7.68.64:1337/swipers",
+    type: 'GET',
+    success: function (data) {
+      console.log(data);
+      if (data.length) {
+        for (const i in data) {
+          $('.swiper-wrapper').append(
+            '<div class="swiper-slide ">' +
+            '<div class="card customCursor" style=background-image:url(' + baseUrl + data[i]['image']['url'] + ')>' +
+            '</div>' +
+            '<div class="projDetails">' +
+            '<div class="view">VIEW</div>' +
+             data[i]['projectName'] +
+            '</div>' +
+            '</div>'
+          )
+        }
+        swiperInit();
+        customCursor();
+      }
+    },
+    error: function (error) {
+      console.log(error);
+    },
+  });
+}
+
+function swiperInit() {
   swiper = new Swiper('.swiper-container', {
     pagination: '.swiper-pagination',
     paginationClickable: true,
     direction: 'horizontal',
     slidesPerView: 3,
     spaceBetween: 50,
-    initialSlide: 1,
+    initialSlide: 0,
     mousewheelControl: false,
     on: {
       slideChangeTransitionEnd: function () {
@@ -285,88 +304,9 @@ $(document).ready(function () {
       }, 700);
     }
   });
-  // var cursor = $(".cursor");
+}
 
-  // $(window).mousemove(function (e) {
-  //   cursor.css({
-  //     top: e.clientY - cursor.height() / 2,
-  //     left: e.clientX - cursor.width() / 2
-  //   });
-  // });
-
-  // $(window)
-  //   .mouseleave(function () {
-  //     cursor.css({
-  //       opacity: "0",
-  //       transform: "scale(1)",
-  //     });
-  //   })
-  //   .mouseenter(function () {
-  //     cursor.css({
-  //       opacity: "1",
-  //       transform: "scale(1)",
-  //       fontSize: '0px'
-  //     });
-  //   });
-
-  // $(".customCursor")
-  //   .mouseenter(function () {
-  //     cursor.css({
-  //       transform: "scale(6)",
-  //       fontSize: '4px',
-  //       transition: 'transform 0.2s'
-
-  //     });
-  //     setTimeout(() => {
-  //       cursor.css({
-  //         transform: "scale(4)",
-  //         fontSize: '4px'
-  //       });
-  //     }, 200);
-  //   })
-  //   .mouseleave(function () {
-  //     cursor.css({
-  //       transform: "scale(1)",
-  //       backgroundColor: 'black',
-  //       fontSize: '0px'
-  //     });
-  //     $('.cursor').css('transition', 'all 0.1s');
-  //   });
-  // $(window)
-  //   .mousedown(function () {
-  //     cursor.css({
-  //       transform: "scale(.2)"
-  //     });
-  //   })
-  //   .mouseup(function (event) {
-  //     try {
-  //       if ($(event.target).hasClass('customCursor')) {
-  //         cursor.css({
-  //           transform: "scale(4)"
-  //         });
-  //       } else {
-  //         cursor.css({
-  //           transform: "scale(1)"
-  //         });
-  //       }
-  //     } catch (e) {
-  //       cursor.css({
-  //         transform: "scale(1)"
-  //       });
-  //     }
-
-  //   });
-  // $('.customCursor')
-  //   .mousedown(function () {
-  //     cursor.css({
-  //       transform: "scale(.2)"
-  //     });
-  //   })
-  //   .mouseup(function () {
-  //     cursor.css({
-  //       transform: "scale(4)"
-  //     });
-  //   });
+function customCursor() {
   var cursor = $(".cursor"),
     follower = $(".cursor-follower");
 
@@ -411,6 +351,8 @@ $(document).ready(function () {
     cursor.removeClass("active");
     follower.removeClass("active");
   });
+}
 
-
+$(document).ready(function () {
+  swiperImages();
 });

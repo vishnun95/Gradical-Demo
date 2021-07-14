@@ -221,14 +221,25 @@ nav {
   height: 100%;
 }
 .swiper-slide{
-  /* cursor: none; */
-  /* cursor:url(../media/img/cursor.png), pointer; */
+  min-height: 443px;
 }
+
+
 .card{
-  height: 443px; 
+  height: 0px; 
   width: 100%;
   background: #C4C4C4;
   margin-bottom: 48px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition-duration: 800ms;
+    -moz-transition-duration: 800ms;
+    -o-transition-duration: 800ms;
+    transition-duration: 800ms;
+}
+.swiperActive{
+  height: 443px;
 }
 .projDetails{
   font-family: FoundersGroteskXCondensed;
@@ -1730,7 +1741,9 @@ FOOTER
 .cursor.active span{
   display: inline-block;
   vertical-align: top;
-  margin-top: 3px;
+  transform: scale(0.5);
+  font-size: 4px;
+  line-height: 9px;
 }
 
 .cursor.active::before {
