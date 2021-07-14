@@ -262,8 +262,7 @@ $(document).ready(function () {
     slidesPerView: 3,
     spaceBetween: 50,
     initialSlide: 1,
-    mousewheelControl: true,
-    mousewheelReleaseOnEdges: true,
+    mousewheelControl: false,
     on: {
       slideChangeTransitionEnd: function () {
         console.log('images ready.'); // this doesn't work
