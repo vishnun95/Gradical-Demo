@@ -14,7 +14,8 @@ function check(element) {
     case '#description1':
       $("#description1").addClass("active2");
       $('.body').removeClass('invertColor');
-      $('.cursor').css({ backgroundColor: "black" });
+      // $('.cursor').css({ backgroundColor: "black" });
+      // $('.cursor').css({ 'transform': 'scale(0.8)' })
 
       break;
     case '#description2':
@@ -33,7 +34,6 @@ function check(element) {
     case '#header3':
       $("#header3").addClass("active");
       $('.body').addClass('invertColor');
-      $('.cursor').css({ backgroundColor: "white", transform: "scale(1)", fontSize: '0px' });
 
       break;
     case '#header4':
@@ -92,7 +92,7 @@ function unCheck(element) {
     case '#header2':
       $("#header2").removeClass("active");
       $('.body').removeClass('invertColor');
-      $('.cursor').css({ backgroundColor: "black" });
+      // $('.cursor').css({ backgroundColor: "black" });
 
       break;
     case '#header3':
@@ -162,14 +162,14 @@ window.onload = function () {
     if (typeof args.currentElements['hey'] === 'object') {
       let progress = args.currentElements['hey'].progress;
       if (progress > 0.8 && progress < 0.9 && !swiperEnded) {
-//         if (args.direction === 'down') {
-//           locoScroll.stop();
-//           if (checkIfScrollStopped === false) {
-//             lastScrollDirection = args['direction'];
-//             checkIfScrollStopped = true;
-//             locoScroll.scrollTo('#line1');
-//           }
-//         }
+        //         if (args.direction === 'down') {
+        //           locoScroll.stop();
+        //           if (checkIfScrollStopped === false) {
+        //             lastScrollDirection = args['direction'];
+        //             checkIfScrollStopped = true;
+        //             locoScroll.scrollTo('#line1');
+        //           }
+        //         }
       }
       // ouput log example: 0.34
       // gsap example : myGsapAnimation.progress(progress);
@@ -285,89 +285,132 @@ $(document).ready(function () {
       }, 700);
     }
   });
-  var cursor = $(".cursor");
+  // var cursor = $(".cursor");
 
-  $(window).mousemove(function (e) {
-    cursor.css({
-      top: e.clientY - cursor.height() / 2,
-      left: e.clientX - cursor.width() / 2
-    });
+  // $(window).mousemove(function (e) {
+  //   cursor.css({
+  //     top: e.clientY - cursor.height() / 2,
+  //     left: e.clientX - cursor.width() / 2
+  //   });
+  // });
+
+  // $(window)
+  //   .mouseleave(function () {
+  //     cursor.css({
+  //       opacity: "0",
+  //       transform: "scale(1)",
+  //     });
+  //   })
+  //   .mouseenter(function () {
+  //     cursor.css({
+  //       opacity: "1",
+  //       transform: "scale(1)",
+  //       fontSize: '0px'
+  //     });
+  //   });
+
+  // $(".customCursor")
+  //   .mouseenter(function () {
+  //     cursor.css({
+  //       transform: "scale(6)",
+  //       fontSize: '4px',
+  //       transition: 'transform 0.2s'
+
+  //     });
+  //     setTimeout(() => {
+  //       cursor.css({
+  //         transform: "scale(4)",
+  //         fontSize: '4px'
+  //       });
+  //     }, 200);
+  //   })
+  //   .mouseleave(function () {
+  //     cursor.css({
+  //       transform: "scale(1)",
+  //       backgroundColor: 'black',
+  //       fontSize: '0px'
+  //     });
+  //     $('.cursor').css('transition', 'all 0.1s');
+  //   });
+  // $(window)
+  //   .mousedown(function () {
+  //     cursor.css({
+  //       transform: "scale(.2)"
+  //     });
+  //   })
+  //   .mouseup(function (event) {
+  //     try {
+  //       if ($(event.target).hasClass('customCursor')) {
+  //         cursor.css({
+  //           transform: "scale(4)"
+  //         });
+  //       } else {
+  //         cursor.css({
+  //           transform: "scale(1)"
+  //         });
+  //       }
+  //     } catch (e) {
+  //       cursor.css({
+  //         transform: "scale(1)"
+  //       });
+  //     }
+
+  //   });
+  // $('.customCursor')
+  //   .mousedown(function () {
+  //     cursor.css({
+  //       transform: "scale(.2)"
+  //     });
+  //   })
+  //   .mouseup(function () {
+  //     cursor.css({
+  //       transform: "scale(4)"
+  //     });
+  //   });
+  var cursor = $(".cursor"),
+    follower = $(".cursor-follower");
+
+  var posX = 0,
+    posY = 0,
+    mouseX = 0,
+    mouseY = 0;
+
+  TweenMax.to({}, 0.016, {
+    repeat: -1,
+    onRepeat: function () {
+      posX += (mouseX - posX) / 9;
+      posY += (mouseY - posY) / 9;
+
+      TweenMax.set(follower, {
+        css: {
+          left: posX - 20,
+          top: posY - 20
+        }
+      });
+
+      TweenMax.set(cursor, {
+        css: {
+          left: mouseX,
+          top: mouseY
+        }
+      });
+    }
   });
 
-  $(window)
-    .mouseleave(function () {
-      cursor.css({
-        opacity: "0",
-        transform: "scale(1)",
-      });
-    })
-    .mouseenter(function () {
-      cursor.css({
-        opacity: "1",
-        transform: "scale(1)",
-        fontSize: '0px'
-      });
-    });
+  $(document).on("mousemove", function (e) {
+    mouseX = e.pageX;
+    mouseY = e.pageY;
+  });
 
-  $(".customCursor")
-    .mouseenter(function () {
-      cursor.css({
-        transform: "scale(6)",
-        fontSize: '4px',
-        transition: 'transform 0.2s'
+  $(".customCursor").on("mouseenter", function () {
+    cursor.addClass("active");
+    follower.addClass("active");
+  });
 
-      });
-      setTimeout(() => {
-        cursor.css({
-          transform: "scale(4)",
-          fontSize: '4px'
-        });
-      }, 200);
-    })
-    .mouseleave(function () {
-      cursor.css({
-        transform: "scale(1)",
-        backgroundColor: 'black',
-        fontSize: '0px'
-      });
-      $('.cursor').css('transition', 'all 0.1s');
-    });
-  $(window)
-    .mousedown(function () {
-      cursor.css({
-        transform: "scale(.2)"
-      });
-    })
-    .mouseup(function (event) {
-      try {
-        if ($(event.target).hasClass('customCursor')) {
-          cursor.css({
-            transform: "scale(4)"
-          });
-        } else {
-          cursor.css({
-            transform: "scale(1)"
-          });
-        }
-      } catch (e) {
-        cursor.css({
-          transform: "scale(1)"
-        });
-      }
-
-    });
-  $('.customCursor')
-    .mousedown(function () {
-      cursor.css({
-        transform: "scale(.2)"
-      });
-    })
-    .mouseup(function () {
-      cursor.css({
-        transform: "scale(4)"
-      });
-    });
-
+  $(".customCursor").on("mouseleave", function () {
+    cursor.removeClass("active");
+    follower.removeClass("active");
+  });
 
 
 });
