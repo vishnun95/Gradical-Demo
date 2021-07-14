@@ -258,11 +258,12 @@ function swiperImages() {
             '</div>' +
             '<div class="projDetails">' +
             '<div class="view">VIEW</div>' +
-             data[i]['projectName'] +
+            data[i]['projectName'] +
             '</div>' +
             '</div>'
           )
         }
+        $('.project-img1').find('.imageHolder').css({ 'backgroundImage': 'url(' + baseUrl + data[0]['image']['url'] + ')' })
         swiperInit();
         customCursor();
       }

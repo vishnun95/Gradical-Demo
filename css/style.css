@@ -233,10 +233,10 @@ nav {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-transition-duration: 800ms;
-    -moz-transition-duration: 800ms;
-    -o-transition-duration: 800ms;
-    transition-duration: 800ms;
+  -webkit-transition-duration: 1500ms;
+    -moz-transition-duration: 1500ms;
+    -o-transition-duration: 1500ms;
+    transition-duration: 1500ms;
 }
 .swiperActive{
   height: 443px;
@@ -1239,13 +1239,13 @@ PROJECT PAGE CSS
   }
 }
 
-.project-img6 {
+.project-img0 {
   width: 400px;
   margin-top: 60px;
 }
 
 @media screen and (max-width: 1440px) and (min-width: 769px) {
-  .project-img6 {
+  .project-img0 {
     width: 27.77777777777778vw;
     margin-top: 60px;
   }
@@ -1256,7 +1256,7 @@ PROJECT PAGE CSS
   object-fit: contain;
 }
 
-.project-img6 img {
+.project-img0 img {
   width: 100%;
   object-fit: contain;
 }
@@ -1774,4 +1774,17 @@ FOOTER
 .invertColor .cursor-follower{
   background: rgba(255, 255, 255, 0.1);
 
+}
+.imageWrap{
+  position: relative;
+}
+.imageHolder{
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
 }
