@@ -8,6 +8,8 @@
   <title>Gradical</title>
   <link rel="stylesheet" href="css/swiper.min.css" />
   <link rel="stylesheet" href="css/locomotive.css" />
+  <link rel="stylesheet" href="css/button.css" />
+  <link rel="stylesheet" href="css/footer.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -25,9 +27,9 @@
         </div>
         <nav>
           <ul class="nav-links">
-            <li class="exampleClass"><a href="#">AGENCY</a></li>
-            <li class="exampleClass"><a href="#">PROJECTS</a></li>
-            <li class="exampleClass"><a href="#">CAREERS</a></li>
+            <li class="exampleClass"><a href="agency2.html">AGENCY</a></li>
+            <li class="exampleClass"><a href="projects.html">PROJECTS</a></li>
+            <li class="exampleClass"><a href="careers.html">CAREERS</a></li>
             <li class="exampleClass"><a href="contact.html">CONTACT</a></li>
           </ul>
         </nav>
@@ -69,7 +71,12 @@
           </div>
         </div>
       </h3>
-      <button id="button" class="button animate">LETS TALK</button>
+      <div class="btn">
+        <div class="btnBgAnim">
+        </div>
+        <div class="btnText">LETS TALK</div>
+    </div>
+      <!-- <button id="button" class="button animate">LETS TALK</button> -->
     </section>
     <section class="two" id="two" data-scroll-section>
       <div id="line1" class="line lineAnimateSlow"></div>
@@ -402,13 +409,50 @@
           (PROJECT ENQUIRY FISHING CONTENT)</br>
         </h3>
         <div class="imageProject"></div>
-        <button data-scroll data-scroll-call="seven" class="button">LETS
-          TALK</button>
+        <div class="btn" data-scroll data-scroll-call="seven">
+          <div class="btnBgAnim">
+          </div>
+          <div class="btnText">LETS TALK</div>
+      </div>
+        <!-- <button data-scroll data-scroll-call="seven" class="button">LETS
+          TALK</button> -->
       </div>
     </section>
 
     <section data-scroll-section>
-      <div class="footer"></div>
+      <footer>
+        <div class="footerParentWrap">
+          <div class="footerChildWrap1">
+            <div class="footerLogoWrap">
+              <img src="img/logo-footer.svg" alt="" />
+            </div>
+            <div class="footerLinkWrap">
+              <div><a id="footerAgency" href="">AGENCY</a></div>
+              <div><a id="footerProjects" href="">PROJECTS</a></div>
+              <div><a id="footerCareers" href="">CAREERS</a></div>
+              <div><a id="footerContact" href="">CONTACT</a></div>
+            </div>
+          </div>
+          <div class="footerChildWrap2">
+            <div class="footerSmWrap">
+              <div><a id="footerInstagram" href="">INSTAGRAM</a></div>
+              <div><a id="footerLinkedin" href="">LINKEDIN</a></div>
+              <div><a id="footerFacebook" href="">FACEBOOK</a></div>
+            </div>
+            <div class="footerAddressWrap">
+              <h3>
+                Gradical</br>
+                Atomic, Kazhakootam,</br>
+                Trivandrum, Kerala</br>
+              </h3>
+              <h3>
+                +91 1234567890</br>
+                hey@gradical.xyz</br>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </footer>
     </section>
 
   </div>

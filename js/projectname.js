@@ -57,10 +57,10 @@ function customCursor() {
         type: 'GET',
         success: function (data) {
            console.log(data);
-           document.getElementById('projectname').innerHTML = data.projectName
-           document.getElementById('para1').innerHTML = data.description1
-           document.getElementById('para2').innerHTML = data.description2
-           document.getElementById('img1').src = baseUrl+data.image.url
+           document.getElementById('projectname').innerHTML = data?.projectName
+           document.getElementById('para1').innerHTML = data?.description1
+           document.getElementById('para2').innerHTML = data?.description2
+           document.getElementById('img1').src = baseUrl+data?.image?.url
             document.getElementById('img1').style.width = '100%'
              document.getElementById('img1').style.height = '100%'
              document.getElementById('img2').style.width = '100%'
@@ -71,9 +71,9 @@ function customCursor() {
              document.getElementById('img4').style.height = '100%'
 
 
-            document.getElementById('img2').src = baseUrl+data.image1.url
-            document.getElementById('img3').src = baseUrl+data.image2.url
-            document.getElementById('img4').src = baseUrl+data.image3.url
+            document.getElementById('img2').src = baseUrl+data?.image1?.url
+            document.getElementById('img3').src = baseUrl+data?.image2?.url
+            document.getElementById('img4').src = baseUrl+data?.image3?.url
            customCursor();
         },
         error: function (error) {

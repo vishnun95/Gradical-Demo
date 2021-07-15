@@ -1,0 +1,75 @@
+.btn {
+    font-family: FoundersGroteskMonoLight;
+    width: 180px;
+    height: 48px;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, .82);
+    background-color: #000;
+    border-radius: 40px;
+    transition: ease-out 0.3s;
+    font-size: 16px;
+    letter-spacing: -1px;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    -webkit-transition-duration: 400ms;
+    -moz-transition-duration: 400ms;
+    -o-transition-duration: 400ms;
+    transition-duration: 400ms;
+    position: relative;
+}
+
+.btnText {
+    position: relative;
+    z-index: 10;
+    color: black;
+    -webkit-transition-duration: 1000ms;
+    -moz-transition-duration: 1000ms;
+    -o-transition-duration: 1000ms;
+    transition-duration: 1000ms;
+}
+
+.btnBgAnim {
+    background-color: #f6f6f6;
+    border-radius: 40px;
+    -webkit-transition-duration: 800ms;
+    -moz-transition-duration: 800ms;
+    -o-transition-duration: 800ms;
+    transition-duration: 800ms;
+    position: relative;
+    right: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.white {
+    background-color: #f6f6f6;
+}
+
+.white .btnText {
+    color: #f6f6f6;
+}
+
+.white .btnBgAnim {
+    background-color: #000;
+}
+
+.btn:hover .btnText {
+    color: #f6f6f6;
+}
+
+.btn:hover .btnBgAnim {
+    right: -300px;
+}
+
+.btn.white:hover .btnText {
+    color: #000;
+}
+
+.btn.white:hover .btnBgAnim {
+    right: -300px;
+}
