@@ -8,7 +8,12 @@
     <link rel="stylesheet" href="css/locomotive.css" />
     <title>Document</title>
   </head>
-  <body>
+  <body class="body animateSlow">
+    <div id="topId"></div>
+  <div class="cursor">
+    <span>DRAG</span>
+  </div>
+  <div class="cursor-follower"></div>
     <header>
       <div class="header animate" id="navbar">
         <div class="logo-wrap">
@@ -64,43 +69,47 @@
             </div>
           </div>
           <div class="careerWrapChild2">
-            <form action="">
+            <!-- <form> -->
               <label for="name">NAME</label>
-              <input class="name" type="text" id="name" name="NAME">
+              <input class="name" type="text" id="name" name="name">
               <div class="typeWrap">
                 <label for="type">TYPE</label>
                 <div class="type">
-                  <input  type="radio">
+                  <input  type="radio" value="branding" name="type" id="type">
                   <label for="name">Branding</label>
-                  <input type="radio">
+                  <input type="radio" value="marketting" name="type" id="type">
                   <label for="name">Marketing</label>
-                  <input type="radio">
+                  <input type="radio" value="uiux" name="type" id="type">
                   <label for="name">UI/UX</label>
-                  <input type="radio">
+                  <input type="radio" name="type" value="other" id="type">
                   <label for="name">other</label>
                 </div>
                 <div class="type">
-                  <input  type="radio">
+                  <input  type="radio" name="type" value="webdevelopment" id="type">
                   <label for="name">Web Development</label>
-                  <input type="radio">
+                  <input type="radio" name="type" value="appdevelopment" id="type">
                   <label for="name">App Development</label>
-                  <input type="radio">
+                  <input type="radio" name="type" value="production" id="type">
                   <label for="name">Production</label>
                 </div>
               </div>
               <label class="companyLabel" for="comapany">COMPANY</label>
-              <input class="company" type="text" id="company" name="COMPANY" placeholder="Your Company">
+              <input class="company" type="text" id="company" name="company" placeholder="Your Company">
 
               <label class="companyLabel" for="comapany">EMAIL</label>
-              <input class="company" type="email" id="company" name="COMPANY" placeholder="Email Address*">
+              <input class="company" type="email" id="email" name="email" placeholder="Email Address*">
 
               <label class="companyLabel" for="comapany">PHONE</label>
               <input type="tel" id="phone" name="phone" placeholder="123-45-678" maxlength="10" minlength="8">
 
               <label class="companyLabel" for="comapany">MESSAGE</label>
-              <textarea id="textarea" name="textarea" rows="4" cols="50">
+              <textarea id="message" name="textarea" id="message" rows="4" cols="50">
               </textarea>
-            </form>
+
+              <button onclick="contact()">
+                Submit
+              </button>
+            <!-- </form> -->
           </div>
         </div>
       </section>
@@ -108,11 +117,14 @@
 
     <script src="js/jquery-migrate-3.3.2.min.js"></script>
     <script src="js/locomotive.js"></script>
+    <script src="js/TweenMax.min.js"></script>
     <script>
       (function () {
         var scroll = new LocomotiveScroll();
       })();
+
+      
     </script>
-    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
   </body>
 </html>
