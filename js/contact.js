@@ -45,7 +45,7 @@ function contact() {
 function sendMail(contact) {
     
     let data = {
-        email:  'vishnunarayanan@accubits.com',
+        email:  'hey@gradical.xyz',
         message: 'Hi Team \n \n Name: '+ contact.name + '\n Email: '+ contact.email + '\n Phone: '+ contact.phone + '\n Type: ' + contact.type + '\n Message:' + contact.Description
     }
     //  contact.name + ' raised a query. Please reach him/her on ' + contact.phone + ' or ' + contact.email + '\n '
