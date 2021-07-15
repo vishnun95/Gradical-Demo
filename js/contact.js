@@ -45,9 +45,10 @@ function contact() {
 function sendMail(contact) {
     
     let data = {
-        email:  'hey@gradical.xyz',
-        message: 'Hi Team \n'+ contact.name + ' raised a query. Please reach him/her on ' + contact.phone + ' or ' + contact.email 
+        email:  'vishnunarayanan@accubits.com',
+        message: 'Hi Team \n \n Name: '+ contact.name + '\n Email: '+ contact.email + '\n Phone: '+ contact.phone + '\n Type: ' + contact.type + '\n Message:' + contact.Description
     }
+    //  contact.name + ' raised a query. Please reach him/her on ' + contact.phone + ' or ' + contact.email + '\n '
     $.ajax({
         url:'https://d2krj3pr4i8060.cloudfront.net/users',
         type: 'POST',
