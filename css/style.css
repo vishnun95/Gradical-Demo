@@ -1868,3 +1868,236 @@ FOOTER
   margin-top: 0px;
   margin-bottom: 0px;
 }
+.six {
+  margin: 0px 90px 139px 90px;
+}
+
+.text-wrap-6 {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.text-wrap-6 h1 {
+  font-family: FoundersGroteskXCondensed;
+  font-size: 400px;
+  line-height: 400px;
+  letter-spacing: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 1440px) and (min-width: 320px) {
+  .text-wrap-6 h1 {
+    font-family: FoundersGroteskXCondensed;
+    font-size: 29.41176470588235vw;
+    line-height: 29.41176470588235vw;
+    letter-spacing: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+.fix6 {
+  width: 190px;
+}
+
+@media screen and (max-width: 1440px) and (min-width: 769px) {
+  .fix6 {
+    width: 13.194444444444445vw;
+  }
+}
+
+.agencyParentWrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  .agencyParentWrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+}
+
+.agencyChildWrap1 h3 {
+  font-family: FoundersGroteskTextLight;
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: 100;
+}
+@media screen and (max-width: 1440px) and (min-width: 769px) {
+  .agencyChildWrap1 h3 {
+    font-family: FoundersGroteskTextLight;
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 100;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  .agencyChildWrap1 h3 {
+    font-family: FoundersGroteskTextLight;
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 100;
+  }
+}
+
+.agencyChildWrap2 h3 {
+  font-family: FoundersGroteskTextLight;
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: 100;
+}
+
+.agencyTextWrap2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.agencyImgWrap1 {
+  width: 550px;
+}
+
+.agencyImgWrap2 {
+  width: 550px;
+}
+
+.agencyImgWrap1 img {
+  width: 100%;
+  object-fit: contain;
+}
+.agencyImgWrap2 img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.theCrewParentWrap {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 100px;
+}
+.theCrewParentWrap h1 {
+  font-family: FoundersGroteskXCondensed;
+  font-size: 240px;
+  line-height: 180px;
+  letter-spacing: 0px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.crewImgRow1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.crewImgRow2 {
+  display: flex;
+  justify-content: center;
+}
+
+.crewImgRow3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.memberTextWrap {
+  text-align: left;
+}
+
+.memberName {
+  font-family: FoundersGroteskXCondensed;
+  font-size: 40px;
+  letter-spacing: 0px;
+  line-height: 40px;
+}
+
+.memberRole {
+  font-family: FoundersGroteskTextLight;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0px;
+}
+
+.awardsParentWrap {
+  text-align: center;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.awardsParentWrap h1 {
+  font-family: FoundersGroteskXCondensed;
+  font-size: 240px;
+  line-height: 180px;
+  letter-spacing: 0px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#chat1 {
+  position: absolute;
+  top: 10%;
+  left: -10%;
+  font-family: FoundersGroteskMonoLight;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: -2px;
+  font-weight: 100;
+}
+
+#chat2 {
+  position: absolute;
+  top: 8%;
+  right: -10%;
+  font-family: FoundersGroteskMonoLight;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: -2px;
+  font-weight: 100;
+}
+
+#chat3 {
+  position: absolute;
+  top: 70%;
+  left: 41%;
+  font-family: FoundersGroteskMonoLight;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: -2px;
+  font-weight: 100;
+}
+
+#chat4 {
+  position: absolute;
+  bottom: 10%;
+  left: -3%;
+  font-family: FoundersGroteskMonoLight;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: -2px;
+  font-weight: 100;
+}
+
+#chat5 {
+  position: absolute;
+  top: 75%;
+  right: -5%;
+  font-family: FoundersGroteskMonoLight;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: -2px;
+  font-weight: 100;
+}
+#chat6 {
+  position: absolute;
+  bottom: -15%;
+  right: 7%;
+  font-family: FoundersGroteskMonoLight;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: -2px;
+  font-weight: 100;
+}
