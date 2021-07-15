@@ -293,10 +293,10 @@ nav {
 }
 
 .lineAnimateSlow {
-  -webkit-transition-duration: 4000ms;
-  -moz-transition-duration: 4000ms;
-  -o-transition-duration: 4000ms;
-  transition-duration: 4000ms;
+  -webkit-transition-duration: 2000ms;
+  -moz-transition-duration: 2000ms;
+  -o-transition-duration: 2000ms;
+  transition-duration: 2000ms;
 }
 .slideUpParent{
   overflow-x: visible;

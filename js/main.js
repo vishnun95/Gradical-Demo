@@ -38,6 +38,7 @@ function check(element) {
     case '#header3':
       $("#header3").addClass("active");
       $('.body').addClass('invertColor');
+      $('.slideUp4').css({opacity: 1});
 
       break;
     case '#header4':
@@ -184,42 +185,43 @@ window.onload = function () {
         check('#button1');
 
         unCheck('#header2');
-        unCheck('#header3');
+        // unCheck('#header3');
       }
       if (func['currentElements']['el2']) {
         unCheck('#header2');
-        unCheck('#header3');
-        unCheck('#description2');
-        unCheck('#line2');
-        unCheck('#header4');
+        // unCheck('#header3');
+        // unCheck('#description2');
+        // unCheck('#line2');
+        // unCheck('#header4');
+         check('#line2');
       }
       if (func['currentElements']['el3']) {
-        unCheck('.slideUp');
+        // unCheck('.slideUp');
         unCheck('#description1');
-        unCheck('#line1');
-        unCheck('#button1');
-        check('#line2');
+        // unCheck('#line1');
+        // unCheck('#button1');
+       
 
         check('#header2');
         check('#header3');
         check('#description2');
 
-        unCheck('#line3');
-        unCheck('#header5');
+        // unCheck('#line3');
+        // unCheck('#header5');
       }
       if (func['currentElements']['el4']) {
         // unCheck('#header2');
-        unCheck('#header3');
-        unCheck('#description2');
-        unCheck('#line2');
+        // unCheck('#header3');
+        // unCheck('#description2');
+        // unCheck('#line2');
 
         check('#header4');
         // check('#line3');
         // check('#header5');
 
-        unCheck('#header6');
-        unCheck('#header7');
-        unCheck('#coll');
+        // unCheck('#header6');
+        // unCheck('#header7');
+        // unCheck('#coll');
       }
       if (func['currentElements']['el5']) {
         unCheck('#header2');
@@ -235,10 +237,10 @@ window.onload = function () {
         check('#header7');
       }
       if (func['currentElements']['el7']) {
-        unCheck('#coll');
-        unCheck('#header4');
-        unCheck('#line3');
-        unCheck('#header5');
+        // unCheck('#coll');
+        // unCheck('#header4');
+        // unCheck('#line3');
+        // unCheck('#header5');
       }
     }
   })
