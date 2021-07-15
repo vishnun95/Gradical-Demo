@@ -1797,3 +1797,74 @@ FOOTER
   background-position: center;
   background-repeat: no-repeat; 
 }
+
+
+.agencyImgParentWrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.agencyImgChild1 {
+}
+
+.agencyImgChild2 {
+}
+
+.theCrewParentWrap {
+  text-align: center;
+  width: 100%;
+}
+.theCrewParentWrap h1 {
+  font-family: FoundersGroteskXCondensed;
+  font-size: 240px;
+  line-height: 180px;
+  letter-spacing: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.crewImgRow1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.crewImgRow2 {
+  display: flex;
+  justify-content: center;
+}
+
+.crewImgRow3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.memberTextWrap {
+  text-align: left;
+}
+
+.memberName {
+  font-family: FoundersGroteskXCondensed;
+  font: size 40px;
+  letter-spacing: 0px;
+  line-height: 40px;
+}
+
+.memberRole {
+  font-family: FoundersGroteskTextLight;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0px;
+}
+
+.awardsParentWrap {
+  text-align: center;
+}
+
+.awardsParentWrap h1 {
+  font-family: FoundersGroteskXCondensed;
+  font-size: 240px;
+  line-height: 180px;
+  letter-spacing: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
