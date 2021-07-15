@@ -48,12 +48,12 @@ body {
   position: fixed;
   top: 0px;
   width: 100%;
-  height: 100px;
-  z-index: 100;
+  /* height: 100px; */
+  /* z-index: 100; */
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 0px 90px;
+  /* padding: 0px 90px; */
   background: #f6f6f6;
   margin: 0px;
   left: 0px;
@@ -70,6 +70,15 @@ body {
 .invertColor .logo-wrap img{
   -webkit-filter: invert(100%);
   filter: invert(100%);
+}
+
+.w-88 {
+  width: 88%;
+}
+.flxBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 nav {

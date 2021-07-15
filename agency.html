@@ -1,32 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Agency</title>
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-
-<body>
-  <section class="six">
-    <div class="text-wrap-6">
-      <h1>AGENCY</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agency</title>
+    <link rel="stylesheet" href="css/swiper.min.css" />
+  <link rel="stylesheet" href="css/locomotive.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="body animateSlow">
+    <div id="topId"></div>
+  <div class="cursor">
+    <span>DRAG</span>
+  </div>
+  <div class="cursor-follower"></div>
+  <header>
+  
+    <div class="header animate" id="navbar">
+        <div class="w-88 flxBox">
+          <div class="logo-wrap">
+            <img src="media/img/logo.svg" class="logo" />
+          </div>
+          <nav>
+            <ul class="nav-links">
+              <li class="exampleClass"><a href="#">AGENCY</a></li>
+              <li class="exampleClass"><a href="#">PROJECTS</a></li>
+              <li class="exampleClass"><a href="#">CAREERS</a></li>
+              <li class="exampleClass"><a href="#">CONTACT</a></li>
+            </ul>
+          </nav>
+        </div>
+   
+    <button class="hamburger">
+      <div class="bar">
+      </div>
+    </button>
+   </div>
+  </header>
+    <div class="container" data-scroll-container>
+      <section class="six">
+        <div class="text-wrap-6">
+          <h1>AGENCY</h1>
+        </div>
+        <div class="agencyImgParentWrap">
+          <div class="agencyImgChild1">
+            <h3>
+              Our diverse approach helps startups</br>
+              bring their ideas to life - working</br>
+              closely on everything from strategy</br>
+              to launch.</br>
+            </h3>
+            <img src="media/img/agencyimg2.jpg" alt="" />
+          </div>
+          <div class="agencyImgChild2">
+            <img src="media/img/agencyimg1.jpg" alt="" />
+            <h3>
+              Partnering with established brands</br>
+              we focus on value, and go above and</br>
+              beyond to discover opportunities for</br>
+              sustained growth.</br>
+            </h3>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="theCrewParentWrap">
+          <h1><span><img src="media/img/crew.svg" alt=""></span>THE CREW</h1>
+          <div class="crewImgWrap">
+            <div class="crewImgRow1">
+              <div class="member1">
+                <div class="memberImg">
+                  <img src="media/img/member.jpg" alt="">
+                </div>
+                <h3 class="memberName">ROMAL MARTIN</h3>
+                <h3 class="memberRole">Founder - Creative Director</h3>
+              </div>
+              <div class="member2">
+                <div class="memberImg">
+                  <img src="media/img/member.jpg" alt="">
+                </div>
+                <h3 class="memberName">VISHAL JAYARAJ</h3>
+                <h3 class="memberRole">Executive Producer</h3>
+              </div>
+            </div>
+            <div class="crewImgRow2">
+              <div class="member3">
+                <div class="memberImg">
+                  <img src="media/img/member.jpg" alt="">
+                </div>
+                <h3 class="memberName">AMEN</h3>
+                <h3 class="memberRole">UX Designer - Front-end Developer</h3>
+              </div>
+            </div>
+            <div class="crewImgRow3">
+              <div class="member4">
+                <div class="memberImg">
+                  <img src="media/img/member.jpg" alt="">
+                </div>
+                <h3 class="memberName">SREEDEVI ASOK</h3>
+                <h3 class="memberRole">Founder - Marketing Director </h3>
+              </div>
+              <div class="member5">
+                <div class="memberImg">
+                  <img src="media/img/member.jpg" alt="">
+                </div>
+                <h3 class="memberName">KIRON RV</h3>
+                <h3 class="memberRole">Visual Designer / Marketing Strategist </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="awardsParentWrap">
+          <h1>
+            AWARDS+</br>
+            RECOGNITION</br>
+          </h1>
+          <div class="awardsEmojiWrap">
+            <img src="media/img/awardsEmoji.svg" alt="">
+          </div>
+          <h3></h3>
+          <h3></h3>
+          <h3></h3>
+          <h3></h3>
+          <h3></h3>
+          <h3></h3>
+        </div>
+      </section>
     </div>
+    <script src="js/jquery-migrate-3.3.2.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/locomotive.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script>
+      (function () {
+        var scroll = new LocomotiveScroll();
+      })();
+    </script>
 
-    <div class="line"></div>
-  </section>
-  <section class="seven">
-    <div>
-      <h1>
-        <span><img class="fix6" src="media/img/crew.svg" alt="" /></span> THE
-        CREW
-      </h1>
-    </div>
-  </section>
-  <script src="js/jquery-migrate-3.3.2.min.js"></script>
-  <script src="js/agency.js"></script>
-</body>
-
+    <script src="js/agency.js"></script>
+  </body>
 </html>
