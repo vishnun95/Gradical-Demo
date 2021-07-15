@@ -258,7 +258,7 @@ function swiperImages() {
             '<div class="card customCursor" style=background-image:url(' + baseUrl + data[i]['image']['url'] + ')>' +
             '</div>' +
             '<div class="projDetails">' +
-            '<div class="view">VIEW</div>' +
+            '<div class="view"><a href=projectname.html?id='+data[i].id+'>view</a></div>' +
             data[i]['projectName'] +
             '</div>' +
             '</div>'
