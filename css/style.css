@@ -1696,17 +1696,13 @@ FOOTER
   position: absolute;
   right: 0px;
   width: 400px;
-  height: 0px;
+  height: 400px;
   background: grey;
   top: 213px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-image: url(../media/img/pic.png);
-  -webkit-transition-duration: 1500ms;
-  -moz-transition-duration: 1500ms;
-  -o-transition-duration: 1500ms;
-  transition-duration: 1500ms;
 }
 .rel{
   position: relative;
@@ -2157,4 +2153,10 @@ footer {
   display: flex;
   justify-content: space-between;
   width: 50%;
+}
+.animationSlower{
+  -webkit-transition-duration: 1200ms;
+  -moz-transition-duration: 1200ms;
+  -o-transition-duration: 1200ms;
+  transition-duration: 1200ms;
 }

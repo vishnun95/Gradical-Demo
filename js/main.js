@@ -252,7 +252,7 @@ function swiperImages() {
     url: baseUrl + "/swipers",
     type: 'GET',
     success: function (data) {
-      console.log(data);
+      customCursor();
       if (data.length) {
         for (const i in data) {
           $('.swiper-wrapper').append(
@@ -268,7 +268,6 @@ function swiperImages() {
         }
         $('.project-img1').find('.imageHolder').css({ 'backgroundImage': 'url(' + baseUrl + data[0]['image']['url'] + ')' })
         swiperInit();
-        customCursor();
       }
     },
     error: function (error) {

@@ -52,11 +52,11 @@ function swiperImages() {
         url: baseUrl + "/swipers",
         type: 'GET',
         success: function (data) {
+            customCursor();
             if (data.length) {
                 for (let i = 0; i < data.length; i++) {
                     $('.project-img' + i).find('.imageHolder').css({ 'backgroundImage': 'url(' + baseUrl + data[i]['image']['url'] + ')' });
                 }
-                customCursor();
             }
         },
         error: function (error) {
