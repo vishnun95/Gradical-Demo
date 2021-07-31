@@ -1,4 +1,6 @@
 var locoScroll;
+var baseUrl = 'https://d1rgwuzou45mfe.cloudfront.net';
+
 
 function customCursor() {
     var cursor = $(".cursor"),
@@ -46,48 +48,150 @@ function customCursor() {
         follower.removeClass("active");
     });
 }
-
-window.onload = function() {
-    const menu_btn = document.querySelector(".hamburger");
-    const mobile_menu = document.querySelector(".mobile-nav");
-
-    $(".slideUp").addClass("active");
-
-};
-
-
-$(document).ready(function() {
-    customCursor();
-    // locoScroll = new LocomotiveScroll({
-    //     el: document.querySelector('[data-scroll-container]'),
-    //     smooth: true,
-    // });
-});
-$.fn.moveIt = function() {
-    var $window = $(window);
-    var instances = [];
-
-    $(this).each(function() {
-        instances.push(new moveItItem($(this)));
+function initiateScroll() {
+    locoScroll = new LocomotiveScroll({
+        el: document.querySelector('[data-scroll-container]'),
+        smooth: true,
+        smartphone: {
+            smooth: true
+        },
+        tablet: {
+            smooth: true
+        },
+        getDirection: true
     });
-
-    window.onscroll = function() {
-        var scrollTop = $window.scrollTop();
-        instances.forEach(function(inst) {
-            inst.update(scrollTop);
-        });
-    }
+    locoScroll.on('call', (func) => {
+        let tl = gsap.timeline();
+        switch(Number(func)){
+            case 0:
+                setTimeout(()=>{
+                    $('.bg1').find('.bgSectionImage').addClass('fullHeight');
+                },900)
+                break;
+            case 1:
+                $('.bg2').find('.bgSectionImage').addClass('fullHeight');
+                $('.line').addClass('lineAnim');
+                tl.from(".des2 span", {
+                    duration: .75,
+                    y: 450,
+                    autoAlpha: 0,
+                    ease: Power1.out,
+                    stagger: .0
+                });
+                break;
+            case 2:
+                tl.from(".head2 .scrollerHead", {
+                    duration: 1,
+                    y: 450,
+                    autoAlpha: 0,
+                    ease: Power1.out,
+                    stagger: .0
+                });
+                break;
+             case 3:
+                $('.img1').find('.innerImage').addClass('fullHeight');
+                tl.from(".imageHead span", {
+                    duration: 0.75,
+                    y: 450,
+                    autoAlpha: 0,
+                    ease: Power1.out,
+                    stagger: .0
+                });
+                tl.from(".imgDet1 span", {
+                    duration: 0.75,
+                    y: 450,
+                    autoAlpha: 0,
+                    ease: Power1.out,
+                    stagger: .0
+                });
+                break;
+            case 4:
+                $('.img2').find('.innerImage').addClass('fullHeight');
+                    tl.from(".imageHead2 span", {
+                        duration: 0.75,
+                        y: 450,
+                        autoAlpha: 0,
+                        ease: Power1.out,
+                        stagger: .0
+                    });
+                    tl.from(".imgDet2 span", {
+                        duration: 0.75,
+                        y: 450,
+                        autoAlpha: 0,
+                        ease: Power1.out,
+                        stagger: .0
+                    });    
+            break;    
+             case 5:
+                tl.from(".awardHead .overflowHidden span", {
+                    duration: 1,
+                    y: 450,
+                    autoAlpha: 0,
+                    ease: Power1.out,
+                    stagger: .0
+                });
+                break; 
+            }
+        
+    });
 }
 
-var moveItItem = function(el) {
-    this.el = $(el);
-    this.speed = parseInt(this.el.attr('data-scroll-speed'));
-};
-moveItItem.prototype.update = function(scrollTop) {
-    this.el.css('transform', 'translateY(' + -(scrollTop / this.speed) + 'px)');
-};
+// $(document).ready(function() {
+//     customCursor();
+//     initiateScroll();
+//     let tl = gsap.timeline();
 
-// Initialization
-$(function() {
-    $('[data-scroll-speed]').moveIt();
+//     tl.from(".head span", {
+//     duration: 1.0,
+//     y: 450,
+//     autoAlpha: 0,
+//     ease: Power3.out,
+//     stagger: 1.5
+//     });
+//     tl.from(".des1 span", {
+//         duration: .75,
+//         y: 450,
+//         autoAlpha: 0,
+//         ease: Power1.out,
+//         stagger: .0
+//     });
+// });
+function swiperImages() {
+    $.ajax({
+        url: baseUrl + "/swipers",
+        type: 'GET',
+        success: function (data) {
+            if (data.length) {
+                for (let i = 0; i < data.length; i++) {
+                    $('.bg1 .bgSectionImage').css({ 'backgroundImage': 'url(' + baseUrl + data[2]['image']['url'] + ')' });
+                    $('.bg2 .bgSectionImage').css({ 'backgroundImage': 'url(' + baseUrl + data[2]['image']['url'] + ')' });
+                    $('.in' + i).css({ 'backgroundImage': 'url(' + baseUrl + data[i]['image']['url'] + ')' });
+                }
+            }
+        },
+        error: function (error) {
+        },
+    });
+}
+
+$(window).on('load', function(){
+    customCursor();
+    initiateScroll();
+    let tl = gsap.timeline();
+
+    tl.from(".head span", {
+    duration: 1.0,
+    y: 450,
+    autoAlpha: 0,
+    ease: Power3.out,
+    stagger: 1.5
+    });
+    tl.from(".des1 span", {
+        duration: .75,
+        y: 450,
+        autoAlpha: 0,
+        ease: Power1.out,
+        stagger: .0
+    });
+    swiperImages();
 });

@@ -56,7 +56,35 @@ function initiateScroll() {
     locoScroll = new LocomotiveScroll({
         el: document.querySelector('[data-scroll-container]'),
         smooth: true,
+        smartphone: {
+            smooth: true
+        },
+        tablet: {
+            smooth: true
+        },
         getDirection: true
+    });
+    locoScroll.on('call', (func) => {
+        console.log(func)
+        switch(Number(func)){
+            case 0:
+                $('.overViewSec').find('.swipeUpInit').addClass('swipeUp');
+                $('.overViewSec').find('.animImage1').addClass('fullHeight');
+                // locoScroll.update();
+                break;
+             case 1:
+                $('.topBanner').find('.animImage0').addClass('fullHeight');
+                break;
+             case 2:
+                $('.strategy').find('.swipeUpInit').addClass('swipeUp');
+                $('.strategy').find('.animImage1').addClass('fullHeight');
+                break; 
+            case 3:
+                $('.bottomBanner').find('.animImage0').addClass('fullHeight');
+                break;                
+                      
+        }
+        
     });
 }
 
@@ -66,13 +94,24 @@ function swiperInit() {
       paginationClickable: true,
       direction: 'horizontal',
       slidesPerView: 3,
-      spaceBetween: 50,
+      spaceBetween: 30,
       initialSlide: 0,
       mousewheelControl: false,
-
-      on: {
-        slideChangeTransitionEnd: function () {
-          console.log('images ready.'); // this doesn't work
+      breakpoints: {
+        550: {
+            slidesPerView: 1.3,
+            spaceBetween: 20
+        },
+        650: {
+          slidesPerView: 1.5,
+          spaceBetween: 20
+        },
+        850: {
+          slidesPerView: 2,
+          spaceBetween: 30
+        },
+        1200: {
+          slidesPerView: 2.5
         }
       }
     });
@@ -120,5 +159,4 @@ $(document).ready(function () {
         transformOrigin: "left center", 
         ease: "none"
       });
-    swiperImages();
 });

@@ -73,6 +73,12 @@ function initiateScroll() {
     locoScroll = new LocomotiveScroll({
         el: document.querySelector('[data-scroll-container]'),
         smooth: true,
+        smartphone: {
+            smooth: true
+        },
+        tablet: {
+            smooth: true
+        },
         getDirection: true
     });
     locoScroll.on('call', (func) => {
@@ -90,7 +96,6 @@ function initiateScroll() {
                 $('.line2').addClass('lineAnim');
                 break;
              case 2:
-                 $('.manualAdd').addClass('is-inview');
                 $('.span2').addClass('swipeUp');
                 $('.span2').closest('.projectSectionItem').find('.projectName span').addClass('swipeUp');
                 $('.span2').closest('.projectSectionItem').find('.imageWrap').addClass('fullHeight');

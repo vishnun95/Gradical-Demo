@@ -47,13 +47,18 @@
             </div>
             <div class="line"></div>
         </div>
-        <div class="bannerSection" data-scroll-section>
+        <div class="bannerOuter" data-scroll-section>
+            <div class="bannerSection topBanner"  data-scroll data-scroll-speed="1">
+                <div class="bannerImage animImage0 imageHolder" data-scroll data-scroll-call="1" ></div>
+            </div>
         </div>
-        <div class="overviewSection" data-scroll-section>
-            <div class="left">
-                <div class="sectionHead">THE OVERVIEW</div>
-                <div class="overviewDes">
-                    <span>
+        <div class="overviewSection overViewSec" data-scroll-section >
+            <div class="left" data-scroll data-scroll-call="0">
+                <div class="sectionHead overflowHidden">
+                    <span class="swipeUpInit">THE OVERVIEW</span>
+                </div>
+                <div class="overviewDes overflowHidden">
+                    <span  class="swipeUpInit">
                     Since 2017, our team has worked closely with the Google Hardware team to launch
                      new products and help turn store.google.com into a world-class brand and 
                      eCommerce destination. 
@@ -64,11 +69,13 @@
                      strategy and experience design to art direction, content creation, and campaign development. 
                      Highlighted below are some recognitions and a collaboration reel from our ongoing partnership. 
                      To learn more, please contact us.
-                     </span>
+                    </span>
                 </div>
             </div>
-            <div class="right">
-                <div class="overviewImage" data-scroll  data-scroll-speed="2"></div>
+            <div class="right" data-scroll  data-scroll-speed="2">
+                <div class="overviewImage ">
+                    <div class="innerImage animImage1 imageHolder"></div>
+                </div>
             </div>
         </div>
         <div class="swiperSection"  data-scroll-section>
@@ -105,13 +112,17 @@
             </div>
         </div>
         <div class="overviewSection strategy" data-scroll-section>
-            <div class="right">
-                <div class="overviewImage" data-scroll  data-scroll-speed="2"></div>
+            <div class="right desktopOnly"  data-scroll  data-scroll-speed="2">
+                <div class="overviewImage">
+                    <div class="innerImage animImage1 imageHolder"></div>
+                </div>
             </div>
-            <div class="left">
-                <div class="sectionHead">THE STRATEGY</div>
-                <div class="overviewDes">
-                    <span>
+            <div class="left" data-scroll data-scroll-call="2">
+                <div class="sectionHead overflowHidden">
+                    <span class="swipeUpInit">THE STRATEGY</span>
+                </div>
+                <div class="overviewDes overflowHidden">
+                    <span  class="swipeUpInit">
                     Since 2017, our team has worked closely with the Google Hardware team to launch
                      new products and help turn store.google.com into a world-class brand and 
                      eCommerce destination. 
@@ -125,11 +136,22 @@
                      </span>
                 </div>
             </div>
+            <div class="right mobileOnly" data-scroll  data-scroll-speed="2">
+                <div class="overviewImage">
+                    <div class="innerImage animImage1"></div>
+                </div>
+            </div>
         </div>
-        <div class="bannerSection bottomBanner" data-scroll-section></div>
-        <div class="back" data-scroll-section>
-            <img src="./media/img/left.PNG" alt="back">
-            BACK TO PROJECTS
+        <div class="bannerOuter" data-scroll-section>
+            <div class="bannerSection bottomBanner"  data-scroll data-scroll-speed="1">
+                <div class="bannerImage animImage0 imageHolder" data-scroll data-scroll-call="3" ></div>
+            </div>
+        </div>
+        <div class="back" data-scroll-section >
+            <div class="backInner" data-scroll data-scroll-speed="-3" data-scroll-direction="horizontal">
+                <img src="./media/img/left.PNG" alt="back">
+                BACK TO PROJECTS
+            </div>
         </div>
         <div class="scrollOffset" data-scroll-section></div>
     </div>
@@ -138,7 +160,7 @@
 <script src="js/swiper.min.js"></script>
 <script src="js/TweenMax.min.js "></script>
 <script src="js/gsap-latest-beta.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+<script src="js/locomotive-scroll.min.js"></script>
 <script src=" js/projectDetails.js "></script>
 </body>
 </html>
