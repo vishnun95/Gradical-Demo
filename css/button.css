@@ -73,3 +73,18 @@
 .btn.white:hover .btnBgAnim {
     right: -300px;
 }
+@media only screen and (max-width:950px){
+    .btn{
+        width: 140px;
+        height: 35px;
+    }
+}
+@media only screen and (max-width:650px){
+    .btn .btnText {
+        color: #f6f6f6;
+    }
+    
+    .btn .btnBgAnim {
+        right: -300px;
+    }
+}
