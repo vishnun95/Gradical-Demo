@@ -1,0 +1,113 @@
+@font-face {
+    font-family: DigluExtralight;
+    src: url(../fonts/Diglu-Extralight.woff2);
+}
+
+@font-face {
+    font-family: FoundersGroteskTextLight;
+    src: url(../fonts/Founders\ Grotesk\ -\ Text\ Light.woff2);
+}
+
+@font-face {
+    font-family: FoundersGroteskXCondensed;
+    src: url(../fonts/Founders\ Grotesk\ -\ X-Condensed\ SmBd.woff2);
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: FoundersGroteskMonoRegular;
+    src: url(../fonts/FoundersGroteskMonoRegular.woff2);
+}
+
+@font-face {
+    font-family: FoundersGroteskMonoLight;
+    src: url(../fonts/FoundersGroteskMonoLight.woff2);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0pc;
+    padding: 0px 90px;
+    background-color: #f6f6f6;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    cursor: none;
+}
+
+.cursor {
+    position: absolute;
+    background: black;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    z-index: 1;
+    transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
+    user-select: none;
+    pointer-events: none;
+    transform: scale(0.8);
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 2px;
+    font-family: FoundersGroteskMonoRegular;
+}
+
+.cursor span {
+    display: none;
+}
+
+
+/* .cursor::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background-image: url("http://mirkozeppieri.emanuelepapale.com/wp-content/uploads/2018/07/project-hover-cursor.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+    opacity: 0;
+  } */
+
+.cursor.active {
+    opacity: 1;
+    transform: scale(12);
+}
+
+.cursor.active span {
+    display: inline-block;
+    vertical-align: top;
+    transform: scale(0.5);
+    font-size: 4px;
+    line-height: 9px;
+}
+
+.cursor.active::before {
+    opacity: 1;
+}
+
+.cursor-follower {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.1);
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    z-index: 1;
+    transition: 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.4s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
+    user-select: none;
+    pointer-events: none;
+    transform: translate(4px, 4px);
+}
+
+.cursor-follower.active {
+    opacity: 0.3;
+    transform: scale(0);
+}
