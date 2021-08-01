@@ -28,14 +28,14 @@ $(document).ready(function () {
     y: 650,
     autoAlpha: 0,
     ease: Power3.out,
-    stagger: 0.2
+    stagger: 0.0
     });
     tl.from(".topHeaderFirst .up", {
         duration: 0.75,
         y: 650,
         autoAlpha: 0,
         ease: Power3.out,
-        stagger: 0.2
+        stagger: 0.0
     });
     tl.from(".topSection .description span", {
         duration: 0.75,
