@@ -164,16 +164,7 @@ window.onload = function () {
 
   // locoScroll.stop();
 
-  locoScroll.on('scroll', (args) => {
-    // Get all current elements : args.currentElements
-    if (args.direction === 'down') {
-      $('.header').addClass('moveUpHeader');
-    } else {
-      if (!checkIfScrollStopped) {
-        $('.header').removeClass('moveUpHeader');
-      }
-    }
-  });
+ 
 
   locoScroll.on('scroll', (func, dir, obj) => {
     // console.log(func)

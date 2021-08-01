@@ -77,7 +77,7 @@ function initiateScroll() {
             smooth: false
         },
         tablet: {
-            smooth: true
+            smooth: false
         },
         getDirection: true
     });

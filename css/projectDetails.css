@@ -175,15 +175,20 @@ body, body{
     justify-content: center;
     align-items: center;
   }
+  .backInner a{
+    display: block;
+    text-decoration: none;
+     color: black;
+  }
   .back img{
       width: 100px;
       margin-right: 60px;
-      margin-top: 10px;
+      margin-top: 36px;
       vertical-align: top;
       display: inline-block;
   }
   .scrollOffset{
-      height: 200px;
+      height: 80px;
   }
   .overflowHidden{
       overflow: hidden;
@@ -291,6 +296,7 @@ body, body{
         .back img{
             width: 60px;
             margin-right: 20px;
+            margin-top: 50px;
         }
         .detHead{
             font-size: 20px;
@@ -315,6 +321,8 @@ body, body{
     .back img{
         width: 50px;
         margin-right: 20px;
+        margin-top: 15px;
+        margin-bottom: 30px;
     }
     .projectDetailSection{
         display: block;
@@ -380,7 +388,7 @@ body, body{
     .back img{
         width: 30px;
         margin-right: 20px;
-        margin-top: 2px;    
+        margin-top: 20px;    
     }
     .card{
         height: 300px;

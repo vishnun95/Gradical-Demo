@@ -65,15 +65,19 @@ function initiateScroll() {
         getDirection: true
     });
     locoScroll.on('call', (func) => {
-        tl.from(".carrer" + func, {
-            duration: 0.75,
-            y: 250,
-            autoAlpha: 0,
-            ease: Power3.out,
-            stagger: 1.5
-        });
-        $('.careerItems'+func).addClass('active');
+        // tl.from(".carrer" + func, {
+        //     duration: 0.75,
+        //     y: 250,
+        //     autoAlpha: 0,
+        //     ease: Power3.out,
+        //     stagger: 1.5
+        // });
+        // $('.careerItems'+func).addClass('active');
     });
+}
+
+function checkSelect($this){
+    console.log($this);
 }
 
 
@@ -81,12 +85,51 @@ $(document).ready(function () {
     initiateScroll();
     customCursor();
     let tl = gsap.timeline();
+    $("input").on("input", function() {
+        if($(this).val()){
+            $(this).closest('.fieldInput').addClass('active');
+        }else{
+            $(this).closest('.fieldInput').removeClass('active');
+        } 
+     });
 
+     $("textarea").on("input", function() {
+        if($(this).val()){
+            $(this).closest('.fieldInput').addClass('active');
+        }else{
+            $(this).closest('.fieldInput').removeClass('active');
+        } 
+     });
+
+     $('.checkBoxWrap').click(function(){
+        $(this).addClass('activeCheck');
+    });
     tl.from(".head span", {
     duration: 0.75,
     y: 650,
     autoAlpha: 0,
     ease: Power3.out,
     stagger: 1.5
+    });
+    tl.from(".left span", {
+        duration: 0.75,
+        y: 250,
+        autoAlpha: 0,
+        ease: Power3.out,
+        stagger: 1.5
+    });
+    tl.from(".contactDes span", {
+        duration: 0.75,
+        y: 250,
+        autoAlpha: 0,
+        ease: Power3.out,
+        stagger: 0
+    });
+    tl.from(".contactLink a", {
+        duration: 0.75,
+        y: 250,
+        autoAlpha: 0,
+        ease: Power3.out,
+        stagger: 0
     });
 });
