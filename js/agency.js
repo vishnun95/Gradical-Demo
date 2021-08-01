@@ -66,6 +66,9 @@ function initiateScroll() {
             case 0:
                 setTimeout(()=>{
                     $('.bg1').find('.bgSectionImage').addClass('fullHeight');
+                    if(window.innerWidth < 800){
+                        $('.bg2').find('.bgSectionImage').addClass('fullHeight');
+                    }
                 },900)
                 break;
             case 1:
