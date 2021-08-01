@@ -57,9 +57,25 @@
 .white .btnBgAnim {
     background-color: #000;
 }
-
+.btnText .whiteBtn{
+    display: inline-block;
+    width: 13px;
+    margin-left: 25px;
+}
+.btnText .blackBtn{
+    display: none;
+}
 .btn:hover .btnText {
     color: #f6f6f6;
+}
+.btn:hover .btnText .blackBtn{
+    display: inline-block;
+    width: 13px;
+    margin-left: 25px;
+}
+
+.btn:hover .btnText .whiteBtn{
+    display: none;
 }
 
 .btn:hover .btnBgAnim {
@@ -73,6 +89,7 @@
 .btn.white:hover .btnBgAnim {
     right: -300px;
 }
+
 @media only screen and (max-width:950px){
     .btn{
         width: 140px;

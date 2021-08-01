@@ -1,0 +1,132 @@
+.head{
+    font-family: FoundersGroteskXCondensed;
+    font-size: 26.38888888888889vw;
+    line-height: 20.388889vw;
+    letter-spacing: 0px;
+    margin: 0px;
+    text-align: center;
+    overflow: hidden;
+}
+.head span{
+    display: block;
+    position: relative;
+}
+.careerItemWrap{
+    margin-top: 130px;
+    margin-bottom: 180px;
+}
+.careerItems{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 29px 0px;
+    position: relative;
+}
+.careerItems::after{
+    content: '';
+    width: 0%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    height: 1px;
+    background-color: black;
+    -webkit-transition-duration: 800ms;
+    -moz-transition-duration: 800ms;
+    -o-transition-duration: 800ms;
+    transition-duration: 800ms;
+}
+.careerItems:first-child::before{
+    content: '';
+    width: 0%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 1px;
+    background-color: black;
+    -webkit-transition-duration: 800ms;
+    -moz-transition-duration: 800ms;
+    -o-transition-duration: 800ms;
+    transition-duration: 800ms;
+}
+.active::after{
+    width: 100%;
+}
+.careerItems.active:first-child:before{
+    width: 100%;
+}
+.careerItem{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: FoundersGroteskTextLight;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 80px;
+    text-transform: uppercase;
+}
+.careerItemOut{
+    overflow: hidden;
+}
+@media only screen and (max-width:950px){
+    .num{
+        display: none
+    }
+    .lineItem{
+        display: none;
+    }
+    .careerItems{
+        display: block;
+    }
+    .btnText .whiteBtn {
+        display: inline-block;
+        width: 13px;
+        margin-left: 2px;
+    }
+    
+    .head {
+        font-size: 22.388889vw;
+        line-height: 22.388889vw;
+        text-align: center;
+    }
+    body {
+        padding: 0px 50px;
+    }
+    .careerItem{
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 40px;
+        min-height: 70px;
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (max-width:650px){
+    .btnText .blackBtn {
+        display: inline-block;
+        width: 13px;
+        margin-left: 2px;
+    }
+    .btnText .whiteBtn {
+        display: none;
+        width: 13px;
+        margin-left: 2px;
+    }
+    .careerItemWrap{
+        margin-top: 50px;
+    }
+}
+@media only screen and (max-width:550px){
+    body {
+        padding: 0px 25px;
+    }
+}
+@media only screen and (max-width:450px){
+    .head {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 100px;
+        text-align: center;
+        line-height: 100px;
+        margin-top: 30px;
+    }
+}

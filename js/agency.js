@@ -163,7 +163,7 @@ function swiperImages() {
         success: function (data) {
             if (data.length) {
                 for (let i = 0; i < data.length; i++) {
-                    $('.bg1 .bgSectionImage').css({ 'backgroundImage': 'url(' + baseUrl + data[2]['image']['url'] + ')' });
+                    $('.bg1 .bgSectionImage').css({ 'backgroundImage': 'url(' + baseUrl + data[0]['image']['url'] + ')' });
                     $('.bg2 .bgSectionImage').css({ 'backgroundImage': 'url(' + baseUrl + data[2]['image']['url'] + ')' });
                     $('.in' + i).css({ 'backgroundImage': 'url(' + baseUrl + data[i]['image']['url'] + ')' });
                 }
