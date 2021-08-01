@@ -151,4 +151,5 @@ $(document).ready(function () {
         ease: "none"
       });
     swiperImages();
+    $('.projectImage').click()
 });
