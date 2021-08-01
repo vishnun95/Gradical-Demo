@@ -298,11 +298,11 @@ body {
     body {
         padding: 0px 50px;
     }
-    .bgSectionImage{
+    /* .bgSectionImage{
         height: 100%;
         opacity: 1;
         top: 0px;
-    }
+    } */
     .line{
         width: 100%;
         opacity: 1;
