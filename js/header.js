@@ -31,5 +31,7 @@ $(document).ready(function () {
         }
         position = scroll;
     });
-
+    $('.logo img').click(function(){
+        window.location = 'index.html';
+    })
 })

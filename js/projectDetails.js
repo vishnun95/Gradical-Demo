@@ -47,6 +47,25 @@ function customCursor() {
         cursor.removeClass("active");
         follower.removeClass("active");
     });
+    $(".footerOuterWrap").on("mouseenter", function () {
+        cursor.addClass("activeWhite");
+        follower.addClass("activeWhite");
+      });
+      $(".footerOuterWrap").on("mouseleave", function () {
+        cursor.removeClass("activeWhite");
+        follower.removeClass("activeWhite");
+      });
+      $(".customCursor").on("mouseenter", function () {
+        cursor.addClass("active");
+        follower.addClass("active");
+        $(".cursor").find('span').html('DRAG');
+      });
+  
+      $(".customCursor").on("mouseleave", function () {
+        cursor.removeClass("active");
+        follower.removeClass("active");
+        $(".cursor").find('span').html('');
+    });
 
 }
 
@@ -117,14 +136,58 @@ function swiperInit() {
     });
   }
 
+  function getProjectId () {
+    var url_string = window.location.href;
+    var url = new URL(url_string);
+    var id = url.searchParams.get('id');
+
+     $.ajax({
+      url: baseUrl + "/swipers/" +id,
+      type: 'GET',
+      success: function (data) {
+          try{
+            for (const i in data.slider) {
+                console.log( baseUrl + data['slider'][i]['url'])
+                $('.swiper-wrapper').append(
+                  '<div class="swiper-slide" >'+
+                  '<div class="card customCursor"style=background-image:url(' + baseUrl + data['slider'][i]['url'] + ')>'+
+                  '</div>'+
+                '</div>'
+                )
+              }
+              swiperInit();
+          }
+          catch(e){
+              console.log(e);
+          }
+          setTimeout(()=>{
+            initiateScroll();
+            customCursor();
+          },300)
+        $('.Head').find('span').html(data?.projectName);
+        $('.bannerImage').css('background-image', 'url(' + baseUrl+data?.image?.url + ')');
+        $('.innerImage1').css('background-image', 'url(' + baseUrl+data?.image1?.url + ')');
+        $('.innerImage2').css('background-image', 'url(' + baseUrl+data?.image2?.url + ')'); 
+        $('.bannerImage2').css('background-image', 'url(' + baseUrl+data?.image3?.url + ')'); 
+        $('.det1 span').html(data?.focus);
+        $('.detClient span').html(data?.clientName);
+        $('.overDes span').html(data?.description1);
+        $('.overDes2 span').html(data?.description2);
+    },
+      error: function (error) {
+        initiateScroll();
+        customCursor();
+      },
+  });
+}
+
 $(document).ready(function () {
-    initiateScroll();
-    swiperInit();
-    customCursor();
+   
+    getProjectId();
     let tl = gsap.timeline();
 
     tl.from(".Head span", {
-    duration: 0.75,
+    duration: 1,
     y: 650,
     autoAlpha: 0,
     ease: Power3.out,

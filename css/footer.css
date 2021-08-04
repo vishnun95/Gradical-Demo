@@ -41,6 +41,7 @@
     letter-spacing: -0.04em;
     text-decoration-line: underline;
     color: #F6F6F6;
+    cursor: none;
 }
 .companyDet{
     display: flex;

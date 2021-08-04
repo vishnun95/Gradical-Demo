@@ -24,14 +24,14 @@ $(document).ready(function () {
     let tl = gsap.timeline();
 
     tl.from(".slideUpContainer .up", {
-    duration: 0.75,
+    duration: 1,
     y: 650,
     autoAlpha: 0,
     ease: Power3.out,
     stagger: 0.0
     });
     tl.from(".topHeaderFirst .up", {
-        duration: 0.75,
+        duration: 0.5,
         y: 650,
         autoAlpha: 0,
         ease: Power3.out,

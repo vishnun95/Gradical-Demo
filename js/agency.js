@@ -47,6 +47,14 @@ function customCursor() {
     //     cursor.removeClass("active");
     //     follower.removeClass("active");
     // });
+    $(".footerOuterWrap").on("mouseenter", function () {
+        cursor.addClass("activeWhite");
+        follower.addClass("activeWhite");
+      });
+      $(".footerOuterWrap").on("mouseleave", function () {
+        cursor.removeClass("activeWhite");
+        follower.removeClass("activeWhite");
+      });
 }
 function initiateScroll() {
     locoScroll = new LocomotiveScroll({
@@ -183,7 +191,7 @@ $(window).on('load', function(){
     let tl = gsap.timeline();
 
     tl.from(".head span", {
-    duration: 0.5,
+    duration: 1,
     y: 450,
     autoAlpha: 0,
     ease: Power3.out,

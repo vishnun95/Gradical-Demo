@@ -278,7 +278,9 @@ nav {
   right: 0px;
   top: 0px;
 }
-
+#mobileCards .view{
+  top: -5px;
+}
 .view a {
     font-family: FoundersGroteskMonoRegular;
     font-style: normal;
@@ -1799,6 +1801,13 @@ FOOTER
   background: white;
 }
 .invertColor .cursor-follower{
+  background: rgba(255, 255, 255, 0.1);
+
+}
+.activeWhite.cursor{
+  background: white;
+}
+.activeWhite.cursor-follower{
   background: rgba(255, 255, 255, 0.1);
 
 }

@@ -81,7 +81,9 @@ body {
     opacity: 1;
     transform: scale(12);
 }
-
+.cursor.activeWhite{
+    background-color: white;
+}
 .cursor.active span {
     display: inline-block;
     vertical-align: top;
@@ -106,11 +108,15 @@ body {
     pointer-events: none;
     transform: translate(4px, 4px);
 }
+.cursor-follower.activeWhite {
+    background: rgba(255, 255, 255, 0.1);
+}
 
 .cursor-follower.active {
     opacity: 0.3;
     transform: scale(0);
 }
+
 
 .desktopOnly{
     display: block;
@@ -123,6 +129,9 @@ body {
 }
 @media only screen and (max-width:950px){
     .desktopOnly{
+        display: none;
+    }
+    .cursor.desktopOnly{
         display: none;
     }
     .mobileOnly{
