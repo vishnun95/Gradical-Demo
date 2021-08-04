@@ -38,15 +38,15 @@ function customCursor() {
         mouseY = e.pageY;
     });
 
-    $(".customCursor").on("mouseenter", function() {
-        cursor.addClass("active");
-        follower.addClass("active");
-    });
+    // $(".customCursor").on("mouseenter", function() {
+    //     cursor.addClass("active");
+    //     follower.addClass("active");
+    // });
 
-    $(".customCursor").on("mouseleave", function() {
-        cursor.removeClass("active");
-        follower.removeClass("active");
-    });
+    // $(".customCursor").on("mouseleave", function() {
+    //     cursor.removeClass("active");
+    //     follower.removeClass("active");
+    // });
 }
 function initiateScroll() {
     locoScroll = new LocomotiveScroll({
@@ -66,20 +66,20 @@ function initiateScroll() {
             case 0:
                 setTimeout(()=>{
                     $('.bg1').find('.bgSectionImage').addClass('fullHeight');
-                    if(window.innerWidth < 800){
+                    // if(window.innerWidth < 800){
                         $('.bg2').find('.bgSectionImage').addClass('fullHeight');
-                    }
-                },900)
+                    // }
+                },300)
                 break;
             case 1:
                 $('.bg2').find('.bgSectionImage').addClass('fullHeight');
                 $('.line').addClass('lineAnim');
                 tl.from(".des2 span", {
-                    duration: .75,
+                    duration: .5,
                     y: 450,
                     autoAlpha: 0,
                     ease: Power1.out,
-                    stagger: .0
+                    stagger: 2.0
                 });
                 break;
             case 2:
@@ -183,7 +183,7 @@ $(window).on('load', function(){
     let tl = gsap.timeline();
 
     tl.from(".head span", {
-    duration: 1.0,
+    duration: 0.5,
     y: 450,
     autoAlpha: 0,
     ease: Power3.out,

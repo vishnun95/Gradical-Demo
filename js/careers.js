@@ -65,14 +65,17 @@ function initiateScroll() {
         getDirection: true
     });
     locoScroll.on('call', (func) => {
-        tl.from(".carrer" + func, {
-            duration: 0.75,
-            y: 250,
-            autoAlpha: 0,
-            ease: Power3.out,
-            stagger: 1.5
-        });
-        $('.careerItems'+func).addClass('active');
+        // tl.from(".careerItem", {
+        //     duration: 0.75,
+        //     y: 250,
+        //     autoAlpha: 0,
+        //     ease: Power3.out,
+        //     stagger: 0
+        // });
+        $('.careerItems').addClass('active');
+        $('.careerItem').addClass('active');
+
+        
     });
 }
 
@@ -83,10 +86,10 @@ $(document).ready(function () {
     let tl = gsap.timeline();
 
     tl.from(".head span", {
-    duration: 0.75,
+    duration: 0.6,
     y: 650,
     autoAlpha: 0,
     ease: Power3.out,
-    stagger: 1.5
+    stagger: 0
     });
 });

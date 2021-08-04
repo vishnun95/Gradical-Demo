@@ -34,9 +34,18 @@ function check(element) {
     case '#header2':
       // console.log(locoScroll)
       $("#header2").addClass("active");
+      setTimeout(()=>{
+        $("#header3").addClass("active");
+        setTimeout(()=>{
+          $('#descri').addClass('active');
+        },200)
+      },300);
       break;
     case '#header3':
-      $("#header3").addClass("active");
+      setTimeout(()=>{
+        $("#header3").addClass("active");
+        $('#descri').addClass('active');
+      },500)
       $('.body').addClass('invertColor');
       $('.slideUp4').css({opacity: 1});
 
@@ -99,11 +108,14 @@ function unCheck(element) {
     case '#header2':
       $("#header2").removeClass("active");
       $('.body').removeClass('invertColor');
+      $("#header3").removeClass("active");
+      $('#descri').removeClass('active');
       // $('.cursor').css({ backgroundColor: "black" });
 
       break;
     case '#header3':
       $("#header3").removeClass("active");
+      $('#descri').removeClass('active');
       break;
     case '#header4':
       $("#header4").removeClass("active");
@@ -167,9 +179,8 @@ window.onload = function () {
  
 
   locoScroll.on('scroll', (func, dir, obj) => {
-    // console.log(func)
     if (func['currentElements']) {
-      if (func['currentElements']['el0']) {
+      if (func['currentElements']['el0'] || func['currentElements']['0']) {
         check('.slideUp');
         check('#description1');
         check('#line1');
@@ -178,7 +189,7 @@ window.onload = function () {
         unCheck('#header2');
         // unCheck('#header3');
       }
-      if (func['currentElements']['el2']) {
+      if (func['currentElements']['el2'] || func['currentElements']['2']) {
         unCheck('#header2');
         // unCheck('#header3');
         // unCheck('#description2');
@@ -186,7 +197,7 @@ window.onload = function () {
         // unCheck('#header4');
          check('#line2');
       }
-      if (func['currentElements']['el3']) {
+      if (func['currentElements']['el3'] || func['currentElements']['3']) {
         // unCheck('.slideUp');
         unCheck('#description1');
         // unCheck('#line1');
@@ -200,7 +211,7 @@ window.onload = function () {
         // unCheck('#line3');
         // unCheck('#header5');
       }
-      if (func['currentElements']['el4']) {
+      if (func['currentElements']['el4'] || func['currentElements']['4']) {
         // unCheck('#header2');
         // unCheck('#header3');
         // unCheck('#description2');
@@ -214,7 +225,7 @@ window.onload = function () {
         // unCheck('#header7');
         // unCheck('#coll');
       }
-      if (func['currentElements']['el5']) {
+      if (func['currentElements']['el5'] || func['currentElements']['5']) {
         unCheck('#header2');
         check('#header4');
         // check('#line3');
@@ -222,12 +233,12 @@ window.onload = function () {
 
         check('#coll');
       }
-      if (func['currentElements']['el6']) {
+      if (func['currentElements']['el6'] || func['currentElements']['6']) {
 
         check('#header6');
         check('#header7');
       }
-      if (func['currentElements']['el7']) {
+      if (func['currentElements']['el7'] || func['currentElements']['7']) {
         // unCheck('#coll');
         // unCheck('#header4');
         // unCheck('#line3');

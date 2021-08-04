@@ -68,6 +68,20 @@
 .careerItemOut{
     overflow: hidden;
 }
+.swipeUpInit{
+    top: 100px;
+    opacity: 0;
+    position: relative;
+    -webkit-transition-duration: 400ms;
+    -moz-transition-duration: 400ms;
+    -o-transition-duration: 400ms;
+    transition-duration: 400ms;
+    transition-delay: 500ms;
+}
+.active{
+    top: 0px;
+    opacity: 1;
+}
 @media only screen and (max-width:950px){
     .num{
         display: none

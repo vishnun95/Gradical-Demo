@@ -132,7 +132,7 @@ $(document).ready(function () {
     let tl = gsap.timeline();
 
     tl.from(".Head span", {
-    duration: 0.75,
+    duration: 0.5,
     y: 350,
     autoAlpha: 0,
     ease: Power3.out,

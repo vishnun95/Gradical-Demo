@@ -105,21 +105,21 @@ $(document).ready(function () {
         $(this).addClass('activeCheck');
     });
     tl.from(".head span", {
-    duration: 0.75,
+    duration: 0.6,
     y: 650,
     autoAlpha: 0,
     ease: Power3.out,
-    stagger: 1.5
+    stagger: .3
     });
     tl.from(".left span", {
         duration: 0.75,
         y: 250,
         autoAlpha: 0,
         ease: Power3.out,
-        stagger: 1.5
+        stagger: .2
     });
     tl.from(".contactDes span", {
-        duration: 0.75,
+        duration: 0.5,
         y: 250,
         autoAlpha: 0,
         ease: Power3.out,

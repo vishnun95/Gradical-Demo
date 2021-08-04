@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 70px 90px 30px;
+    padding: 30px 90px 30px;
     background: #f6f6f6;
     z-index: 1000;
     position: relative;
@@ -18,7 +18,7 @@
 }
 .headeroffset{
     position: relative;
-    height: 140px;
+    height: 100px;
 }
 .menu{
     display: flex;
@@ -36,7 +36,7 @@
     line-height: 40px;
     letter-spacing: -0.04em;
     color: #191515;
-    cursor: pointer;
+    cursor: none;
     text-decoration: none;
     -webkit-transition-duration: 1200ms;
     -moz-transition-duration: 1200ms;
