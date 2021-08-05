@@ -88,8 +88,10 @@ function initiateScroll() {
     console.log(func)
     switch (Number(func)) {
       case 0:
-        $('.overViewSec').find('.swipeUpInit').addClass('swipeUp');
         $('.overViewSec').find('.animImage1').addClass('fullHeight');
+        setTimeout(()=>{
+          $('.overViewSec').find('.swipeUpInit').addClass('swipeUp');
+        },1000)
         // locoScroll.update();
         break;
       case 1:
@@ -100,11 +102,16 @@ function initiateScroll() {
 
         break;
       case 2:
-        $('.strategy').find('.swipeUpInit').addClass('swipeUp');
+        setTimeout(()=>{
+          $('.strategy').find('.swipeUpInit').addClass('swipeUp');
+        },1000)
         $('.strategy').find('.animImage1').addClass('fullHeight');
         break;
       case 3:
         $('.bottomBanner').find('.animImage0').addClass('fullHeight');
+        break;
+        case 1111:
+        $('.card').addClass('swiperActive');
         break;
 
     }
