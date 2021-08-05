@@ -71,12 +71,13 @@ function check(element) {
       },800)
       break;
     case '#header6':
-      $("#header6").addClass("active");
-      $("#line4").addClass("activeWidth2");
-      $("#description3").addClass("active2");
-      $('#buttonBottom').addClass('active3');
       setTimeout(() => {
+        $("#header6").addClass("active");
+        $("#line4").addClass("activeWidth2");
+        $("#description3").addClass("active2");
+        $('#buttonBottom').addClass('active3');
         $('.imageProject').addClass('imageAnim');
+        $("#header7").addClass("active");
       }, 1000)
       break;
     case '#header7':

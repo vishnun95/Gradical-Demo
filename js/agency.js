@@ -97,7 +97,7 @@ function initiateScroll() {
                     y: 450,
                     autoAlpha: 0,
                     ease: Power1.out,
-                    stagger: .0
+                    stagger: 1.0
                 });
                 break;
              case 3:
