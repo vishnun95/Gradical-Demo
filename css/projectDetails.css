@@ -371,6 +371,9 @@ body, body{
     .strategy{
         margin-top: 0px;
     }
+    .projectInnerDetail:first-child{
+        margin-bottom: 20px;
+    }
   }
   @media only screen and (max-width:550px){
     .bannerSection{
