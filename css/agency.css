@@ -78,7 +78,9 @@ body {
     top: -250px;
     right: -70px;
 }
-
+.des2Outer{
+    margin-top: -320px;
+}
 .line {
     opacity: 0;
     width: 0%;
