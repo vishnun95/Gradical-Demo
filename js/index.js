@@ -33,7 +33,7 @@ $(document).ready(function () {
     stagger: 0.0
     });
     tl.from(".topHeaderFirst .up", {
-        duration: 0.5,
+        duration: 1,
         y: 650,
         autoAlpha: 0,
         ease: Power3.out,
@@ -47,13 +47,13 @@ $(document).ready(function () {
         stagger: 0
     });
     tl.from(".topSection .btnOutWrap .btn", {
-        duration: 0.3,
+        duration: 0.5,
         y: 450,
         autoAlpha: 0,
         ease: Power3.out,
         stagger: 0
     });
     setTimeout(()=>{
-        $('.line').addClass('lineActive');
+        $('.line1').addClass('lineActive');
     },3000);
 });

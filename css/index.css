@@ -18,6 +18,9 @@
 .welcome .btnContainer .btn{
     transition-delay: 300ms;
 }
+.gotAproject .btnContainer .btn{
+    transition-delay: 300ms;
+}
 a.bordera{
     border: 1px solid;
     padding: 3px;

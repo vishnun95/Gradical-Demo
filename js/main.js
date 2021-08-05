@@ -191,6 +191,7 @@ function intiateScrollNew(){
     console.log(func);
     if(func==='welcomeSection'){
       setTimeout(()=>{
+        $('.line2').addClass('lineActive');
         $('.welcomeTop .slideUpWelcome').addClass('active');
       },200)
     }
@@ -210,14 +211,17 @@ function intiateScrollNew(){
       },200)
     }
     if(func==='collab'){
+      $('.line3').addClass('lineActive');
       setTimeout(()=>{
         $('.collabTopSection .slideUpWelcome').addClass('active');
       },200)
     }
     if(func==='got'){
       setTimeout(()=>{
+        $('.line4').addClass('lineActive');
         $('.gotTopSection .slideUpWelcome').addClass('active');
         $('.gotAproject .description span').addClass('active');
+        $('.gotAproject .btnContainer .btn').addClass('active');
       },200)
     }
     $('.'+func).find('.'+func+'In').addClass('fullHeight');
