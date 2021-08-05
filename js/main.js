@@ -81,7 +81,7 @@ function check(element) {
       }, 1000)
       break;
     case '#header7':
-      $("#header7").addClass("active");
+      // $("#header7").addClass("active");
       break;
     case '#coll':
       $('.heightZero').addClass('heightOne');
