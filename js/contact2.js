@@ -1,6 +1,7 @@
 var baseUrl = 'https://d1rgwuzou45mfe.cloudfront.net';
 var locoScroll;
 var swiper;
+var types = [];
 
 function customCursor() {
     var cursor = $(".cursor"),
@@ -85,7 +86,17 @@ function initiateScroll() {
 }
 
 function checkSelect($this){
-    console.log($this);
+    console.log('page',types.indexOf($this));
+    if(types.includes($this)) {
+      types.splice(types.indexOf($this), 1);
+    } else {
+        types.push($this);
+    }
+
+    console.log(types)
+   
+    
+ 
 }
 
 

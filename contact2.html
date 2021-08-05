@@ -78,43 +78,43 @@
                 <div class="fieldLabel">Type <span class="subLabel">Choose all that applies</span></div>
                 <div class="fieldInput">
                     <div class="checkBoxOuter">
-                        <div class="checkBoxWrap">
+                        <div class="checkBoxWrap" onclick="checkSelect('Branding')">
                             <div class="check">
                                 <div class="checkInner"></div>
                             </div>
                             <div class="checkLabel">Branding</div>
                         </div>
-                        <div class="checkBoxWrap">
+                        <div class="checkBoxWrap" onclick="checkSelect('Marketing')">
                             <div class="check">
                                 <div class="checkInner"></div>
                             </div>
                             <div class="checkLabel">Marketing</div>
                         </div>
-                        <div class="checkBoxWrap">
+                        <div class="checkBoxWrap" onclick="checkSelect('UX + UI')">
                             <div class="check">
                                 <div class="checkInner"></div>
                             </div>
                             <div class="checkLabel">UX + UI</div>
                         </div>
-                        <div class="checkBoxWrap">
+                        <div class="checkBoxWrap" onclick="checkSelect('Other')">
                             <div class="check">
                                 <div class="checkInner"></div>
                             </div>
                             <div class="checkLabel">Other</div>
                         </div>
-                        <div class="checkBoxWrap">
+                        <div class="checkBoxWrap" onclick="checkSelect('Web Development')">
                             <div class="check">
                                 <div class="checkInner"></div>
                             </div>
                             <div class="checkLabel">Web Development</div>
                         </div>
-                        <div class="checkBoxWrap">
+                        <div class="checkBoxWrap" onclick="checkSelect('App Development')">
                             <div class="check">
                                 <div class="checkInner"></div>
                             </div>
                             <div class="checkLabel">App Development</div>
                         </div>
-                        <div class="checkBoxWrap">
+                        <div class="checkBoxWrap" onclick="checkSelect('Production')">
                             <div class="check">
                                 <div class="checkInner"></div>
                             </div>
@@ -142,9 +142,9 @@
                 </div>
             </div>
             <div class="fieldOuter">
-                <div class="fieldLabel">Message</div>
+                <div class="fieldLabel">Message <span class="subLabel">Maximum 160 Characters</span></div>
                 <div class="fieldInput">
-                    <textarea class="inp" type="text" placeholder="What more would you like to add?"></textarea>
+                    <textarea class="inp" maxlength="160" type="text" placeholder="What more would you like to add?"></textarea>
                 </div>
             </div>
         </div>
