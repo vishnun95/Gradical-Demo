@@ -15,6 +15,15 @@
 .btnContainer .btn{
     transition-delay: 1500ms;
 }
+a.bordera{
+    border: 1px solid;
+    padding: 3px;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 16px;
+    top: 10px;
+    position: relative;
+}
 @media only screen and (max-width:950px){
     body{
         padding: 0px 50px;

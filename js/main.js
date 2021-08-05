@@ -267,25 +267,47 @@ function swiperImages() {
       customCursor();
       if (data.length) {
         for (const i in data) {
-          $('.swiper-wrapper').append(
-            '<div class="swiper-slide ">' +
-            '<div class="card customCursor" style=background-image:url(' + baseUrl + data[i]['image']['url'] + ')>' +
-            '</div>' +
-            '<div class="projDetails">' +
-            '<div class="view"><a href=projectDetails.html?id='+data[i].id+'>view</a></div>' +
-            data[i]['projectName'] +
-            '</div>' +
-            '</div>'
-          )
-          $('#mobileCards').append(
-            '<div class="featureCardItem">'+
-            '<div class="featureCard" style=background-image:url(' + baseUrl + data[i]['image']['url'] + ')></div>'+
-            '<div class="featureDetails">'+
-              '<div class="projectName">'+data[i]['projectName'] +'</div>'+
-              '<div class="view"><a href=projectDetails.html?id='+data[i].id+'>VIEW</a></div>'+
-            '</div>'+
-          '</div>'
+          if(data[i]['isCompleted']){
+            $('.swiper-wrapper').append(
+              '<div class="swiper-slide ">' +
+              '<div class="card customCursor" style=background-image:url(' + baseUrl + data[i]['image']['url'] + ')>' +
+              '</div>' +
+              '<div class="projDetails">' +
+              '<div class="view"><a href=projectDetails.html?id='+data[i].id+'>view</a></div>' +
+              data[i]['projectName'] +
+              '</div>' +
+              '</div>'
             )
+            $('#mobileCards').append(
+              '<div class="featureCardItem">'+
+              '<div class="featureCard" style=background-image:url(' + baseUrl + data[i]['image']['url'] + ')></div>'+
+              '<div class="featureDetails">'+
+                '<div class="projectName">'+data[i]['projectName'] +'</div>'+
+                '<div class="view"><a href=projectDetails.html?id='+data[i].id+'>VIEW</a></div>'+
+              '</div>'+
+            '</div>'
+              )
+          } else{
+            $('.swiper-wrapper').append(
+              '<div class="swiper-slide ">' +
+              '<div class="card customCursor" style=background-image:url(' + baseUrl + data[i]['image']['url'] + ')>' +
+              '</div>' +
+              '<div class="projDetails">' +
+              '<div class="view"><a class="bordera" href="#">IN PROGRESS</a></div>' +
+              data[i]['projectName'] +
+              '</div>' +
+              '</div>'
+            )
+            $('#mobileCards').append(
+              '<div class="featureCardItem">'+
+              '<div class="featureCard" style=background-image:url(' + baseUrl + data[i]['image']['url'] + ')></div>'+
+              '<div class="featureDetails">'+
+                '<div class="projectName">'+data[i]['projectName'] +'</div>'+
+                '<div class="view"><a class="bordera" href="#">IN PROGRESS</a></div>'+
+              '</div>'+
+            '</div>'
+              )
+          }
         }
         $('.project-img1').find('.imageHolder').css({ 'backgroundImage': 'url(' + baseUrl + data[0]['image']['url'] + ')' })
         swiperInit();
