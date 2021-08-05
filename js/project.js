@@ -185,7 +185,7 @@ $(document).ready(function (e) {
     swiperImages();
     $('.projectImage').click(function($event){
         try{
-            if($(this).hasClass('wipCursor')){
+            if($(this).find('.imageHolder').hasClass('wipCursor')){
 
             }else{
                 if($(this).find('.imageHolder').attr("data-id")){
