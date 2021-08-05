@@ -1,27 +1,28 @@
-function initiateScroll() {
-    let tl = gsap.timeline();
-    locoScroll = new LocomotiveScroll({
-        el: document.querySelector('[data-scroll-container]'),
-        smooth: true,
-        smartphone: {
-            smooth: false
-        },
-        tablet: {
-            smooth: false
-        },
-        getDirection: true,
-        inertia:1
-    });
-    locoScroll.on('call', (func) => {
-       switch(func){
-           case 1:
-               break;
-       }
-    });
-}
+// function initiateScroll() {
+//     let tl = gsap.timeline();
+//     locoScroll = new LocomotiveScroll({
+//         el: document.querySelector('[data-scroll-container]'),
+//         smooth: true,
+//         smartphone: {
+//             smooth: false
+//         },
+//         tablet: {
+//             smooth: false
+//         },
+//         getDirection: true,
+//         inertia:1
+//     });
+//     locoScroll.on('call', (func) => {
+//         console.log(func)
+//        switch(func){
+//            case 1:
+//                break;
+//        }
+//     });
+// }
 
 $(document).ready(function () {
-    initiateScroll();
+    // initiateScroll();
     let tl = gsap.timeline();
 
     tl.from(".slideUpContainer .up", {

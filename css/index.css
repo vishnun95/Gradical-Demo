@@ -15,6 +15,9 @@
 .btnContainer .btn{
     transition-delay: 1500ms;
 }
+.welcome .btnContainer .btn{
+    transition-delay: 300ms;
+}
 a.bordera{
     border: 1px solid;
     padding: 3px;
@@ -27,6 +30,14 @@ a.bordera{
 }
 .invertColor a.bordera{
     background-color: black;
+}
+.slideUpWelcome{
+    bottom: -180px;
+    opacity: 0;
+}
+.active {
+    bottom: 0px;
+    opacity: 1;
 }
 @media only screen and (max-width:950px){
     body{
@@ -93,16 +104,25 @@ a.bordera{
         position: relative;
         margin-bottom: 40px;
     }
+    .featureCardItemInner{
+        height: 259px;
+        margin-bottom: 28px;
+    }
     .featureCard{
         width: 100%;
         max-width: 100%;
-        height: 259px;
+        height: 0px;
         background-color: #C4C4C4;
-        margin-bottom: 28px;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-    
+        -webkit-transition-duration: 1200ms;
+        -moz-transition-duration: 1200ms;
+        -o-transition-duration: 1200ms;
+        transition-duration: 1200ms;
+    }
+    .fullHeight{
+        height: 100%;
     }
     .featureDetails{
         position: relative;
@@ -117,6 +137,10 @@ a.bordera{
         text-transform: uppercase;
         color: #191515;
         max-width: 80%;
+        -webkit-transition-duration: 800ms;
+        -moz-transition-duration: 800ms;
+        -o-transition-duration: 800ms;
+        transition-duration: 800ms;
     }
     .welcomeTop{
         margin-top: 60px;
@@ -133,6 +157,12 @@ a.bordera{
         display: block;
         margin-bottom: 25px;
         margin-top: 34px;
+    }
+    .animateClassNew{
+        -webkit-transition-duration: 800ms;
+        -moz-transition-duration: 800ms;
+        -o-transition-duration: 800ms;
+        transition-duration: 800ms;
     }
     .welcomeCards{
         margin-top: 62px;
@@ -233,7 +263,19 @@ a.bordera{
         top: 0px;
         max-width: 100%;
     }
+    #mobileCards .slideUpView{
+        top: 180px;
+        position: absolute; 
+    }
+    #mobileCards .slideUpView.active{
+        bottom: auto;
+        top: -5px;
+    }
     .view{
+        -webkit-transition-duration: 800ms;
+        -moz-transition-duration: 800ms;
+        -o-transition-duration: 800ms;
+        transition-duration: 800ms;
         line-height: 20px;
     }
     .btnOutWrap{
