@@ -38,15 +38,15 @@ function customCursor() {
         mouseY = e.pageY;
     });
 
-    $(".imageHolder").on("mouseenter", function () {
-        cursor.addClass("active");
-        follower.addClass("active");
-    });
+    // $(".imageHolder").on("mouseenter", function () {
+    //     cursor.addClass("active");
+    //     follower.addClass("active");
+    // });
 
-    $(".imageHolder").on("mouseleave", function () {
-        cursor.removeClass("active");
-        follower.removeClass("active");
-    });
+    // $(".imageHolder").on("mouseleave", function () {
+    //     cursor.removeClass("active");
+    //     follower.removeClass("active");
+    // });
     $(".footerOuterWrap").on("mouseenter", function () {
         cursor.addClass("activeWhite");
         follower.addClass("activeWhite");

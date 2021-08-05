@@ -195,7 +195,7 @@ body, body{
 @media only screen and (max-width:850px){
     .projectSectionItem{
         display: block;
-        margin: 45px ​0px 0px;
+        margin: 45px 0px 0px;
     }
     .projectLeft{
         width: 100%;
