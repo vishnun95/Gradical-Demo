@@ -71,7 +71,7 @@
             <div class="fieldOuter">
                 <div class="fieldLabel">Name</div>
                 <div class="fieldInput">
-                    <input class="inp" type="text" placeholder="Name">
+                    <input class="inp" type="text" placeholder="Name" id="name">
                 </div>
             </div>
             <div class="fieldOuter">
@@ -126,34 +126,39 @@
             <div class="fieldOuter">
                 <div class="fieldLabel">COMPANY</div>
                 <div class="fieldInput">
-                    <input class="inp" type="text" placeholder="Your Company">
+                    <input class="inp" type="text" placeholder="Your Company" id="company">
                 </div>
             </div>
             <div class="fieldOuter">
                 <div class="fieldLabel">Email</div>
                 <div class="fieldInput">
-                    <input class="inp" type="text" placeholder="Email Address*">
+                    <input class="inp" type="text" placeholder="Email Address*" id="email">
                 </div>
             </div>
             <div class="fieldOuter">
                 <div class="fieldLabel">Phone</div>
                 <div class="fieldInput">
-                    <textarea class="inp" type="text" placeholder="Your mobile with country code"></textarea>
+                    <textarea class="inp" type="text" placeholder="Your mobile with country code" id="phone"></textarea>
                 </div>
             </div>
             <div class="fieldOuter">
                 <div class="fieldLabel">Message <span class="subLabel">Maximum 160 Characters</span></div>
                 <div class="fieldInput">
-                    <textarea class="inp" maxlength="160" type="text" placeholder="What more would you like to add?"></textarea>
+                    <textarea class="inp" maxlength="160" type="text" placeholder="What more would you like to add?" id="message"></textarea>
                 </div>
             </div>
         </div>
         <div class="btnWrapOut" data-scroll-section>
-            <div class="btn">
+           <div class="wrap">
+            <div class="btn" onclick="contact()">
                 <div class="btnBgAnim">
                 </div>
-                <div class="btnText">SEND ENQUIRY</div>
+                <div class="btnText">SEND ENQUIRY</div> 
             </div>
+            <div class="success" id="successText"></div>
+           </div>
+            
+           
         </div>
     </div>
     <div class="footerOuterWrap" data-scroll-section>
