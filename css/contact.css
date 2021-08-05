@@ -231,6 +231,23 @@ textarea:focus{
     background-color: #000;
     display: none;
 }
+
+.success {
+    font-family: FoundersGroteskMonoRegular;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #277D12;
+    margin-left: 28px;
+    word-break: break-all;
+    margin-top: 10px;
+}
+
+.wrap {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
 @media only screen and (max-width:1300px){
     .contactDes{
         font-size: 20px;
