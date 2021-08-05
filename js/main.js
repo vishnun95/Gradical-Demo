@@ -175,12 +175,13 @@ window.onload = function () {
 
   locoScroll = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
+    elMobile: document.querySelector('[data-scroll-container]'),
     smooth: true,
     smartPhone:{
       smooth:true
     },
     getDirection: true,
-    inertia:1
+    inertia:1,
   });
 
   // locoScroll.stop();

@@ -112,17 +112,18 @@
         height: 100%;
         opacity: 0;
         z-index: 1000000;
-        background: black;  
+        background: white;  
         padding:23px 17px;
         box-sizing: border-box;
         -webkit-transition-duration: 500ms;
         -moz-transition-duration: 500ms;
         -o-transition-duration: 500ms;
-        transition-duration: 500ms;  
+        transition-duration: 800ms;  
     }
     .headerRight.active{
         top: 0%;
         opacity: 1;
+        background: black;  
     }
     .menuHead{
         font-family: FoundersGroteskXCondensed;
@@ -195,11 +196,11 @@
         opacity: 0;
         height: 1px;
         background-color: white;
-        -webkit-transition-duration: 1200ms;
-        -moz-transition-duration: 1200ms;
-        -o-transition-duration: 1200ms;
-        transition-duration: 1200ms; 
-        transition-delay: 1000ms;
+        -webkit-transition-duration: 1500ms;
+        -moz-transition-duration: 1500ms;
+        -o-transition-duration: 1500ms;
+        transition-duration: 1500ms; 
+        transition-delay: 1500ms;
     }
     .active .menuItem a{
         opacity: 1;
