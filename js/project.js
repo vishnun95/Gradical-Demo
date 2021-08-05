@@ -94,9 +94,11 @@ function initiateScroll() {
         console.log(func)
         switch(Number(func)){
             case 0:
-                $('.span0').addClass('swipeUp');
-                $('.span0').closest('.projectSectionItem').find('.projectName span').addClass('swipeUp');
-                $('.span0').closest('.projectSectionItem').find('.imageWrap').addClass('fullHeight');
+                setTimeout(()=>{
+                    $('.span0').addClass('swipeUp');
+                    $('.span0').closest('.projectSectionItem').find('.projectName span').addClass('swipeUp');
+                    $('.span0').closest('.projectSectionItem').find('.imageWrap').addClass('fullHeight');
+                },400); 
                 break;
              case 1:
                 $('.span1').addClass('swipeUp');
@@ -105,10 +107,12 @@ function initiateScroll() {
                 $('.line2').addClass('lineAnim');
                 break;
              case 2:
-                $('.span2').addClass('swipeUp');
-                $('.span2').closest('.projectSectionItem').find('.projectName span').addClass('swipeUp');
-                $('.span2').closest('.projectSectionItem').find('.imageWrap').addClass('fullHeight');
-                $('.line3').addClass('lineAnim');
+                setTimeout(()=>{
+                    $('.span2').addClass('swipeUp');
+                    $('.span2').closest('.projectSectionItem').find('.projectName span').addClass('swipeUp');
+                    $('.span2').closest('.projectSectionItem').find('.imageWrap').addClass('fullHeight');
+                    $('.line3').addClass('lineAnim');
+                },1000); 
                 break;       
         }
     });
