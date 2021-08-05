@@ -75,7 +75,8 @@ input, textarea{
     font-family: FoundersGroteskTextLight;
     font-style: normal;
     font-weight: 600;
-    font-size: 44px;
+    /* font-size: 44px; */
+    font-size: 32px;
     line-height: 32px;
     letter-spacing: -0.05em;
     color: #191515;

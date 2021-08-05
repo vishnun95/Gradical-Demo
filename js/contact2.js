@@ -110,7 +110,7 @@ $(document).ready(function () {
      });
 
      $('.checkBoxWrap').click(function(){
-        $(this).addClass('activeCheck');
+        $(this).toggleClass('activeCheck');
     });
     tl.from(".head span", {
     duration: 1,
