@@ -77,7 +77,7 @@ function check(element) {
         $("#description3").addClass("active");
         $('.imageProject').addClass('imageAnim');
         $("#header7").addClass("active");
-      }, 500)
+      }, 700)
       break;
     case '#header7':
       // $("#header7").addClass("active");
