@@ -261,7 +261,7 @@ nav {
   text-transform: uppercase;
   color: #191515;
   position: relative;
-  padding-right: 40px;
+  padding-right: 100px;
   -webkit-transition-duration: 1500ms;
   -moz-transition-duration: 1500ms;
   -o-transition-duration: 1500ms;
@@ -295,6 +295,13 @@ nav {
     color: #191515;
     cursor: none;
     text-decoration: none;
+    -webkit-transition-duration: 1500ms;
+    -moz-transition-duration: 1500ms;
+    -o-transition-duration: 1500ms;
+    transition-duration: 1500ms;
+}
+.invertColor .view a{
+  color: white;
 }
 /* animation for blissfull text  starts*/
 .animate{
