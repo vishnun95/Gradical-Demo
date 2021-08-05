@@ -111,7 +111,9 @@ function initiateScroll() {
         $('.bottomBanner').find('.animImage0').addClass('fullHeight');
         break;
         case 1111:
-        $('.card').addClass('swiperActive');
+          setTimeout(()=>{
+            $('.card').addClass('swiperActive');
+          },1000)
         break;
 
     }
