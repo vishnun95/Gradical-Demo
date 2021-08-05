@@ -25,6 +25,9 @@ a.bordera{
     position: relative;
     background-color: #FFFDF2;
 }
+.invertColor a.bordera{
+    background-color: black;
+}
 @media only screen and (max-width:950px){
     body{
         padding: 0px 50px;
