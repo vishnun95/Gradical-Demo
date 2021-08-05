@@ -117,7 +117,7 @@ function initiateScroll() {
         case 22:
           setTimeout(()=>{
             $('.strategy').find('.swipeUpInit').addClass('swipeUp');
-          },1000)
+          },600)
           // $('.strategy').find('.animImage1').addClass('fullHeight');
           break;  
       case 3:

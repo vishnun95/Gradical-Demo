@@ -219,7 +219,7 @@ body, body{
     -moz-transition-duration: 800ms;
     -o-transition-duration: 800ms;
     transition-duration: 800ms;
-    transition-delay: 200ms;
+    transition-delay: 500ms;
 }
 .swipeUp{
     top: 0px;
