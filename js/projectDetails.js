@@ -89,11 +89,18 @@ function initiateScroll() {
     switch (Number(func)) {
       case 0:
         $('.overViewSec').find('.animImage1').addClass('fullHeight');
-        setTimeout(()=>{
-          $('.overViewSec').find('.swipeUpInit').addClass('swipeUp');
-        },1000)
+        // setTimeout(()=>{
+        //   $('.overViewSec').find('.swipeUpInit').addClass('swipeUp');
+        // },1000)
         // locoScroll.update();
         break;
+        case 10:
+          // $('.overViewSec').find('.animImage1').addClass('fullHeight');
+          setTimeout(()=>{
+            $('.overViewSec').find('.swipeUpInit').addClass('swipeUp');
+          },1000)
+          // locoScroll.update();
+          break;  
       case 1:
         $('.line').addClass('lineAnim');
         setTimeout(() => {
@@ -102,11 +109,17 @@ function initiateScroll() {
 
         break;
       case 2:
-        setTimeout(()=>{
-          $('.strategy').find('.swipeUpInit').addClass('swipeUp');
-        },1000)
+        // setTimeout(()=>{
+        //   $('.strategy').find('.swipeUpInit').addClass('swipeUp');
+        // },1000)
         $('.strategy').find('.animImage1').addClass('fullHeight');
         break;
+        case 22:
+          setTimeout(()=>{
+            $('.strategy').find('.swipeUpInit').addClass('swipeUp');
+          },1000)
+          // $('.strategy').find('.animImage1').addClass('fullHeight');
+          break;  
       case 3:
         $('.bottomBanner').find('.animImage0').addClass('fullHeight');
         break;
