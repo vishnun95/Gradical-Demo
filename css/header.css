@@ -202,6 +202,17 @@
         transition-duration: 1500ms; 
         transition-delay: 1500ms;
     }
+    .menuItem.active a::before{
+        content: '';
+        position: absolute;
+        right: 0px;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background-color: white;
+        top: 7px;
+
+    }
     .active .menuItem a{
         opacity: 1;
         top: 0px;
