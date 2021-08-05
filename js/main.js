@@ -217,7 +217,7 @@ function intiateScrollNew(){
     if(func==='got'){
       setTimeout(()=>{
         $('.gotTopSection .slideUpWelcome').addClass('active');
-        $('.gotAproject .description').addClass('active');
+        $('.gotAproject .description span').addClass('active');
       },200)
     }
     $('.'+func).find('.'+func+'In').addClass('fullHeight');
