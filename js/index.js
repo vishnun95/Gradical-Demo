@@ -52,6 +52,6 @@ $(document).ready(function () {
         stagger: 0
     });
     setTimeout(()=>{
-        $('.topSection .line').addClass('lineActive');
+        $('.line').addClass('lineActive');
     },3000);
 });

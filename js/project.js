@@ -140,7 +140,7 @@ function initiateScroll() {
     // });
 }
 
-$(document).ready(function () {
+$(document).ready(function (e) {
     initiateScroll();
     let tl = gsap.timeline();
 

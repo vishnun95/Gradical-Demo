@@ -200,6 +200,9 @@ body, body{
     .line{
         margin-top: 60px;
     }
+    .scrollOffset{
+        height: 20px;
+    }
 }
 @media only screen and (max-width:550px){
     body{
