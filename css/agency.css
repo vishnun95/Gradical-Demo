@@ -319,8 +319,8 @@ img.diam{
         top: 0px;
     } */
     .line{
-        width: 100%;
-        opacity: 1;
+        /* width: 0%; */
+        /* opacity: 1; */
     }
     .head{
         font-size: 22.388889vw;

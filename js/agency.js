@@ -82,7 +82,6 @@ function initiateScroll() {
                 break;
             case 1:
                 $('.bg2').find('.bgSectionImage').addClass('fullHeight');
-                $('.line').addClass('lineAnim');
                 
                 tl.from(".des2 span", {
                     duration: 1,
@@ -93,6 +92,7 @@ function initiateScroll() {
                 });
                 break;
             case 2:
+                $('.line').addClass('lineAnim');
                 tl.from(".head2 .scrollerHead22", {
                     duration: 1,
                     y: 450,
