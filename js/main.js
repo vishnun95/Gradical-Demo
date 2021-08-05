@@ -68,9 +68,9 @@ function check(element) {
       },800)
       break;
     case '#header6':
+      $("#line4").addClass("activeWidth2");
       setTimeout(() => {
         $("#header6").addClass("active");
-        $("#line4").addClass("activeWidth2");
         setTimeout(()=>{
           $('#buttonBottom').addClass('active3');
         },700);
