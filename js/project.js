@@ -102,18 +102,20 @@ function initiateScroll() {
                 },400); 
                 break;
              case 1:
-                $('.span1').addClass('swipeUp');
-                $('.span1').closest('.projectSectionItem').find('.projectName span').addClass('swipeUp');
-                $('.span1').closest('.projectSectionItem').find('.imageWrap').addClass('fullHeight');
-                $('.line2').addClass('lineAnim');
-                break;
-             case 2:
+                $('.lineCall1').addClass('lineAnim');
                 setTimeout(()=>{
-                    $('.span2').addClass('swipeUp');
-                    $('.span2').closest('.projectSectionItem').find('.projectName span').addClass('swipeUp');
-                    $('.span2').closest('.projectSectionItem').find('.imageWrap').addClass('fullHeight');
-                    $('.line3').addClass('lineAnim');
-                },1000); 
+                    $('.span1').addClass('swipeUp');
+                    $('.span1').closest('.projectSectionItem').find('.projectName span').addClass('swipeUp');
+                    $('.span1').closest('.projectSectionItem').find('.imageWrap').addClass('fullHeight');
+                },500)
+                break;
+             case 4:
+                $('.lineCall4').addClass('lineAnim');
+                setTimeout(()=>{
+                        $('.span2').addClass('swipeUp');
+                        $('.span2').closest('.projectSectionItem').find('.projectName span').addClass('swipeUp');
+                        $('.span2').closest('.projectSectionItem').find('.imageWrap').addClass('fullHeight');
+                },500); 
                 break;       
         }
     });
@@ -152,9 +154,9 @@ $(document).ready(function (e) {
     ease: Power3.out,
     stagger: 1.5
     });
-    gsap.from(".line", {
+    gsap.from(".line11", {
         scrollTrigger: {
-          trigger: ".line",
+          trigger: ".line11",
           scroller: ".smooth-scroll",
           scrub: true,
           start: "top bottom",
