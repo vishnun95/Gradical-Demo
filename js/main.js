@@ -177,7 +177,7 @@ window.onload = function () {
     el: document.querySelector('[data-scroll-container]'),
     smooth: true,
     smartPhone:{
-      smooth:false
+      smooth:true
     },
     getDirection: true,
     inertia:1
