@@ -1753,7 +1753,9 @@ FOOTER
 .cursor span{
   display: none;
 }
-
+.marTop2{
+  margin-top: 30px;
+}
 /* .cursor::before {
   content: "";
   width: 100%;

@@ -54,19 +54,16 @@ function check(element) {
       // $("#grid1").addClass("active2");
       // $("#grid2").addClass("active3");
       // $("#grid3").addClass("active2");
-
       $('.slideUpCard').addClass('slideUpCardActive')
-      setTimeout(()=>{
-        $("#header4").addClass("active");
-      },800)
       $("#line3").addClass("activeWidth2");
-      $('.desClass').addClass('active2');
       break;
     case '#line2':
       $("#line2").addClass("activeWidth2");
       break;
     case '#header5':
       setTimeout(()=>{
+        $('.desClass').addClass('active2');
+        $("#header4").addClass("active");
         $("#header5").addClass("active");
       },800)
       break;
@@ -74,8 +71,10 @@ function check(element) {
       setTimeout(() => {
         $("#header6").addClass("active");
         $("#line4").addClass("activeWidth2");
-        $("#description3").addClass("active2");
-        $('#buttonBottom').addClass('active3');
+        setTimeout(()=>{
+          $('#buttonBottom').addClass('active3');
+        },700);
+        $("#description3").addClass("active");
         $('.imageProject').addClass('imageAnim');
         $("#header7").addClass("active");
       }, 500)
@@ -84,8 +83,10 @@ function check(element) {
       // $("#header7").addClass("active");
       break;
     case '#coll':
-      $('.heightZero').addClass('heightOne');
-      $('.zoomZero').addClass('scaleOne');
+      setTimeout(()=>{
+        $('.heightZero').addClass('heightOne');
+        $('.zoomZero').addClass('scaleOne');
+      },700);
       break;
   }
 }
