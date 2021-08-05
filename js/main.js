@@ -34,9 +34,18 @@ function check(element) {
     case '#header2':
       // console.log(locoScroll)
       $("#header2").addClass("active");
+      setTimeout(()=>{
+        $("#header3").addClass("active");
+        setTimeout(()=>{
+          $('#descri').addClass('active');
+        },200)
+      },300);
       break;
     case '#header3':
-      $("#header3").addClass("active");
+      setTimeout(()=>{
+        $("#header3").addClass("active");
+        $('#descri').addClass('active');
+      },500)
       $('.body').addClass('invertColor');
       $('.slideUp4').css({opacity: 1});
 
@@ -45,34 +54,39 @@ function check(element) {
       // $("#grid1").addClass("active2");
       // $("#grid2").addClass("active3");
       // $("#grid3").addClass("active2");
-
       $('.slideUpCard').addClass('slideUpCardActive')
-
-      $("#header4").addClass("active");
       $("#line3").addClass("activeWidth2");
-      $('.desClass').addClass('active2');
       break;
     case '#line2':
       $("#line2").addClass("activeWidth2");
       break;
     case '#header5':
-      $("#header5").addClass("active");
+      setTimeout(()=>{
+        $('.desClass').addClass('active2');
+        $("#header4").addClass("active");
+        $("#header5").addClass("active");
+      },800)
       break;
     case '#header6':
-      $("#header6").addClass("active");
       $("#line4").addClass("activeWidth2");
-      $("#description3").addClass("active2");
-      $('#buttonBottom').addClass('active3');
       setTimeout(() => {
+        $("#header6").addClass("active");
+        setTimeout(()=>{
+          $('#buttonBottom').addClass('active3');
+        },700);
+        $("#description3").addClass("active");
         $('.imageProject').addClass('imageAnim');
-      }, 1000)
+        $("#header7").addClass("active");
+      }, 700)
       break;
     case '#header7':
-      $("#header7").addClass("active");
+      // $("#header7").addClass("active");
       break;
     case '#coll':
-      $('.heightZero').addClass('heightOne');
-      $('.zoomZero').addClass('scaleOne');
+      setTimeout(()=>{
+        $('.heightZero').addClass('heightOne');
+        $('.zoomZero').addClass('scaleOne');
+      },700);
       break;
   }
 }
@@ -99,11 +113,14 @@ function unCheck(element) {
     case '#header2':
       $("#header2").removeClass("active");
       $('.body').removeClass('invertColor');
+      $("#header3").removeClass("active");
+      $('#descri').removeClass('active');
       // $('.cursor').css({ backgroundColor: "black" });
 
       break;
     case '#header3':
       $("#header3").removeClass("active");
+      $('#descri').removeClass('active');
       break;
     case '#header4':
       $("#header4").removeClass("active");
@@ -158,27 +175,22 @@ window.onload = function () {
 
   locoScroll = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
+    elMobile: document.querySelector('[data-scroll-container]'),
     smooth: true,
-    getDirection: true
+    smartPhone:{
+      smooth:true
+    },
+    getDirection: true,
+    inertia:1,
   });
 
   // locoScroll.stop();
 
-  locoScroll.on('scroll', (args) => {
-    // Get all current elements : args.currentElements
-    if (args.direction === 'down') {
-      $('.header').addClass('moveUpHeader');
-    } else {
-      if (!checkIfScrollStopped) {
-        $('.header').removeClass('moveUpHeader');
-      }
-    }
-  });
+ 
 
   locoScroll.on('scroll', (func, dir, obj) => {
-    // console.log(func)
     if (func['currentElements']) {
-      if (func['currentElements']['el0']) {
+      if (func['currentElements']['el0'] || func['currentElements']['0']) {
         check('.slideUp');
         check('#description1');
         check('#line1');
@@ -187,7 +199,7 @@ window.onload = function () {
         unCheck('#header2');
         // unCheck('#header3');
       }
-      if (func['currentElements']['el2']) {
+      if (func['currentElements']['el2'] || func['currentElements']['2']) {
         unCheck('#header2');
         // unCheck('#header3');
         // unCheck('#description2');
@@ -195,7 +207,7 @@ window.onload = function () {
         // unCheck('#header4');
          check('#line2');
       }
-      if (func['currentElements']['el3']) {
+      if (func['currentElements']['el3'] || func['currentElements']['3']) {
         // unCheck('.slideUp');
         unCheck('#description1');
         // unCheck('#line1');
@@ -209,7 +221,7 @@ window.onload = function () {
         // unCheck('#line3');
         // unCheck('#header5');
       }
-      if (func['currentElements']['el4']) {
+      if (func['currentElements']['el4'] || func['currentElements']['4']) {
         // unCheck('#header2');
         // unCheck('#header3');
         // unCheck('#description2');
@@ -223,7 +235,7 @@ window.onload = function () {
         // unCheck('#header7');
         // unCheck('#coll');
       }
-      if (func['currentElements']['el5']) {
+      if (func['currentElements']['el5'] || func['currentElements']['5']) {
         unCheck('#header2');
         check('#header4');
         // check('#line3');
@@ -231,12 +243,12 @@ window.onload = function () {
 
         check('#coll');
       }
-      if (func['currentElements']['el6']) {
+      if (func['currentElements']['el6'] || func['currentElements']['6']) {
 
         check('#header6');
         check('#header7');
       }
-      if (func['currentElements']['el7']) {
+      if (func['currentElements']['el7'] || func['currentElements']['7']) {
         // unCheck('#coll');
         // unCheck('#header4');
         // unCheck('#line3');
@@ -260,11 +272,20 @@ function swiperImages() {
             '<div class="card customCursor" style=background-image:url(' + baseUrl + data[i]['image']['url'] + ')>' +
             '</div>' +
             '<div class="projDetails">' +
-            '<div class="view"><a href=projectname.html?id='+data[i].id+'>view</a></div>' +
+            '<div class="view"><a href=projectDetails.html?id='+data[i].id+'>view</a></div>' +
             data[i]['projectName'] +
             '</div>' +
             '</div>'
           )
+          $('#mobileCards').append(
+            '<div class="featureCardItem">'+
+            '<div class="featureCard" style=background-image:url(' + baseUrl + data[i]['image']['url'] + ')></div>'+
+            '<div class="featureDetails">'+
+              '<div class="projectName">'+data[i]['projectName'] +'</div>'+
+              '<div class="view"><a href=projectDetails.html?id='+data[i].id+'>VIEW</a></div>'+
+            '</div>'+
+          '</div>'
+            )
         }
         $('.project-img1').find('.imageHolder').css({ 'backgroundImage': 'url(' + baseUrl + data[0]['image']['url'] + ')' })
         swiperInit();
@@ -312,11 +333,13 @@ function swiperInit() {
 function customCursor() {
   var cursor = $(".cursor"),
     follower = $(".cursor-follower");
-
-  var posX = 0,
-    posY = 0,
-    mouseX = 0,
-    mouseY = 0;
+    // $(window).load(function(eventObj){
+    //   console.log(eventObj);
+    // });
+  var posX = 1000,
+    posY = 1000,
+    mouseX =1000,
+    mouseY = 1000;
 
   TweenMax.to({}, 0.016, {
     repeat: -1,
@@ -345,15 +368,25 @@ function customCursor() {
     mouseY = e.pageY;
   });
 
-  $(".customCursor").on("mouseenter", function () {
-    cursor.addClass("active");
-    follower.addClass("active");
-  });
+  setTimeout(()=>{
+    $(".customCursor").on("mouseenter", function () {
+      cursor.addClass("active");
+      follower.addClass("active");
+    });
 
-  $(".customCursor").on("mouseleave", function () {
-    cursor.removeClass("active");
-    follower.removeClass("active");
-  });
+    $(".customCursor").on("mouseleave", function () {
+      cursor.removeClass("active");
+      follower.removeClass("active");
+    });
+    $(".footerOuterWrap").on("mouseenter", function () {
+      cursor.addClass("activeWhite");
+      follower.addClass("activeWhite");
+    });
+    $(".footerOuterWrap").on("mouseleave", function () {
+      cursor.removeClass("activeWhite");
+      follower.removeClass("activeWhite");
+    });
+  },1000);
 }
 
 $(document).ready(function () {

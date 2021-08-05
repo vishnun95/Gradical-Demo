@@ -133,7 +133,7 @@ nav {
   transform-origin: bottom left;
 }
 .one {
-  margin: 165px 0px 0px 0px;
+  margin: 55px 0px 0px 0px;
   z-index: 1;
 }
 
@@ -261,13 +261,17 @@ nav {
   text-transform: uppercase;
   color: #191515;
   position: relative;
-  padding-right: 40px;
+  padding-right: 100px;
+  -webkit-transition-duration: 1500ms;
+  -moz-transition-duration: 1500ms;
+  -o-transition-duration: 1500ms;
+  transition-duration: 1500ms;
 }
 .view{
-  font-family: FoundersGroteskXCondensed;
+  font-family: FoundersGroteskMonoRegular;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 40px;  
   display: flex;
   align-items: center;
@@ -278,12 +282,26 @@ nav {
   right: 0px;
   top: 0px;
 }
-
+#mobileCards .view{
+  top: -5px;
+}
 .view a {
-  text-decoration: none;
-    color: #000000;
-
-    font-weight: 400;
+    font-family: FoundersGroteskMonoRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: -0.04em;
+    color: #191515;
+    cursor: none;
+    text-decoration: none;
+    -webkit-transition-duration: 1500ms;
+    -moz-transition-duration: 1500ms;
+    -o-transition-duration: 1500ms;
+    transition-duration: 1500ms;
+}
+.invertColor .view a{
+  color: white;
 }
 /* animation for blissfull text  starts*/
 .animate{
@@ -353,6 +371,7 @@ nav {
 }
 .active{
   bottom: 0px;
+  opacity: 1;
 }
 .active span{
   -webkit-transform: rotate(0deg);
@@ -486,8 +505,14 @@ nav {
 .invertColor #header3{
   color: white;
 }
+.invertColor #descri{
+  color: white;
+}
 .invertColor .emo{
   color: white;
+}
+.invertColor .projDetails{
+  color:white;
 }
 #description2{
   color: #000;
@@ -898,7 +923,7 @@ nav {
   margin: 75px 0px 110px 0px;
 }
 .five {
-  margin: 75px 0px 410px 0px;
+  margin: 75px 0px 110px 0px;
 }
 
 .five-wrap H1 {
@@ -1654,6 +1679,10 @@ FOOTER
   }
 }
 @media only screen and (max-width:1350px){
+  .slideUpContainer {
+    height: 141px;
+    overflow-y: hidden;
+  }
   .one h1{
     font-size: 170px;
   }
@@ -1716,7 +1745,7 @@ FOOTER
   width: 8px;
   height: 8px;
   border-radius: 100%;
-  z-index: 1;
+  z-index: 10000;
   transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
       0.2s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
   user-select: none;
@@ -1731,7 +1760,9 @@ FOOTER
 .cursor span{
   display: none;
 }
-
+.marTop2{
+  margin-top: 30px;
+}
 /* .cursor::before {
   content: "";
   width: 100%;
@@ -1774,7 +1805,7 @@ FOOTER
   width: 40px;
   height: 40px;
   border-radius: 100%;
-  z-index: 1;
+  z-index: 10000;
   transition: 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
       0.4s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
   user-select: none;
@@ -1790,6 +1821,13 @@ FOOTER
   background: white;
 }
 .invertColor .cursor-follower{
+  background: rgba(255, 255, 255, 0.1);
+
+}
+.activeWhite.cursor{
+  background: white;
+}
+.activeWhite.cursor-follower{
   background: rgba(255, 255, 255, 0.1);
 
 }

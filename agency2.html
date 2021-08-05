@@ -1,124 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  data-scroll-container>
 
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agency</title>
+    <title>Project Details</title>
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/agency.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> 
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
 </head>
-
 <body>
-    <div class="cursor">
+    <div class="cursor desktopOnly">
     </div>
-    <div class="cursor-follower"></div>
-    <div class="outer" data-scroll-container>
+    <div class="cursor-follower desktopOnly"></div>
+    <div class="headerOuter">
+        <div class="headerLeft">
+          <div class="logo">
+            <img src="./media/img/logo.svg" alt="logo">
+          </div>
+          <img class="menuActive" src="./media/img/menu.png" alt="menu">
+        </div>
+        <div class="headerRight">
+          <div class="popClose">
+            <img src="./media/img/close.png" alt="close">
+          </div>
+          <div class="menuHead menuActive">MENU</div>
+          <div class="menu">
+            <!-- <div class="menuItem"><a href="index.html">HOME</a></div> -->
+            <div class="menuItem active"><a href="#">AGENCY</a></div>
+            <div class="menuItem"><a href="project2.html">PROJECTS</a></div>
+            <div class="menuItem"><a href="careers2.html">CAREERS</a></div>
+            <div class="menuItem"><a href="contact2.html">CONTACT</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="headeroffset"></div>
+    <div class="outer">
         <div class="sectionWrap">
-            <div class="topSection sectionWidth">
-                <div class="head">AGENCY</div>
+            <div class="topSection sectionWidth" data-scroll-section>
+                <div class="head overflowHidden">
+                    <span>AGENCY</span>
+                </div>
                 <div class="sectionWrap">
                     <div class="left">
-                        <div class="description">
-                            <div class="desInner">Digital agency working along startups and evolving brands that are brave enough to think ahead and change at the pace of the new world.</div>
+                        <div class="description desktopOnly">
+                            <div class="desInner des1 overflowHidden">
+                                <span>Digital agency working along startups and evolving brands that are brave enough to think ahead and change at the pace of the new world.</span>
+                            </div>
                         </div>
-                        <div class="bgSection customCursor">
-
+                        <div class="bgSection bg1 customCursor" data-scroll  data-scroll-speed="2">
+                            <div class="bgSectionImage" data-scroll data-scroll-call="0"></div>
                         </div>
                     </div>
-                    <div class="right">
-                        <div class="bgSection customCursor" data-scroll-speed="4">
+                    <div class="right" >
+                        <div class="bgSection bg2 customCursor" data-scroll  data-scroll-speed="1">
+                            <div class="bgSectionImage"></div>
                         </div>
-                        <div class="description">
-                            <div class="desInner">Digital agency working along startups and evolving brands that are brave enough to think ahead and change at the pace of the new world.</div>
+                        <div class="description des2Outer desktopOnly" data-scroll data-scroll-call="1">
+                            <div class="desInner des2 overflowHidden">
+                                <span>Digital agency working along startups and evolving brands that are brave enough to think ahead and change at the pace of the new world.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desWrap mobileOnly" data-scroll  data-scroll-speed="1">
+                        <div class="description ">
+                            <div class="desInner des1 overflowHidden">
+                                <span>Digital agency working along startups and evolving brands that are brave enough to think ahead and change at the pace of the new world.</span></div>
+                        </div>
+                        <div class="description "  data-scroll data-scroll-call="1">
+                            <div class="desInner des1 overflowHidden">
+                                <span>Digital agency working along startups and evolving brands that are brave enough to think ahead and change at the pace of the new world.</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="line">
+                <div class="line lineTop">
                 </div>
             </div>
-            <div class="crewSection sectionWidth">
-                <div class="head2">
-                    <img src="media/img/crew.svg" alt="crew"> THE CREW
+            <div class="crewSection sectionWidth" data-scroll-section>
+                <div class="head2 overflowHidden" data-scroll data-scroll-call="2">
+                    <div class="scrollerHead">
+                        <img class="diam" src="media/img/crew.svg" alt="crew"> 
+                        <span>THE CREW</span>
+                    </div>
                 </div>
-                <div class="imageSection" data-scroll-speed="6">
+                <div class="imageSection">
                     <div class="topImages">
-                        <div class="imageWrap topMargin" data-scroll-speed="10">
-                            <div class="image customCursor">
+                        <div class="imageWrap topMargin" data-scroll  data-scroll-speed="1">
+                            <div class="image img1 customCursor"  data-scroll data-scroll-call="3">
+                                <div class="innerImage in0"></div>
                             </div>
-                            <div class="imageDet">
-                                <div class="imageHead">ROMAL MARTIN</div>
-                                <div class="imageDet">
-                                    Founder - Creative Director </div>
+                            <div class="imageDet" >
+                                <div class="imageHead imageHead3 overflowHidden">
+                                    <span>
+                                        ROMAL MARTIN
+                                    </span>
+                                </div>
+                                <div class="imageDet imgDet3 overflowHidden">
+                                    <span>
+                                        Founder - Creative Director
+                                    </span> 
+                                </div>
                             </div>
                         </div>
-                        <div class="imageWrap " data-scroll-speed="8">
-                            <div class="image customCursor">
+                        <div class="imageWrap " data-scroll  data-scroll-speed="2">
+                            <div class="image img2 customCursor" data-scroll data-scroll-call="32">
+                                <div class="innerImage in1"></div>
                             </div>
                             <div class="imageDet ">
-                                <div class="imageHead ">VISHAL JAYARAJ</div>
-                                <div class="imageDet ">
-                                    Executive Producer </div>
+                                <div class="imageHead imageHead32 overflowHidden">
+                                    <span>VISHAL JAYARAJ</span>
+                                </div>
+                                <div class="imageDet imgDet32 overflowHidden">
+                                    <span>Executive Producer</span>
+                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="topImages center ">
-                        <div class="imageWrap " data-scroll-speed="8">
-                            <div class="image customCursor">
+                        <div class="imageWrap" data-scroll data-scroll-call="33"  data-scroll-speed="3">
+                            <div class="image img3 customCursor" >
+                                <div class="innerImage in2"></div>
                             </div>
                             <div class="imageDet ">
-                                <div class="imageHead ">AMEN</div>
-                                <div class="imageDet ">
-                                    UX Designer - Front-end Developer </div>
+                                <div class="imageHead imageHead33 overflowHidden">
+                                    <span>AMEN</span>
+                                </div>
+                                <div class="imageDet imgDet33 overflowHidden"> 
+                                    <span>UX Designer - Front-end Developer</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="topImages ">
-                        <div class="imageWrap topMargin " data-scroll-speed="10">
-                            <div class="image customCursor">
+                        <div class="imageWrap topMargin " data-scroll  data-scroll-speed="2">
+                            <div class="image img4 customCursor"  data-scroll data-scroll-call="4">
+                                <div class="innerImage in3"></div>
                             </div>
                             <div class="imageDet ">
-                                <div class="imageHead ">SREEDEVI ASOK</div>
-                                <div class="imageDet ">
-                                    Founder - Marketing Director </div>
+                                <div class="imageHead imageHead4 overflowHidden">
+                                    <span>SREEDEVI ASOK</span>
+                                </div>
+                                <div class="imageDet imgDet4 overflowHidden">
+                                    <span>Founder - Marketing Director</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="imageWrap " data-scroll-speed="8">
-                            <div class="image customCursor">
+                        <div class="imageWrap " data-scroll data-scroll-call="35"  data-scroll-speed="3">
+                            <div class="image img5 customCursor">
+                                <div class="innerImage in4"></div>
                             </div>
                             <div class="imageDet ">
-                                <div class="imageHead ">KIRON RV</div>
-                                <div class="imageDet ">
-                                    Visual Designer / Marketing Strategist </div>
+                                <div class="imageHead imageHead35 overflowHidden">
+                                    <span>KIRON RV</span>
+                                </div>
+                                <div class="imageDet imgDet35 overflowHidden">
+                                    <span> Visual Designer / Marketing Strategist</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="awardsSection sectionWidth ">
-                <div class="awardHead " data-scroll-speed="5">
-                    AWARDS+ RECOGNITION
-                    <div data-scroll-speed="7">
-                        <div class="awardIcon ">
+            <div class="awardsSection sectionWidth desktopOnly" data-scroll-section>
+                <div class="line" >
+                </div>
+                <div class="awardHead" data-scroll data-scroll-call="5">
+                    <div class="overflowHidden">
+                        <span>AWARDS+ RECOGNITION</span>
+                    </div>
+                    <div>
+                        <div class="awardIcon " data-scroll  data-scroll-speed="1">
                             <img src="media/img/awardsEmoji.svg " alt=" ">
                         </div>
-                        <div class="gotNone one " data-scroll-speed="-8">
+                        <div class="gotNone one " data-scroll  data-scroll-speed="1">
                             We’ve got none, help us get some.
                         </div>
-                        <div class="gotNone two " data-scroll-speed="-9">
+                        <div class="gotNone two " data-scroll  data-scroll-speed="1">
                             We’ve got none, help us get some.
                         </div>
-                        <div class="gotNone three " data-scroll-speed="-7">
+                        <div class="gotNone three " data-scroll  data-scroll-speed="1">
+                            We’d like our work to speak for itself. But awards help.
+                        </div>
+                        <div class="gotNone four "data-scroll  data-scroll-speed="1" >
                             We’ve got none, help us get some.
                         </div>
-                        <div class="gotNone four " data-scroll-speed="-8">
+                        <div class="gotNone five " data-scroll  data-scroll-speed="1">
                             We’ve got none, help us get some.
                         </div>
-                        <div class="gotNone five " data-scroll-speed="-9">
-                            We’ve got none, help us get some.
-                        </div>
-                        <div class="gotNone six " data-scroll-speed="-10">
+                        <div class="gotNone six " data-scroll  data-scroll-speed="1">
                             We’ve got none, help us get some.
                         </div>
                     </div>   
@@ -126,11 +199,65 @@
             </div>
         </div>
     </div>
-
+    <div class="footerOuterWrap" data-scroll-section>
+        <div class="footerOuter">
+        <div class="footerLeft">
+            <div class="footerLogo">
+              <img src="./media/img/logo-footer.svg" alt="logo">
+            </div>
+            <div class="footerList desktopOnly">
+              <div class="footerItem">INSTAGRAM</div>
+              <div class="footerItem">LINKEDIN</div>
+              <div class="footerItem">FACEBOOK</div>
+            </div>
+        </div>
+        <div class="footerRight">
+          <div class="footerMenu">
+            <div class="footerMenuItem active">
+                <a href="#">AGENCY</a>
+              </div>
+              <div class="footerMenuItem">
+                <a href="project2.html">PROJECT</a>
+              </div>
+              <div class="footerMenuItem">
+                <a href="careers2.html">CAREERS</a>
+              </div>
+              <div class="footerMenuItem">
+                <a href="contact2.html">CONTACT</a>
+              </div>
+          </div>
+          <div class="companyDet">
+            <div class="address desktopOnly">
+              Gradical
+              The Atomic, Kazhakootam, Trivandrum, Kerala
+            </div>
+            <div class="emailPhone desktopOnly">
+              <div>+91 73561 35061</div>
+              <div>hey@gradical.xyz</div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="address mobileOnly">
+          Gradical
+          The Atomic, Kazhakootam, Trivandrum, Kerala
+        </div>
+        <div class="emailPhone mobileOnly">
+          <div>+91 73561 35061</div>
+          <div>hey@gradical.xyz</div>
+        </div>
+        <div class="footerList mobileOnly">
+          <div class="footerItem">INSTAGRAM</div>
+          <div class="footerItem">LINKEDIN</div>
+          <div class="footerItem">FACEBOOK</div>
+        </div>
+      </div>
     <script src="js/jquery-migrate-3.3.2.min.js "></script>
     <script src="js/TweenMax.min.js "></script>
-    <!-- <script src="js/locomotive.js "></script> -->
+    <script src="js/gsap-latest-beta.min.js"></script>
+    <script src="js/locomotive-scroll.min.js"></script>
     <script src=" js/agency.js "></script>
+    <script src="js/header.js"></script>
 </body>
 
 </html>

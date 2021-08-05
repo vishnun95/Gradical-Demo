@@ -1,0 +1,273 @@
+.mobileOnly{
+    display: none;
+}
+.overflowHiddenNew{
+    overflow: hidden;
+}
+.overflowHiddenNew span{
+    display: block;
+    position: relative;
+}
+.btnContainer{
+    padding: 6px 2px;
+
+}
+.btnContainer .btn{
+    transition-delay: 1500ms;
+}
+@media only screen and (max-width:950px){
+    body{
+        padding: 0px 50px;
+    }
+    .desktopOnly{
+        display: none;
+    }
+    .mobileOnly{
+        display: block;
+    }
+    .head{
+        text-align: left;
+    }
+    .head img{
+        width: 65px;
+        height: 65px;
+        margin-bottom: 25px;
+    }
+    .head span{
+        font-family: 'FoundersGroteskXCondensed';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 78px;
+        line-height: 60px;
+        letter-spacing: -0.01em;
+        text-transform: uppercase;
+        color: #191515;
+        display: block;
+        margin-bottom: 25px;
+    }
+    .description{
+        font-family: FoundersGroteskTextLight;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: -0.01em;
+        color: #191515;
+        margin-bottom: 25px;
+        position: relative;
+        z-index: 10;
+    }
+    .line{
+        margin-top: 48px;
+    }
+    .featuredProj{
+        position: relative;
+    }
+    .featureHead{
+        font-family:FoundersGroteskMonoRegular;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 40px;
+        letter-spacing: -0.04em;
+        color: #191515;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .featureCardItem{
+        position: relative;
+        margin-bottom: 40px;
+    }
+    .featureCard{
+        width: 100%;
+        max-width: 100%;
+        height: 259px;
+        background-color: #C4C4C4;
+        margin-bottom: 28px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+    }
+    .featureDetails{
+        position: relative;
+    }
+    .projectName{
+        font-family: FoundersGroteskXCondensed;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 33px;
+        letter-spacing: -0.01em;
+        text-transform: uppercase;
+        color: #191515;
+        max-width: 80%;
+    }
+    .welcomeTop{
+        margin-top: 60px;
+    }
+    .welcomeHead{
+        font-family: 'FoundersGroteskXCondensed';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 78px;
+        line-height: 60px;
+        letter-spacing: -0.01em;
+        text-transform: uppercase;
+        color: #191515;
+        display: block;
+        margin-bottom: 25px;
+        margin-top: 34px;
+    }
+    .welcomeCards{
+        margin-top: 62px;
+    }
+    .welcomeCardInner{
+        display: block;
+        justify-content: flex-start;
+        overflow: auto;
+    }::-webkit-scrollbar {
+        height: 0px;  
+        background: transparent;
+    }
+    .welcomeCardItem{
+        margin-right: 5px;
+        min-width: 300px;
+        margin-bottom: 40px;
+    }
+    .welcomeCardItem:last-child{
+        margin-bottom: 0px;
+    }
+    .welcomeCardHead{
+        font-family: 'FoundersGroteskXCondensed';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 44px;
+        line-height: 40px;
+        letter-spacing: -0.01em;
+        text-transform: uppercase;
+        margin-bottom: 31px;
+    }
+    .welcomeCardDes{
+        font-family:FoundersGroteskMonoRegular;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: -0.05em;
+        color: #191515;
+    }
+    .collabTopSection{
+        margin-top: 39px;
+    }
+    .collabHead{
+        font-family: 'FoundersGroteskXCondensed';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 78px;
+        line-height: 60px;
+        letter-spacing: -0.01em;
+        text-transform: uppercase;
+        color: #191515;
+        display: block;
+        margin-bottom: 25px;
+        margin-top: 34px;
+    }
+    .logoWrapCompanies{
+        background: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: -50px;
+        width: calc(100% + 100px);
+        padding: 0px 40px;
+        box-sizing: border-box;    
+        margin-top: 60px;
+    }
+    .logoWrapCompanies img{
+        width: 70px;
+    }
+    .gotAproject{
+        margin-top: 40px;
+        position: relative;
+        margin-bottom: 70px;
+    }
+    .line.gotAprojectLine{
+        margin-top: 40px;
+    }
+    .gotAproject .head{
+        font-family: FoundersGroteskXCondensed;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 78px;
+        line-height: 60px;
+        letter-spacing: -0.01em;
+        text-transform: uppercase;
+        color: #191515;
+        position: relative;
+        z-index: 10;
+        max-width: 240px;
+        margin-bottom: 55px;
+    }
+    .gotAprojectImage{
+        width: 273px;
+        height: 197px;
+        background: #C4C4C4;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        max-width: 100%;
+    }
+    .view{
+        line-height: 20px;
+    }
+    .btnOutWrap{
+        padding: 2px 2px;
+    }
+    .line{
+        width: 0%;
+        opacity: 0;
+        -webkit-transition-duration: 400ms;
+        -moz-transition-duration: 400ms;
+        -o-transition-duration: 400ms;
+        transition-duration: 400ms;
+    }
+    .lineActive{
+        width: 100%;
+        opacity: 1;
+    }
+    
+}
+@media only screen and (max-width:550px){
+    body {
+        padding: 0px 25px;
+    }
+    .logoWrapCompanies{
+        background: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: -25px;
+        width: calc(100% + 50px);
+        padding: 0px 20px;
+        box-sizing: border-box;    
+    }
+    .logoWrapCompanies img{
+        width: 50px;
+    }
+}
+@media only screen and (max-width:400px){
+    .head span, .welcomeHead, .collabHead, .gotAproject .head{
+        font-size: 59px;
+        line-height: 53px;
+    }
+    .gotAproject .head{
+        max-width: 183px;
+    }
+    .welcomeCardItem{
+        margin-right: 20px;
+        min-width: 210px;
+    }
+}

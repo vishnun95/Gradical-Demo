@@ -5,10 +5,10 @@ function customCursor() {
     var cursor = $(".cursor"),
         follower = $(".cursor-follower");
 
-    var posX = 0,
-        posY = 0,
-        mouseX = 0,
-        mouseY = 0;
+        var posX = 1000,
+        posY = 1000,
+        mouseX =1000,
+        mouseY = 1000;
 
     TweenMax.to({}, 0.016, {
         repeat: -1,
@@ -46,6 +46,15 @@ function customCursor() {
         cursor.removeClass("active");
         follower.removeClass("active");
     });
+    $(".footerOuterWrap").on("mouseenter", function () {
+        cursor.addClass("activeWhite");
+        follower.addClass("activeWhite");
+      });
+      $(".footerOuterWrap").on("mouseleave", function () {
+        cursor.removeClass("activeWhite");
+        follower.removeClass("activeWhite");
+      });
+
 }
 
 function swiperImages() {
@@ -57,6 +66,7 @@ function swiperImages() {
             if (data.length) {
                 for (let i = 0; i < data.length; i++) {
                     $('.project-img' + i).find('.imageHolder').css({ 'backgroundImage': 'url(' + baseUrl + data[i]['image']['url'] + ')' });
+                    $('.project-img' + i).find('.imageHolder').attr('data-id', data[i]['id']);
                     $('.project-img' + i).find('.projectName span').html(data[i]['projectName']);
                 }
             }
@@ -72,15 +82,24 @@ function initiateScroll() {
     locoScroll = new LocomotiveScroll({
         el: document.querySelector('[data-scroll-container]'),
         smooth: true,
-        getDirection: true
+        smartphone: {
+            smooth: false
+        },
+        tablet: {
+            smooth: false
+        },
+        getDirection: true,
+        inertia:1
     });
     locoScroll.on('call', (func) => {
         console.log(func)
         switch(Number(func)){
             case 0:
-                $('.span0').addClass('swipeUp');
-                $('.span0').closest('.projectSectionItem').find('.projectName span').addClass('swipeUp');
-                $('.span0').closest('.projectSectionItem').find('.imageWrap').addClass('fullHeight');
+                setTimeout(()=>{
+                    $('.span0').addClass('swipeUp');
+                    $('.span0').closest('.projectSectionItem').find('.projectName span').addClass('swipeUp');
+                    $('.span0').closest('.projectSectionItem').find('.imageWrap').addClass('fullHeight');
+                },400); 
                 break;
              case 1:
                 $('.span1').addClass('swipeUp');
@@ -89,11 +108,12 @@ function initiateScroll() {
                 $('.line2').addClass('lineAnim');
                 break;
              case 2:
-                 $('.manualAdd').addClass('is-inview');
-                $('.span2').addClass('swipeUp');
-                $('.span2').closest('.projectSectionItem').find('.projectName span').addClass('swipeUp');
-                $('.span2').closest('.projectSectionItem').find('.imageWrap').addClass('fullHeight');
-                $('.line3').addClass('lineAnim');
+                setTimeout(()=>{
+                    $('.span2').addClass('swipeUp');
+                    $('.span2').closest('.projectSectionItem').find('.projectName span').addClass('swipeUp');
+                    $('.span2').closest('.projectSectionItem').find('.imageWrap').addClass('fullHeight');
+                    $('.line3').addClass('lineAnim');
+                },1000); 
                 break;       
         }
     });
@@ -121,12 +141,12 @@ function initiateScroll() {
     // });
 }
 
-$(document).ready(function () {
+$(document).ready(function (e) {
     initiateScroll();
     let tl = gsap.timeline();
 
     tl.from(".Head span", {
-    duration: 0.75,
+    duration: 1,
     y: 350,
     autoAlpha: 0,
     ease: Power3.out,
@@ -145,4 +165,14 @@ $(document).ready(function () {
         ease: "none"
       });
     swiperImages();
+    $('.projectImage').click(function($event){
+        try{
+            if($(this).find('.imageHolder').attr("data-id")){
+                window.location = 'projectDetails.html?id='+$(this).find('.imageHolder').attr("data-id");
+            }
+        }catch(e){
+            console.log(e)
+        }
+        
+    })
 });

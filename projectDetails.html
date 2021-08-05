@@ -11,12 +11,37 @@
     <link rel="stylesheet" href="css/button.css"/>
     <link rel="stylesheet" href="css/projectDetails.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> 
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
 </head>
 <body>
 <div class="outer" >
-    <div class="cursor">
+    <div class="cursor desktopOnly">
+      <span></span>
     </div>
-    <div class="cursor-follower"></div>
+    <div class="cursor-follower desktopOnly"></div>
+    <div class="headerOuter">
+        <div class="headerLeft">
+          <div class="logo">
+            <img src="./media/img/logo.svg" alt="logo">
+          </div>
+          <img class="menuActive" src="./media/img/menu.png" alt="menu">
+        </div>
+        <div class="headerRight">
+          <div class="popClose">
+            <img src="./media/img/close.png" alt="close">
+          </div>
+          <div class="menuHead menuActive"><span>MENU</span></div>
+          <div class="menu">
+            <!-- <div class="menuItem"><a href="index.html">HOME</a></div> -->
+            <div class="menuItem"><a href="agency2.html">AGENCY</a></div>
+            <div class="menuItem active"><a href="project2.html">PROJECTS</a></div>
+            <div class="menuItem"><a href="careers2.html">CAREERS</a></div>
+            <div class="menuItem"><a href="contact2.html">CONTACT</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="headeroffset"></div>
     <div class="container">
         <div class="projectTop"  data-scroll-section>
             <div class="Head">
@@ -27,10 +52,9 @@
                     <div class="detHead overflowHidden">
                         <span>PROJECT FOCUS</span>
                     </div>
-                    <div class="projDetails overflowHidden">
+                    <div class="projDetails det1 overflowHidden">
                         <span>
-                        ELECTRONICS + HARDWARE,
-                        RETAIL + ECOMMERCE
+                        
                         </span>
                     </div>
                 </div>
@@ -38,107 +62,143 @@
                     <div class="detHead overflowHidden">
                         <span>CLIENT</span>
                     </div>
-                    <div class="projDetails overflowHidden">
+                    <div class="projDetails detClient overflowHidden">
                         <span>
-                        CLIENT NAME
+                        
                         </span>
                     </div>
                 </div>
             </div>
             <div class="line"></div>
         </div>
-        <div class="bannerSection" data-scroll-section>
+        <div class="bannerOuter" data-scroll-section>
+            <div class="bannerSection topBanner"  data-scroll data-scroll-speed="1">
+                <div class="bannerImage animImage0 imageHolder" data-scroll data-scroll-call="1" ></div>
+            </div>
         </div>
-        <div class="overviewSection" data-scroll-section>
-            <div class="left">
-                <div class="sectionHead">THE OVERVIEW</div>
-                <div class="overviewDes">
-                    <span>
-                    Since 2017, our team has worked closely with the Google Hardware team to launch
-                     new products and help turn store.google.com into a world-class brand and 
-                     eCommerce destination. 
-                     <br>
-                     <br>
-                     While we can't get into all the details, we can tell you our collaborative efforts 
-                     have been successful. We've contributed end-to-end services, ranging from eCommerce 
-                     strategy and experience design to art direction, content creation, and campaign development. 
-                     Highlighted below are some recognitions and a collaboration reel from our ongoing partnership. 
-                     To learn more, please contact us.
-                     </span>
+        <div class="overviewSection overViewSec" data-scroll-section >
+            <div class="left" data-scroll data-scroll-call="0">
+                <div class="sectionHead overflowHidden">
+                    <span class="swipeUpInit">THE OVERVIEW</span>
+                </div>
+                <div class="overviewDes overDes overflowHidden">
+                    <span class="swipeUpInit">
+                      
+                    </span>
                 </div>
             </div>
-            <div class="right">
-                <div class="overviewImage" data-scroll  data-scroll-speed="2"></div>
+            <div class="right" data-scroll  data-scroll-speed="2">
+                <div class="overviewImage ">
+                    <div class="innerImage innerImage1 animImage1 imageHolder"></div>
+                </div>
             </div>
         </div>
         <div class="swiperSection"  data-scroll-section>
             <div class="slider-wrap">
                 <div class="swiper-container">
                   <div class="swiper-wrapper">
-        
-                    <div class="swiper-slide" >
-                      <div class="card customCursor">
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="card customCursor">
-        
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="card customCursor">
-        
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="card customCursor">
-        
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="card customCursor">
-        
-                      </div>
-                    </div>
+    
                   </div>
                 </div>
             </div>
         </div>
         <div class="overviewSection strategy" data-scroll-section>
-            <div class="right">
-                <div class="overviewImage" data-scroll  data-scroll-speed="2"></div>
+            <div class="right desktopOnly"  data-scroll  data-scroll-speed="2">
+                <div class="overviewImage">
+                    <div class="innerImage innerImage2 animImage1 imageHolder"></div>
+                </div>
             </div>
-            <div class="left">
-                <div class="sectionHead">THE STRATEGY</div>
-                <div class="overviewDes">
-                    <span>
-                    Since 2017, our team has worked closely with the Google Hardware team to launch
-                     new products and help turn store.google.com into a world-class brand and 
-                     eCommerce destination. 
-                     <br>
-                     <br>
-                     While we can't get into all the details, we can tell you our collaborative efforts 
-                     have been successful. We've contributed end-to-end services, ranging from eCommerce 
-                     strategy and experience design to art direction, content creation, and campaign development. 
-                     Highlighted below are some recognitions and a collaboration reel from our ongoing partnership. 
-                     To learn more, please contact us.
+            <div class="left" data-scroll data-scroll-call="2">
+                <div class="sectionHead overflowHidden">
+                    <span class="swipeUpInit">THE STRATEGY</span>
+                </div>
+                <div class="overviewDes overDes2 overflowHidden">
+                    <span  class="swipeUpInit">
+              
                      </span>
                 </div>
             </div>
+            <div class="right mobileOnly" data-scroll  data-scroll-speed="2">
+                <div class="overviewImage">
+                    <div class="innerImage innerImage2 animImage1"></div>
+                </div>
+            </div>
         </div>
-        <div class="bannerSection bottomBanner" data-scroll-section></div>
-        <div class="back" data-scroll-section>
-            <img src="./media/img/left.PNG" alt="back">
-            BACK TO PROJECTS
+        <div class="bannerOuter" data-scroll-section>
+            <div class="bannerSection bottomBanner"  data-scroll data-scroll-speed="1">
+                <div class="bannerImage bannerImage2 animImage0 imageHolder" data-scroll data-scroll-call="3" ></div>
+            </div>
+        </div>
+        <div class="back" data-scroll-section >
+            <div class="backInner">
+                <a href="project2.html">
+                <img src="./media/img/left.PNG" alt="back">
+                BACK TO PROJECTS
+                </a>
+            </div>
         </div>
         <div class="scrollOffset" data-scroll-section></div>
     </div>
+    <div class="footerOuterWrap" data-scroll-section>
+        <div class="footerOuter">
+        <div class="footerLeft">
+            <div class="footerLogo">
+              <img src="./media/img/logo-footer.svg" alt="logo">
+            </div>
+            <div class="footerList desktopOnly">
+              <div class="footerItem">INSTAGRAM</div>
+              <div class="footerItem">LINKEDIN</div>
+              <div class="footerItem">FACEBOOK</div>
+            </div>
+        </div>
+        <div class="footerRight">
+          <div class="footerMenu">
+            <div class="footerMenuItem">
+              <a href="agency2.html">AGENCY</a>
+            </div>
+            <div class="footerMenuItem active">
+              <a href="project2.html">PROJECT</a>
+            </div>
+            <div class="footerMenuItem">
+              <a href="careers2.html">CAREERS</a>
+            </div>
+            <div class="footerMenuItem">
+              <a href="contact2.html">CONTACT</a>
+            </div>
+          </div>
+          <div class="companyDet">
+            <div class="address desktopOnly">
+              Gradical
+              The Atomic, Kazhakootam, Trivandrum, Kerala
+            </div>
+            <div class="emailPhone desktopOnly">
+              <div>+91 73561 35061</div>
+              <div>hey@gradical.xyz</div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="address mobileOnly">
+          Gradical
+          The Atomic, Kazhakootam, Trivandrum, Kerala
+        </div>
+        <div class="emailPhone mobileOnly">
+          <div>+91 73561 35061</div>
+          <div>hey@gradical.xyz</div>
+        </div>
+        <div class="footerList mobileOnly">
+          <div class="footerItem">INSTAGRAM</div>
+          <div class="footerItem">LINKEDIN</div>
+          <div class="footerItem">FACEBOOK</div>
+        </div>
+      </div>
 </div>
 <script src="js/jquery-migrate-3.3.2.min.js "></script>
 <script src="js/swiper.min.js"></script>
 <script src="js/TweenMax.min.js "></script>
 <script src="js/gsap-latest-beta.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+<script src="js/locomotive-scroll.min.js"></script>
 <script src=" js/projectDetails.js "></script>
+<script src="js/header.js"></script>
 </body>
 </html>

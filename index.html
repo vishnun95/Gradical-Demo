@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,53 +12,51 @@
   <link rel="stylesheet" href="css/button.css" />
   <link rel="stylesheet" href="css/footer.css" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> 
 </head>
 
-<body class="body animationSlower">
-  <div id="topId"></div>
-  <div class="cursor">
+<body class="body animationSlower" data-scroll-container>
+  <div id="topId desktopOnly"></div>
+  <div class="cursor desktopOnly">
     <span>DRAG</span>
   </div>
-  <div class="cursor-follower"></div>
-  <header>
-    <div class="header animate" id="navbar">
-      <div class="w-88 flxBox">
-        <div class="logo-wrap">
-          <img src="media/img/logo.svg" class="logo" />
-        </div>
-        <nav>
-          <ul class="nav-links">
-            <li class="exampleClass"><a href="agency2.html">AGENCY</a></li>
-            <li class="exampleClass"><a href="projects.html">PROJECTS</a></li>
-            <li class="exampleClass"><a href="careers.html">CAREERS</a></li>
-            <li class="exampleClass"><a href="contact.html">CONTACT</a></li>
-          </ul>
-        </nav>
+  <div class="cursor-follower desktopOnly"></div>
+  <div class="headerOuter">
+    <div class="headerLeft">
+      <div class="logo">
+        <img src="./media/img/logo.svg" alt="logo">
+      </div>
+      <img class="menuActive" src="./media/img/menu.png" alt="menu">
+    </div>
+    <div class="headerRight">
+      <div class="popClose">
+        <img src="./media/img/close.png" alt="close">
+      </div>
+      <div class="menuHead menuActive">MENU</div>
+      <div class="menu">
+        <!-- <div class="menuItem active"><a href="#">HOME</a></div> -->
+        <div class="menuItem"><a href="agency2.html">AGENCY</a></div>
+        <div class="menuItem"><a href="project2.html">PROJECTS</a></div>
+        <div class="menuItem"><a href="careers2.html">CAREERS</a></div>
+        <div class="menuItem"><a href="contact2.html">CONTACT</a></div>
       </div>
     </div>
-    <button class="hamburger">
-      <div class="bar">
-      </div>
-    </button>
-  </header>
-  <nav class="mobile-nav">
-    <li><a href="#">AGENCY</a></li>
-    <li><a href="#">PROJECTS</a></li>
-    <li><a href="#">CAREERS</a></li>
-    <li><a href="#">CONTACT</a></li>
-  </nav>
-  <div class="contianer" data-scroll-container>
+  </div>
+  <div class="headeroffset"></div>
+  <div class=" desktopOnly contianer" >
     <section class="one" id="one" data-scroll-section>
       <h1>
         <div class="slideUpParent">
           <div class="slideUpContainer">
-            <div class="slideUp animateSlow">BLISSFULLY <img class="fix1" src="media/img/smile.svg" alt="">
+            <div class="up">BLISSFULLY <img class="fix1" src="media/img/smile.svg" alt="">
             </div>
           </div>
         </div>
         <div class="slideUpParent">
           <div class="slideUpContainer">
-            <div class="slideUp slideUp2 animateSlow">DOMESTICATED</div>
+            <div class="up">DOMESTICATED</div>
           </div>
         </div>
         <!-- </br> -->
@@ -72,10 +71,12 @@
           </div>
         </div>
       </h3>
-      <div class="btn">
-        <div class="btnBgAnim">
+      <div class="btnContainer overflowHidden">
+        <div class="btn slideUp slideUp5">
+          <div class="btnBgAnim">
+          </div>
+          <div class="btnText">LETS TALK</div>
         </div>
-        <div class="btnText">LETS TALK</div>
       </div>
       <!-- <button id="button" class="button animate">LETS TALK</button> -->
     </section>
@@ -150,9 +151,8 @@
       <div class="three-text-wrap">
         <h1 class="invertInner">
           <span class="emo animateSlow"></span></br>
-
           <div class="slideUpParent">
-            <div class="slideUpContainer">
+            <div class="slideUpContainer" data-scroll data-scroll-call="third">
               <div id="header2" class="slideUp3 animateSlow">WELCOME
               </div>
             </div>
@@ -163,11 +163,10 @@
             </div>
           </div>
         </h1>
-        <h3 id="description2" data-scroll data-scroll-call="third">
-
+        <h3 id="description2" >
           <div class="slideUpParent">
             <div class="slideUpContainer">
-              <div class="slideUp4 animate" style="color: #ffffff; opacity: 0">
+              <div id="descri" class="slideUp3 animateSlow" >
                 <div>
                   Digital agency working along startups and evolving brands that are
                 </div>
@@ -178,7 +177,6 @@
               </div>
             </div>
           </div>
-
         </h3>
         <button class="button">LETS TALK</button>
       </div>
@@ -345,19 +343,19 @@
         </div>
       </div>
       <!-- <div id="line2" class="line lineAnimateSlow"></div> -->
-      <div id="line3" class="line lineAnimateSlow"></div>
+      <div id="line3" data-scroll data-scroll-call="four" class="line lineAnimateSlow"></div>
     </section>
     <section class="four" id="four" data-scroll-section>
       <div class="four-text-wrap">
         <h1>
-          <div class="slideUpParent" data-scroll data-scroll-call="four">
+          <div class="slideUpParent" >
             <div class="slideUpContainer">
               <div id="header4" class="slideUp3 animateSlow"><span><img class="fix4" src="media/img/diamond.svg"
                     alt=""></span> COLLABS&
               </div>
             </div>
           </div>
-          <div class="slideUpParent">
+          <div class="slideUpParent" data-scroll data-scroll-call="five">
             <div class="slideUpContainer">
               <div id="header5" class="slideUp3 animateSlow">PARTNERSHIPS
               </div>
@@ -371,21 +369,21 @@
             for the platforms on which they are digested with the pursuit of</br>
             beauty.(GRAMMAR FIX THIS)</br>
           </h3>
-          <h3 class="desClass animateSlow moveRight">
+          <!-- <h3 class="desClass animateSlow moveRight">
             the platforms on which they are</br>
             digested with the pursuit of</br>
             beauty. (WHATEVER)</br>
-          </h3>
+          </h3> -->
         </div>
       </div>
-      <div class="four-icon-wrap heightZero animateSlow" id="coll" data-scroll data-scroll-call="five">
+      <div class="four-icon-wrap heightZero animateSlow" id="coll" >
         <div class="four-icon animateSlow zoomZero"><img src="media/img/vanz.svg" alt=""></div>
         <div class="four-icon animateSlow zoomZero"><img src="media/img/airbnb.svg" alt=""></div>
         <div class="four-icon animateSlow zoomZero"><img src="media/img/nike.svg" alt=""></div>
         <div class="four-icon animateSlow zoomZero"><img src="media/img/netflix.svg" alt=""></div>
         <div class="four-icon animateSlow zoomZero"><img src="media/img/eqinox.svg" alt=""></div>
       </div>
-      <div id="line4" class="line animateSlow"></div>
+      <div id="line4" class="line lineAnimateSlow"></div>
     </section>
     <section class="five" id="five" data-scroll-section>
       <div class="five-wrap rel" data-scroll data-scroll-call="six">
@@ -403,14 +401,16 @@
             </div>
           </div>
         </h1>
-        <h3 id="description3" class="animateSlow slideIn">
+        <div class="overflowHiddenNew">
+           <h3 id="description3" class="animateSlow slideUp3">
           We move at the speed of culture, tailoring</br>
           materials specifically for the platforms on which</br>
           they are digested with the pursuit of beauty.</br>
           (PROJECT ENQUIRY FISHING CONTENT)</br>
-        </h3>
+          </h3>
+        </div>
         <div class="imageProject" data-scroll data-scroll-speed="4"></div>
-        <div class="btn" data-scroll data-scroll-call="seven">
+        <div class="btn marTop2" data-scroll data-scroll-call="seven">
           <div class="btnBgAnim">
           </div>
           <div class="btnText">LETS TALK</div>
@@ -419,48 +419,197 @@
           TALK</button> -->
       </div>
     </section>
-
-    <section data-scroll-section>
-      <footer>
-        <div class="footerParentWrap">
-          <div class="footerChildWrap1">
-            <div class="footerLogoWrap">
-              <img src="img/logo-footer.svg" alt="" />
-            </div>
-            <div class="footerLinkWrap">
-              <div><a id="footerAgency" href="">AGENCY</a></div>
-              <div><a id="footerProjects" href="">PROJECTS</a></div>
-              <div><a id="footerCareers" href="">CAREERS</a></div>
-              <div><a id="footerContact" href="">CONTACT</a></div>
+  </div>
+  <div class="mobileOnly">
+    <div class="topSection" data-scroll-section>
+      <div class="head topHeaderFirst overflowHiddenNew">
+        <div class="imgWrp up"><img class="fix1" src="media/img/smile.svg" alt=""></div>
+        <span class="up">BlisSfully Domesticated</span>
+      </div>
+      <div class="description overflowHiddenNew" data-scroll data-scroll-call="0">
+        <span>Digital agency working along startups and evolving brands that are brave enough to think ahead and change at the pace of the new world.</span>
+      </div>
+      <div class="btnOutWrap overflowHiddenNew">
+        <div class="btn">
+          <div class="btnBgAnim">
+          </div>
+          <div class="btnText">LETS TALK</div>
+        </div>
+      </div>
+      <div class="line"></div>
+    </div>
+    <div class="featuredProj" data-scroll-section>
+      <div class="featureHead">
+        <div class="featureLeft">
+          <span class="emoji"></span>
+           FEATURED PROJECTS
+        </div>
+        <div class="featureRight">
+          <span>©2021</span>
+        </div>
+      </div>
+      <div class="featureCards" id="mobileCards">
+        
+        <!-- <div class="featureCardItem" data-scroll data-scroll-speed="2">
+          <div class="featureCard"></div>
+          <div class="featureDetails">
+            <div class="projectName">PROJECT NAME GOES HERE</div>
+            <div class="view">VIEW</div>
+          </div>
+        </div> -->
+      </div>
+      <div class="line"></div>
+    </div>
+    <div class="welcome" data-scroll-section>
+      <div class="welcomeTop">
+        <img src="./media/img/triangle.png" alt="welcome">
+        <div class="welcomeHead">
+          WELCOME TRADECRAFT.
+        </div>
+        <div class="description">
+          Digital agency working along startups and evolving brands that are brave enough to think ahead and change at the pace of the new world. 
+        </div>
+        <div class="btn">
+          <div class="btnBgAnim">
+          </div>
+          <div class="btnText">LETS TALK</div>
+        </div>
+      </div>
+      <div class="welcomeCards">
+        <div class="welcomeCardInner">
+          <div class="welcomeCardItem">
+            <div class="welcomeCardHead">STRATEGY</div>
+            <div class="welcomeCardDes">
+              <div>Marketing &  Content</div>
+              <div>Social Media Marketing</div>
+              <div>UX (User Experience)</div>
+              <div>Audience Research</div>
+              <div>Product Concepting</div>
+              <div>Optimisation</div>
+              <div>Auditing</div>
             </div>
           </div>
-          <div class="footerChildWrap2">
-            <div class="footerSmWrap">
-              <div><a id="footerInstagram" href="">INSTAGRAM</a></div>
-              <div><a id="footerLinkedin" href="">LINKEDIN</a></div>
-              <div><a id="footerFacebook" href="">FACEBOOK</a></div>
+          <div class="welcomeCardItem">
+            <div class="welcomeCardHead">CREATIVE</div>
+            <div class="welcomeCardDes">
+              <div>Website + App Design</div>
+              <div>Branding</div>
+              <div>3D & Motion</div>
+              <div>Content & Copywriting</div>
+              <div>Photo + Video Production</div>
+              <div>Sound design</div>
             </div>
-            <div class="footerAddressWrap">
-              <h3>
-                Gradical</br>
-                Atomic, Kazhakootam,</br>
-                Trivandrum, Kerala</br>
-              </h3>
-              <h3>
-                +91 1234567890</br>
-                hey@gradical.xyz</br>
-              </h3>
+          </div>
+          <div class="welcomeCardItem">
+            <div class="welcomeCardHead">TECHNOLOGY</div>
+            <div class="welcomeCardDes">
+              <div>Website Development</div>
+              <div>Native & Web Apps</div>
+              <div>E-commerce</div>
+              <div>Minimum Viable Product</div>
+              <div>Prototyping</div>
+              <div>Analytics</div>
+              <div>Server Ops</div>
             </div>
           </div>
         </div>
-      </footer>
-    </section>
-
+      </div>
+      <div class="line"></div>
+    </div>
+    <div class="collab" data-scroll-section>
+      <div class="collabTopSection">
+        <img src="./media/img/diamond.png">
+        <div class="collabHead">
+          COLLABS & PARTNERSHIPS
+        </div>
+        <div class="description">
+          Digital agency working along startups and evolving brands that are brave enough to think ahead and change at the pace of the new world. 
+        </div>
+      </div>
+      <div class="logoWrapCompanies">
+        <img src="media/img/vanz.svg" alt="vanz">
+        <img src="media/img/airbnb.svg" alt="airbnb">
+        <img src="media/img/nike.svg" alt="nike">
+        <img src="media/img/netflix.svg" alt="netflix">
+        <img src="media/img/eqinox.svg" alt="eqinox">
+      </div>
+      <div class="line gotAprojectLine"></div>
+    </div>
+    <div class="gotAproject" data-scroll-section>
+        <div class="gotTopSection">
+          <div class="head">
+            got a 
+            project
+            in mind?</div>
+        </div>
+        <div class="description">
+          Digital agency working along startups and evolving brands that are brave enough to think ahead and change at the pace of the new world. 
+        </div>
+        <div class="btn">
+          <div class="btnBgAnim">
+          </div>
+          <div class="btnText">LETS TALK</div>
+        </div>
+        <div class="gotAprojectImage"></div>
+    </div>
   </div>
-
+  <div class="footerOuterWrap" data-scroll-section>
+    <div class="footerOuter">
+    <div class="footerLeft">
+        <div class="footerLogo">
+          <img src="./media/img/logo-footer.svg" alt="logo">
+        </div>
+        <div class="footerList desktopOnly">
+          <div class="footerItem">INSTAGRAM</div>
+          <div class="footerItem">LINKEDIN</div>
+          <div class="footerItem">FACEBOOK</div>
+        </div>
+    </div>
+    <div class="footerRight">
+      <div class="footerMenu">
+        <div class="footerMenuItem">
+          <a href="agency2.html">AGENCY</a>
+        </div>
+        <div class="footerMenuItem">
+          <a href="project2.html">PROJECTS</a>
+        </div>
+        <div class="footerMenuItem">
+          <a href="careers2.html">CAREERS</a>
+        </div>
+        <div class="footerMenuItem">
+          <a href="contact2.html">CONTACT</a>
+        </div>
+      </div>
+      <div class="companyDet">
+        <div class="address desktopOnly">
+          Gradical
+          The Atomic, Kazhakootam, Trivandrum, Kerala
+        </div>
+        <div class="emailPhone desktopOnly">
+          <div>+91 73561 35061</div>
+          <div>hey@gradical.xyz</div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="address mobileOnly">
+      Gradical
+      The Atomic, Kazhakootam, Trivandrum, Kerala
+    </div>
+    <div class="emailPhone mobileOnly">
+      <div>+91 73561 35061</div>
+      <div>hey@gradical.xyz</div>
+    </div>
+    <div class="footerList mobileOnly">
+      <div class="footerItem">INSTAGRAM</div>
+      <div class="footerItem">LINKEDIN</div>
+      <div class="footerItem">FACEBOOK</div>
+    </div>
+  </div>
   <script src="js/jquery-migrate-3.3.2.min.js"></script>
   <script src="js/swiper.min.js"></script>
-  <script src="js/locomotive.js"></script>
+  <script src="js/gsap-latest-beta.min.js"></script>
+  <script src="js/locomotive-scroll.min.js"></script>
   <script src="js/TweenMax.min.js"></script>
   <script>
     (function () {
@@ -468,6 +617,8 @@
     })();
   </script>
   <script src="js/main.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/header.js"></script>
 </body>
 
 </html>
