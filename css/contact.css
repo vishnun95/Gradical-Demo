@@ -388,6 +388,7 @@ textarea:focus{
     }
     textarea{
         height: 49px;
+        padding-bottom: 0px;
     }
     .subLabel{
         font-size: 18px;
