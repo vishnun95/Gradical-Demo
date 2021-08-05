@@ -327,11 +327,13 @@ function swiperInit() {
 function customCursor() {
   var cursor = $(".cursor"),
     follower = $(".cursor-follower");
-
-  var posX = 0,
-    posY = 0,
-    mouseX = 0,
-    mouseY = 0;
+    // $(window).load(function(eventObj){
+    //   console.log(eventObj);
+    // });
+  var posX = 1000,
+    posY = 1000,
+    mouseX =1000,
+    mouseY = 1000;
 
   TweenMax.to({}, 0.016, {
     repeat: -1,
@@ -359,6 +361,7 @@ function customCursor() {
     mouseX = e.pageX;
     mouseY = e.pageY;
   });
+
   setTimeout(()=>{
     $(".customCursor").on("mouseenter", function () {
       cursor.addClass("active");

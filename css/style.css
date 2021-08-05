@@ -262,6 +262,10 @@ nav {
   color: #191515;
   position: relative;
   padding-right: 40px;
+  -webkit-transition-duration: 1500ms;
+  -moz-transition-duration: 1500ms;
+  -o-transition-duration: 1500ms;
+  transition-duration: 1500ms;
 }
 .view{
   font-family: FoundersGroteskMonoRegular;
@@ -499,6 +503,9 @@ nav {
 }
 .invertColor .emo{
   color: white;
+}
+.invertColor .projDetails{
+  color:white;
 }
 #description2{
   color: #000;
@@ -1665,6 +1672,10 @@ FOOTER
   }
 }
 @media only screen and (max-width:1350px){
+  .slideUpContainer {
+    height: 141px;
+    overflow-y: hidden;
+  }
   .one h1{
     font-size: 170px;
   }
