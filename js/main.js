@@ -174,7 +174,8 @@ window.onload = function () {
   locoScroll = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
     smooth: true,
-    getDirection: true
+    getDirection: true,
+    inertia:1
   });
 
   // locoScroll.stop();

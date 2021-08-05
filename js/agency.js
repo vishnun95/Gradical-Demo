@@ -66,6 +66,7 @@ function initiateScroll() {
         tablet: {
             smooth: false
         },
+        inertia:1,
         getDirection: true
     });
     locoScroll.on('call', (func) => {
