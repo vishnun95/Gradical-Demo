@@ -45,7 +45,8 @@ body {
     height: 8px;
     border-radius: 100%;
     z-index: 10000;
-    transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
+    transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+        0.2s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
     user-select: none;
     pointer-events: none;
     transform: scale(0.8);
@@ -53,7 +54,7 @@ body {
     display: flex;
     justify-content: center;
     font-size: 2px;
-    font-family: FoundersGroteskMonoRegular;
+    font-family: FoundersGroteskMonoRegular ;
 }
 
 .cursor span {

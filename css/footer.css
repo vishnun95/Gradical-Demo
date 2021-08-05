@@ -39,9 +39,33 @@
     font-size: 20px;
     line-height: 40px;
     letter-spacing: -0.04em;
-    text-decoration-line: underline;
+    text-decoration-line: none;
     color: #F6F6F6;
     cursor: none;
+    position: relative;
+}
+.footerMenuItem a::after{
+    width: 0%;
+    opacity: 0;
+    height: 2px;
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: white;
+    -webkit-transition-duration: 400ms;
+    -moz-transition-duration: 400ms;
+    -o-transition-duration: 400ms;
+    transition-duration: 400ms;
+}
+.footerMenuItem:hover a::after{
+    width: 100%;
+    opacity: 1;
+}
+
+.active.footerMenuItem a::after{
+    width: 100%;
+    opacity: 1;
 }
 .companyDet{
     display: flex;

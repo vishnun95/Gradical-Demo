@@ -34,4 +34,7 @@ $(document).ready(function () {
     $('.logo img').click(function(){
         window.location = 'index.html';
     })
+    $('.footerLogo').click(function(){
+        window.location = 'index.html';
+    })
 })

@@ -56,8 +56,9 @@ function check(element) {
       // $("#grid3").addClass("active2");
 
       $('.slideUpCard').addClass('slideUpCardActive')
-
-      $("#header4").addClass("active");
+      setTimeout(()=>{
+        $("#header4").addClass("active");
+      },800)
       $("#line3").addClass("activeWidth2");
       $('.desClass').addClass('active2');
       break;
@@ -65,7 +66,9 @@ function check(element) {
       $("#line2").addClass("activeWidth2");
       break;
     case '#header5':
-      $("#header5").addClass("active");
+      setTimeout(()=>{
+        $("#header5").addClass("active");
+      },800)
       break;
     case '#header6':
       $("#header6").addClass("active");
