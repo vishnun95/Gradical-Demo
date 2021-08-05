@@ -58,10 +58,10 @@ body {
     position: relative;
     top: -20px;
     /* background-image: url('../media/img/dummy1.jpg'); */
-    -webkit-transition-duration: 800ms;
-    -moz-transition-duration: 800ms;
-    -o-transition-duration: 800ms;
-    transition-duration: 800ms;
+    -webkit-transition-duration: 1500ms;
+    -moz-transition-duration: 1500ms;
+    -o-transition-duration: 1500ms;
+    transition-duration: 1500ms;
 }
 
 .bg2 .bgSectionImage{
