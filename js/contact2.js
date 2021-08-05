@@ -50,9 +50,12 @@ function contact() {
 function sendMail(contact) {
     
     let data = {
-        email:  'hey@gradical.xyz',
-        // email: 'vishnuvn012@gmail.com',
-        message: 'Hi Team \n \n Name: '+ contact.name + '\n Email: '+ contact.email + '\n Phone: '+ contact.phone + '\n Type: ' + contact.type + '\n Message:' + contact.Description
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
+        company: document.getElementById('company').value,
+        type: types.toString(),
+        message: document.getElementById('message').value,
     }
     //  contact.name + ' raised a query. Please reach him/her on ' + contact.phone + ' or ' + contact.email + '\n '
     $.ajax({
