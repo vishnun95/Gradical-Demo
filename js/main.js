@@ -176,6 +176,9 @@ window.onload = function () {
   locoScroll = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
     smooth: true,
+    smartPhone:{
+      smooth:false
+    },
     getDirection: true,
     inertia:1
   });

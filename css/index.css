@@ -98,8 +98,8 @@
         font-family: FoundersGroteskXCondensed;
         font-style: normal;
         font-weight: 600;
-        font-size: 28px;
-        line-height: 28px;
+        font-size: 40px;
+        line-height: 33px;
         letter-spacing: -0.01em;
         text-transform: uppercase;
         color: #191515;
@@ -190,9 +190,12 @@
         width: 70px;
     }
     .gotAproject{
-        margin-top: 30px;
+        margin-top: 40px;
         position: relative;
         margin-bottom: 70px;
+    }
+    .line.gotAprojectLine{
+        margin-top: 40px;
     }
     .gotAproject .head{
         font-family: FoundersGroteskXCondensed;
