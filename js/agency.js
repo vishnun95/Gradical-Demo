@@ -83,13 +83,7 @@ function initiateScroll() {
             case 1:
                 $('.bg2').find('.bgSectionImage').addClass('fullHeight');
                 $('.line').addClass('lineAnim');
-                tl.from(".des3 span", {
-                    duration: 1,
-                    y: 650,
-                    autoAlpha: 0,
-                    ease: Power1.out,
-                    stagger: 1.2
-                });
+                
                 tl.from(".des2 span", {
                     duration: 1,
                     y: 650,
@@ -99,6 +93,13 @@ function initiateScroll() {
                 });
                 break;
             case 2:
+                tl.from(".head2 .scrollerHead22", {
+                    duration: 1,
+                    y: 450,
+                    autoAlpha: 0,
+                    ease: Power1.out,
+                    stagger: .5
+                });
                 tl.from(".head2 .scrollerHead", {
                     duration: 1,
                     y: 450,
@@ -272,7 +273,14 @@ $(window).on('load', function () {
         y: 650,
         autoAlpha: 0,
         ease: Power1.out,
-        stagger: .0
+        stagger: 0
+    });
+    tl.from(".des3 span", {
+        duration: 1,
+        y: 650,
+        autoAlpha: 0,
+        ease: Power1.out,
+        stagger: 0
     });
     swiperImages();
 });
