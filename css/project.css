@@ -195,6 +195,7 @@ body, body{
 @media only screen and (max-width:850px){
     .projectSectionItem{
         display: block;
+        margin: 45px ​0px 0px;
     }
     .projectLeft{
         width: 100%;
@@ -209,7 +210,8 @@ body, body{
         line-height: 35px;
     }
     .line{
-        margin-top: 60px;
+        margin-top: 30px;
+        margin-bottom: 30px;    
     }
     .scrollOffset{
         height: 20px;
