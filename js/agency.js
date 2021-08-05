@@ -98,7 +98,7 @@ function initiateScroll() {
                     y: 450,
                     autoAlpha: 0,
                     ease: Power1.out,
-                    stagger: .5
+                    stagger: .7
                 });
                 tl.from(".head2 .scrollerHead", {
                     duration: 1,
