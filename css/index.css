@@ -329,9 +329,8 @@ a.bordera{
         min-width: 210px;
     }
 }
-@media only screen and (max-width: 400px){
-    .head span, .welcomeHead, .collabHead, .gotAproject .head {
-        font-size: 45px;
-        line-height: 53px;
-    }
-}
+/* @media only screen and (max-width: 400px){
+.head span, .welcomeHead, .collabHead, .gotAproject .head {
+    font-size: 55px;
+    line-height: 53px;
+} */
