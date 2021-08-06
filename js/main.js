@@ -173,6 +173,9 @@ window.onload = function () {
 
   $(".slideUp").addClass("active");
 
+};
+
+function intiateScrollNew(){
   locoScroll = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
     elMobile: document.querySelector('[data-scroll-container]'),
@@ -184,10 +187,49 @@ window.onload = function () {
     inertia:1,
   });
 
+  locoScroll.on('call', (func, dir, obj) => {
+    console.log(func);
+    if(func==='welcomeSection'){
+      setTimeout(()=>{
+        $('.line2').addClass('lineActive');
+        $('.welcomeTop .slideUpWelcome').addClass('active');
+      },200)
+    }
+    if(func==='welcomeSection2'){
+      setTimeout(()=>{
+        $('.session1 .slideUpWelcome').addClass('active');
+      },200)
+    }
+    if(func==='welcomeSection3'){
+      setTimeout(()=>{
+        $('.session2 .slideUpWelcome').addClass('active');
+      },200)
+    }
+    if(func==='welcomeSection4'){
+      setTimeout(()=>{
+        $('.session3 .slideUpWelcome').addClass('active');
+      },200)
+    }
+    if(func==='collab'){
+      $('.line3').addClass('lineActive');
+      setTimeout(()=>{
+        $('.collabTopSection .slideUpWelcome').addClass('active');
+      },200)
+    }
+    if(func==='got'){
+      setTimeout(()=>{
+        $('.line4').addClass('lineActive');
+        $('.gotTopSection .slideUpWelcome').addClass('active');
+        $('.gotAproject .description span').addClass('active');
+        $('.gotAproject .btnContainer .btn').addClass('active');
+      },200)
+    }
+    $('.'+func).find('.'+func+'In').addClass('fullHeight');
+    $('.'+func).find('.projectName').addClass('active');
+    $('.'+func).find('.view').addClass('active');
+
+  });
   // locoScroll.stop();
-
- 
-
   locoScroll.on('scroll', (func, dir, obj) => {
     if (func['currentElements']) {
       if (func['currentElements']['el0'] || func['currentElements']['0']) {
@@ -256,8 +298,7 @@ window.onload = function () {
       }
     }
   })
-
-};
+}
 
 function swiperImages() {
   $.ajax({
@@ -265,33 +306,62 @@ function swiperImages() {
     type: 'GET',
     success: function (data) {
       customCursor();
+      // intiateScrollNew();
       if (data.length) {
         for (const i in data) {
-          $('.swiper-wrapper').append(
-            '<div class="swiper-slide ">' +
-            '<div class="card customCursor" style=background-image:url(' + baseUrl + data[i]['image']['url'] + ')>' +
-            '</div>' +
-            '<div class="projDetails">' +
-            '<div class="view"><a href=projectDetails.html?id='+data[i].id+'>view</a></div>' +
-            data[i]['projectName'] +
-            '</div>' +
-            '</div>'
-          )
-          $('#mobileCards').append(
-            '<div class="featureCardItem">'+
-            '<div class="featureCard" style=background-image:url(' + baseUrl + data[i]['image']['url'] + ')></div>'+
-            '<div class="featureDetails">'+
-              '<div class="projectName">'+data[i]['projectName'] +'</div>'+
-              '<div class="view"><a href=projectDetails.html?id='+data[i].id+'>VIEW</a></div>'+
-            '</div>'+
-          '</div>'
+          if(data[i]['isCompleted']){
+            $('.swiper-wrapper').append(
+              '<div class="swiper-slide ">' +
+              '<div class="card customCursor" style=background-image:url(' + baseUrl + data[i]['image']['url'] + ')>' +
+              '</div>' +
+              '<div class="projDetails">' +
+              '<div class="view"><a href=projectDetails.html?id='+data[i].id+'>view</a></div>' +
+              data[i]['projectName'] +
+              '</div>' +
+              '</div>'
             )
+            $('#mobileCards').append(
+              '<div class="featureCardItem mob'+i+'" >'+
+              '<div class="featureCardItemInner">'+
+              '<div class="featureCard mob'+i+'In" style=background-image:url(' + baseUrl + data[i]['image']['url'] + ')></div>'+
+              '</div>'+
+              '<div class="featureDetails overflowHiddenNew">'+
+                '<div class="projectName slideUp" data-scroll data-scroll-call="mob'+i+'">'+data[i]['projectName'] +'</div>'+
+                '<div class="view slideUpView"><a href=projectDetails.html?id='+data[i].id+'>VIEW</a></div>'+
+              '</div>'+
+            '</div>'
+              )
+          } else{
+            $('.swiper-wrapper').append(
+              '<div class="swiper-slide ">' +
+              '<div class="card customCursor" style=background-image:url(' + baseUrl + data[i]['image']['url'] + ')>' +
+              '</div>' +
+              '<div class="projDetails">' +
+              '<div class="view"><a class="bordera" href="#">IN PROGRESS</a></div>' +
+              data[i]['projectName'] +
+              '</div>' +
+              '</div>'
+            )
+            $('#mobileCards').append(
+              '<div class="featureCardItem  mob'+i+'">'+
+              '<div class="featureCardItemInner">'+
+              '<div class="featureCard  mob'+i+'In" style=background-image:url(' + baseUrl + data[i]['image']['url'] + ')></div>'+
+              '</div>'+
+              '<div class="featureDetails overflowHiddenNew">'+
+                '<div class="projectName slideUp" data-scroll data-scroll-call="mob'+i+'">'+data[i]['projectName'] +'</div>'+
+                '<div class="view slideUpView"><a class="bordera" href="#">IN PROGRESS</a></div>'+
+              '</div>'+
+            '</div>'
+              )
+          }
         }
         $('.project-img1').find('.imageHolder').css({ 'backgroundImage': 'url(' + baseUrl + data[0]['image']['url'] + ')' })
         swiperInit();
+        intiateScrollNew();
       }
     },
     error: function (error) {
+      intiateScrollNew();
       customCursor();
     },
   });

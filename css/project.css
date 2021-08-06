@@ -25,13 +25,23 @@ body, body{
 .line2, .line3{
     width: 0%;
     opacity: 0;
-    margin-top: 165px;
-    margin-bottom: 75px;
+   
     /* -webkit-transition-duration: 1000ms;
     -moz-transition-duration: 1000ms;
     -o-transition-duration: 1000ms;
     transition-duration: 1000ms;
     transition-delay: 200ms; */
+}
+.lineCall1, .lineCall4{
+    margin-top: 165px;
+    margin-bottom: 75px;
+    width: 0%;
+    opacity: 0;
+    -webkit-transition-duration: 1000ms;
+    -moz-transition-duration: 1000ms;
+    -o-transition-duration: 1000ms;
+    transition-duration: 1000ms;
+    /* transition-delay: 1000ms; */
 }
 .projectSectionItem{
     margin: 60px 0px 0px;
@@ -137,7 +147,7 @@ body, body{
 }
 .fullHeight{
     opacity: 1;
-    height: 450px;
+    height: 420px;
     top: 0px;
 }
 .lineAnim{
@@ -178,12 +188,14 @@ body, body{
     }
     .projectDescription{
         font-size: 15px;
+        max-width: 80%;
         line-height: 20px;
     }
 }
 @media only screen and (max-width:850px){
     .projectSectionItem{
         display: block;
+        margin: 45px 0px 0px;
     }
     .projectLeft{
         width: 100%;
@@ -198,7 +210,8 @@ body, body{
         line-height: 35px;
     }
     .line{
-        margin-top: 60px;
+        margin-top: 30px;
+        margin-bottom: 30px;    
     }
     .scrollOffset{
         height: 20px;

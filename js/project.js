@@ -38,9 +38,20 @@ function customCursor() {
     });
 
     $(".imageHolder").on("mouseenter", function () {
+        if($(this).hasClass('wipCursor')){
+            $(".cursor").find('span').html('WIP');
+        }else{
+            $(".cursor").find('span').html('VIEW');
+        }
         cursor.addClass("active");
         follower.addClass("active");
     });
+
+    // $(".wipCursor").on("mouseenter", function () {
+    //     $(".cursor").find('span').html('WIP');
+    //     cursor.addClass("active");
+    //     follower.addClass("active");
+    // });
 
     $(".imageHolder").on("mouseleave", function () {
         cursor.removeClass("active");
@@ -68,6 +79,11 @@ function swiperImages() {
                     $('.project-img' + i).find('.imageHolder').css({ 'backgroundImage': 'url(' + baseUrl + data[i]['image']['url'] + ')' });
                     $('.project-img' + i).find('.imageHolder').attr('data-id', data[i]['id']);
                     $('.project-img' + i).find('.projectName span').html(data[i]['projectName']);
+                    if(data[i]['isCompleted']){
+                        // $('.project-img' + i).addClass('wipCursor');
+                    }else{
+                        $('.project-img' + i).find('.imageHolder').addClass('wipCursor');
+                    }
                 }
             }
         },
@@ -102,18 +118,20 @@ function initiateScroll() {
                 },400); 
                 break;
              case 1:
-                $('.span1').addClass('swipeUp');
-                $('.span1').closest('.projectSectionItem').find('.projectName span').addClass('swipeUp');
-                $('.span1').closest('.projectSectionItem').find('.imageWrap').addClass('fullHeight');
-                $('.line2').addClass('lineAnim');
-                break;
-             case 2:
+                $('.lineCall1').addClass('lineAnim');
                 setTimeout(()=>{
-                    $('.span2').addClass('swipeUp');
-                    $('.span2').closest('.projectSectionItem').find('.projectName span').addClass('swipeUp');
-                    $('.span2').closest('.projectSectionItem').find('.imageWrap').addClass('fullHeight');
-                    $('.line3').addClass('lineAnim');
-                },1000); 
+                    $('.span1').addClass('swipeUp');
+                    $('.span1').closest('.projectSectionItem').find('.projectName span').addClass('swipeUp');
+                    $('.span1').closest('.projectSectionItem').find('.imageWrap').addClass('fullHeight');
+                },500)
+                break;
+             case 4:
+                $('.lineCall4').addClass('lineAnim');
+                setTimeout(()=>{
+                        $('.span2').addClass('swipeUp');
+                        $('.span2').closest('.projectSectionItem').find('.projectName span').addClass('swipeUp');
+                        $('.span2').closest('.projectSectionItem').find('.imageWrap').addClass('fullHeight');
+                },500); 
                 break;       
         }
     });
@@ -152,9 +170,9 @@ $(document).ready(function (e) {
     ease: Power3.out,
     stagger: 1.5
     });
-    gsap.from(".line", {
+    gsap.from(".line11", {
         scrollTrigger: {
-          trigger: ".line",
+          trigger: ".line11",
           scroller: ".smooth-scroll",
           scrub: true,
           start: "top bottom",
@@ -167,8 +185,12 @@ $(document).ready(function (e) {
     swiperImages();
     $('.projectImage').click(function($event){
         try{
-            if($(this).find('.imageHolder').attr("data-id")){
-                window.location = 'projectDetails.html?id='+$(this).find('.imageHolder').attr("data-id");
+            if($(this).find('.imageHolder').hasClass('wipCursor')){
+
+            }else{
+                if($(this).find('.imageHolder').attr("data-id")){
+                    window.location = 'projectDetails.html?id='+$(this).find('.imageHolder').attr("data-id");
+                }
             }
         }catch(e){
             console.log(e)
