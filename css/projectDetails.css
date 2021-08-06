@@ -119,7 +119,7 @@ body, body{
   }
   
   .card{
-    height: 440px; 
+    height: 0px; 
     width: 100%;
     background: #C4C4C4;
     margin-bottom: 48px;
@@ -215,10 +215,10 @@ body, body{
     top: 100px;
     opacity: 0;
     position: relative;
-    -webkit-transition-duration: 400ms;
-    -moz-transition-duration: 400ms;
-    -o-transition-duration: 400ms;
-    transition-duration: 400ms;
+    -webkit-transition-duration: 700ms;
+    -moz-transition-duration: 700ms;
+    -o-transition-duration: 700ms;
+    transition-duration: 700ms;
     transition-delay: 500ms;
 }
 .swipeUp{
@@ -356,14 +356,16 @@ body, body{
         font-size: 16px;
         line-height: 24px;
         margin: 0px 0px 0px 0px;
-        max-width: 100%;
+        max-width: 90%;
     }
     .overviewSection .left{
         margin-bottom: 75px;
     }
     .card{
-        height: 400px;
         margin-bottom: 40px;
+    }
+    .swiperActive{
+        height: 400px;
     }
     .overviewImage{
         height: 400px;
@@ -406,8 +408,10 @@ body, body{
         margin-top: 20px;    
     }
     .card{
-        height: 300px;
         margin-bottom: 30px;
+    }
+    .swiperActive{
+        height: 300px;
     }
   }
   

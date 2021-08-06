@@ -88,8 +88,29 @@ function initiateScroll() {
     console.log(func)
     switch (Number(func)) {
       case 0:
-        $('.overViewSec').find('.swipeUpInit').addClass('swipeUp');
-        $('.overViewSec').find('.animImage1').addClass('fullHeight');
+        if (window.innerWidth < 800) {
+         
+        }else{
+          $('.overViewSec').find('.animImage1').addClass('fullHeight');
+        }
+        // setTimeout(()=>{
+        //   $('.overViewSec').find('.swipeUpInit').addClass('swipeUp');
+        // },1000)
+        // locoScroll.update();
+        break;
+      case 10:
+        // $('.overViewSec').find('.animImage1').addClass('fullHeight');
+        setTimeout(() => {
+          if (window.innerWidth < 800) {
+            setTimeout(() => {
+              $('.overViewSec').find('.animImage1').addClass('fullHeight');
+              setTimeout(()=>{
+                $('.card').addClass('swiperActive');
+              },1000);
+            }, 1000);
+          }
+          $('.overViewSec').find('.swipeUpInit').addClass('swipeUp');
+        }, 200)
         // locoScroll.update();
         break;
       case 1:
@@ -100,11 +121,31 @@ function initiateScroll() {
 
         break;
       case 2:
-        $('.strategy').find('.swipeUpInit').addClass('swipeUp');
-        $('.strategy').find('.animImage1').addClass('fullHeight');
+        setTimeout(() => {
+          $('.strategy').find('.animImage1').addClass('fullHeight');
+        }, 1000)
+        break;
+      case 22:
+        setTimeout(() => {
+          $('.strategy').find('.swipeUpInit').addClass('swipeUp');
+          setTimeout(() => {
+            $('.strategy').find('.innerImage2.animImage1').addClass('fullHeight');
+          }, 1000)
+        }, 200)
+        // $('.strategy').find('.animImage1').addClass('fullHeight');
         break;
       case 3:
         $('.bottomBanner').find('.animImage0').addClass('fullHeight');
+        break;
+      case 1111:
+        setTimeout(() => {
+          if (window.innerWidth < 800) {
+            
+          }
+          else{
+            $('.card').addClass('swiperActive');
+          }
+        }, 1000)
         break;
 
     }
