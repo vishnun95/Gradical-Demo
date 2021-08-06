@@ -239,8 +239,7 @@ function initiateScroll() {
 //     });
 // });
 
-
-$(window).on('load', function () {
+$(document).ready(function(){
     customCursor();
     initiateScroll();
     let tl = gsap.timeline();
@@ -266,4 +265,7 @@ $(window).on('load', function () {
         ease: Power1.out,
         stagger: 0
     });
-});
+})
+// $(window).on('load', function () {
+   
+// });
