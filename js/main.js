@@ -315,7 +315,7 @@ function swiperImages() {
               '<div class="card customCursor" style=background-image:url(' + baseUrl + data[i]['image']['url'] + ')>' +
               '</div>' +
               '<div class="projDetails">' +
-              '<div class="view"><a href=projectDetails.html?id='+data[i].id+'>view</a></div>' +
+              '<div class="view viewNew"><a href=projectDetails.html?id='+data[i].id+'>view</a></div>' +
               data[i]['projectName'] +
               '</div>' +
               '</div>'
@@ -327,7 +327,7 @@ function swiperImages() {
               '</div>'+
               '<div class="featureDetails overflowHiddenNew">'+
                 '<div class="projectName slideUp" data-scroll data-scroll-call="mob'+i+'">'+data[i]['projectName'] +'</div>'+
-                '<div class="view slideUpView"><a href=projectDetails.html?id='+data[i].id+'>VIEW</a></div>'+
+                '<div class="view viewNew slideUpView"><a href=projectDetails.html?id='+data[i].id+'>VIEW</a></div>'+
               '</div>'+
             '</div>'
               )
@@ -337,7 +337,7 @@ function swiperImages() {
               '<div class="card customCursor" style=background-image:url(' + baseUrl + data[i]['image']['url'] + ')>' +
               '</div>' +
               '<div class="projDetails">' +
-              '<div class="view"><a class="bordera" href="#">IN PROGRESS</a></div>' +
+              '<div class="view viewNew"><a class="bordera" href="#">IN PROGRESS</a></div>' +
               data[i]['projectName'] +
               '</div>' +
               '</div>'
@@ -349,7 +349,7 @@ function swiperImages() {
               '</div>'+
               '<div class="featureDetails overflowHiddenNew">'+
                 '<div class="projectName slideUp" data-scroll data-scroll-call="mob'+i+'">'+data[i]['projectName'] +'</div>'+
-                '<div class="view slideUpView"><a class="bordera" href="#">IN PROGRESS</a></div>'+
+                '<div class="view viewNew slideUpView"><a class="bordera" href="#">IN PROGRESS</a></div>'+
               '</div>'+
             '</div>'
               )

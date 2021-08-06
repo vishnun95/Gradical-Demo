@@ -27,7 +27,7 @@ a.bordera{
     border-radius: 3px;
     font-size: 14px;
     line-height: 16px;
-    top: 10px;
+    /* top: 10px; */
     position: relative;
     background-color: #FFFDF2;
 }

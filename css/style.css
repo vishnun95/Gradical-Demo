@@ -300,6 +300,9 @@ nav {
     -o-transition-duration: 1500ms;
     transition-duration: 1500ms;
 }
+.viewNew{
+  display: block;
+}
 .invertColor .view a{
   color: white;
 }
