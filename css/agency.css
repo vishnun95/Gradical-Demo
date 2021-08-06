@@ -57,7 +57,7 @@ body {
     opacity: 1;
     position: relative;
     top: -20px;
-    /* background-image: url('../media/img/dummy1.jpg'); */
+    background-image: url('../media/img/dummy1.jpg');
     -webkit-transition-duration: 1800ms;
     -moz-transition-duration: 1800ms;
     -o-transition-duration: 1800ms;
@@ -132,7 +132,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-image: url('../media/img/dummy1.jpg'); */
+    background-image: url('../media/img/dummy1.jpg');
     top: -20px;
     opacity: 0;
     position: relative;

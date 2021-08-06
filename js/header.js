@@ -2,6 +2,7 @@ var position;
 $(document).ready(function () {
     try{
         locoScroll.on('scroll', (args) => {
+            // console.log(args.scroll.y)
             // Get all current elements : args.currentElements
             if (args.direction === 'down') {
                 $('.headerOuter').addClass('moveUpHeader');
@@ -22,8 +23,8 @@ $(document).ready(function () {
 
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
-        if (scroll > position) {
-            console.log('scrollDown');
+        console.log('scrollDown', scroll);
+        if (scroll > position && scroll > 30) {
             $('.headerOuter').addClass('moveUpHeader');
         } else {
             console.log('scrollUp');

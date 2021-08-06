@@ -238,23 +238,7 @@ function initiateScroll() {
 //         stagger: .0
 //     });
 // });
-function swiperImages() {
-    $.ajax({
-        url: baseUrl + "/swipers",
-        type: 'GET',
-        success: function (data) {
-            if (data.length) {
-                for (let i = 0; i < data.length; i++) {
-                    $('.bg1 .bgSectionImage').css({ 'backgroundImage': 'url(' + baseUrl + data[0]['image']['url'] + ')' });
-                    $('.bg2 .bgSectionImage').css({ 'backgroundImage': 'url(' + baseUrl + data[2]['image']['url'] + ')' });
-                    $('.in' + i).css({ 'backgroundImage': 'url(' + baseUrl + data[i]['image']['url'] + ')' });
-                }
-            }
-        },
-        error: function (error) {
-        },
-    });
-}
+
 
 $(window).on('load', function () {
     customCursor();
@@ -282,5 +266,4 @@ $(window).on('load', function () {
         ease: Power1.out,
         stagger: 0
     });
-    swiperImages();
 });
