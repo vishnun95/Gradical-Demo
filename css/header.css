@@ -205,7 +205,7 @@
     .menuItem.active a::before{
         content: '';
         position: absolute;
-        right: 0px;
+        right: 13px;
         width: 14px;
         height: 14px;
         border-radius: 50%;
