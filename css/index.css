@@ -318,7 +318,12 @@ a.bordera{
 }
 @media only screen and (max-width:420px){
     .head span, .welcomeHead, .collabHead, .gotAproject .head{
-        font-size: 55px;
+        font-size: 70px;
+    }
+}
+@media only screen and (max-width:400px){
+    .head span, .welcomeHead, .collabHead, .gotAproject .head{
+        font-size: 59px;
         line-height: 53px;
     }
     .gotAproject .head{
