@@ -57,7 +57,7 @@ body {
     opacity: 1;
     position: relative;
     top: -20px;
-    background-image: url('../media/img/new.jpeg');
+    background-image: url('../media/img/new.webp');
     -webkit-transition-duration: 1800ms;
     -moz-transition-duration: 1800ms;
     -o-transition-duration: 1800ms;
@@ -132,7 +132,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('../media/img/new.jpeg');
+    background-image: url('../media/img/new.webp');
     top: -20px;
     opacity: 0;
     position: relative;
