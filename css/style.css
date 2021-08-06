@@ -298,7 +298,14 @@ nav {
   -o-transition-duration: 1500ms;
   transition-duration: 1500ms;
 }
+<<<<<<< HEAD
 .invertColor .view a {
+=======
+.viewNew{
+  display: block;
+}
+.invertColor .view a{
+>>>>>>> 7d6b9876d7403be76f5d3c889cb592d1c3192058
   color: white;
 }
 /* animation for blissfull text  starts*/
