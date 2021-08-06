@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects</title>
+    <link rel="shortcut icon" href="media/img/favicon.svg" type="image/svg" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/button.css"/>
     <link rel="stylesheet" href="css/project.css" />
@@ -58,17 +59,13 @@
                         </div>
                     <div class="projectDescription">
                         <span class="span0 swipeUpInit">
-                        Digital agency working along
-                        startupsand evolving brands
-                        that are brave enough to think
-                        ahead and change at the pace
-                        of the new world.
+                          Strategy goes into everything we make - we believe it is the foundation for transforming brands. Ensuring the product is not only right for today’s market, but engineered to handle the pace of change.
                         </span>
                     </div>
                     <div class="btn">
                         <div class="btnBgAnim">
                         </div>
-                        <div class="btnText">LETS TALK</div>
+                        <div onclick="toContact()" class="btnText">LETS TALK</div>
                     </div>
                 </div>
                 <div class="projectRight">
@@ -100,17 +97,13 @@
                         </div>
                     <div class="projectDescription">
                         <span class="span1 swipeUpInit">
-                            Digital agency working along
-                            startupsand evolving brands
-                            that are brave enough to think
-                            ahead and change at the pace
-                            of the new world.
+                          We work as an extension of forward-thinking brands, staying fully collaborative. Our designers, developers, and strategists all love to push boundaries and welcome extraordinary creativity. 
                         </span>
                     </div>
                     <div class="btn">
                         <div class="btnBgAnim">
                         </div>
-                        <div class="btnText">LETS TALK</div>
+                        <div onclick="toContact()" class="btnText">LETS TALK</div>
                     </div>
                 </div>
                 <div class="projectRight" >
@@ -141,17 +134,13 @@
                         </span></div>
                     <div class="projectDescription">
                         <span class="span2 swipeUpInit">
-                            Digital agency working along
-                            startupsand evolving brands
-                            that are brave enough to think
-                            ahead and change at the pace
-                            of the new world.
+                          A digital-first approach drives us to improve, iterate and evolve constantly. Our tech team translates smart ideas into rich interactive experiences and irresistible products.
                         </span>
                     </div>
                     <div class="btn">
                         <div class="btnBgAnim">
                         </div>
-                        <div class="btnText">LETS TALK</div>
+                        <div onclick="toContact()" class="btnText">LETS TALK</div>
                     </div>
                 </div>
                 <div class="projectRight">
@@ -183,9 +172,9 @@
               <img src="./media/img/logo-footer.svg" alt="logo">
             </div>
             <div class="footerList desktopOnly">
-              <div class="footerItem">INSTAGRAM</div>
-              <div class="footerItem">LINKEDIN</div>
-              <div class="footerItem">FACEBOOK</div>
+              <div onclick="toInsta()" class="footerItem">INSTAGRAM</div>
+              <div onclick="toLinkedin()" class="footerItem">LINKEDIN</div>
+              <div onclick="toFacebook()" class="footerItem">FACEBOOK</div>
             </div>
         </div>
         <div class="footerRight">
@@ -205,28 +194,28 @@
           </div>
           <div class="companyDet">
             <div class="address desktopOnly">
-              Gradical
+              Gradical</br>
               The Atomic, Kazhakootam, Trivandrum, Kerala
             </div>
             <div class="emailPhone desktopOnly">
-              <div>+91 73561 35061</div>
-              <div>hey@gradical.xyz</div>
+              <div onclick="toCall()" >+91 73561 35061</div>
+              <div onclick="toMail()" >hey@gradical.xyz</div>
             </div>
           </div>
         </div>
       </div>
         <div class="address mobileOnly">
-          Gradical
+          Gradical</br>
           The Atomic, Kazhakootam, Trivandrum, Kerala
         </div>
         <div class="emailPhone mobileOnly">
-          <div>+91 73561 35061</div>
-          <div>hey@gradical.xyz</div>
+          <div onclick="toCall()" >+91 73561 35061</div>
+          <div onclick="toMail()" >hey@gradical.xyz</div>
         </div>
         <div class="footerList mobileOnly">
-          <div class="footerItem">INSTAGRAM</div>
-          <div class="footerItem">LINKEDIN</div>
-          <div class="footerItem">FACEBOOK</div>
+          <div onclick="toInsta()" class="footerItem">INSTAGRAM</div>
+          <div onclick="toLinkedin()" class="footerItem">LINKEDIN</div>
+          <div onclick="toFacebook()" class="footerItem">FACEBOOK</div>
         </div>
       </div>
 </div>
@@ -237,5 +226,6 @@
 <script src="js/locomotive-scroll.min.js"></script>
 <script src=" js/project.js "></script>
 <script src="js/header.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

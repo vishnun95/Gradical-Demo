@@ -392,3 +392,32 @@ function customCursor() {
 $(document).ready(function () {
   swiperImages();
 });
+
+
+function toContact() {
+  window.location = 'contact2.html'
+}
+
+function toNotion() {
+  window.open('https://www.notion.so/gradical/Careers-94c5975091fd4832a40fc32e0faa50ec') 
+}
+
+function toMail() {
+  window.location.href = "mailto:hey@gradical.xyz"
+}
+
+function toCall() {
+  window.location = "tel:+91 73561 35061"
+}
+
+function toInsta() {
+  window.open('https://www.instagram.com/gradicalstudio/')
+}
+
+function toLinkedin() {
+  window.open('https://www.linkedin.com/company/gradical') 
+}
+
+function toFacebook() {
+  window.open('https://www.facebook.com/gradicalstudio')
+}
