@@ -83,6 +83,7 @@ function swiperImages() {
                         // $('.project-img' + i).addClass('wipCursor');
                     }else{
                         $('.project-img' + i).find('.imageHolder').addClass('wipCursor');
+                        $('.project-img' + i).addClass('wipCursorParent');
                     }
                 }
             }
@@ -115,6 +116,7 @@ function initiateScroll() {
                     $('.span0').addClass('swipeUp');
                     $('.span0').closest('.projectSectionItem').find('.projectName span').addClass('swipeUp');
                     $('.span0').closest('.projectSectionItem').find('.imageWrap').addClass('fullHeight');
+                    $('.span0').closest('.projectSectionItem').find('.projectRight').addClass('animInProgress');
                 },400); 
                 break;
              case 1:
@@ -123,14 +125,16 @@ function initiateScroll() {
                     $('.span1').addClass('swipeUp');
                     $('.span1').closest('.projectSectionItem').find('.projectName span').addClass('swipeUp');
                     $('.span1').closest('.projectSectionItem').find('.imageWrap').addClass('fullHeight');
+                    $('.span1').closest('.projectSectionItem').find('.projectRight').addClass('animInProgress');
                 },500)
                 break;
              case 4:
                 $('.lineCall4').addClass('lineAnim');
                 setTimeout(()=>{
-                        $('.span2').addClass('swipeUp');
-                        $('.span2').closest('.projectSectionItem').find('.projectName span').addClass('swipeUp');
-                        $('.span2').closest('.projectSectionItem').find('.imageWrap').addClass('fullHeight');
+                    $('.span2').addClass('swipeUp');
+                    $('.span2').closest('.projectSectionItem').find('.projectName span').addClass('swipeUp');
+                    $('.span2').closest('.projectSectionItem').find('.imageWrap').addClass('fullHeight');
+                    $('.span2').closest('.projectSectionItem').find('.projectRight').addClass('animInProgress');
                 },500); 
                 break;       
         }

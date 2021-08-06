@@ -93,6 +93,7 @@ body, body{
     text-transform: uppercase;
     margin-top: 15px;
     overflow: hidden;
+    position: relative;
 }
 .projectName span{
     display: block;
@@ -167,7 +168,13 @@ body, body{
       height: 100%;
       border-radius: 50%;
       text-align: center;
-  }
+}
+.inProgress{
+    display: none;
+}
+.inProgressView{
+    display: none;
+}
 @media only screen and (max-width:950px){
     body{
         padding:0px 50px;
@@ -180,7 +187,7 @@ body, body{
         height: 300px;
     }
     .projectImage{
-        height: 360px;
+        height: 380px;
     }
     .projectHead{
         font-size: 32px;
@@ -208,6 +215,55 @@ body, body{
         font-size: 30px;
         margin-top: 10px;
         line-height: 35px;
+        padding-right: 92px;
+    }
+    .inProgress{
+        border: 1px solid;
+        padding: 3px;
+        border-radius: 3px;
+        font-size: 12px;
+        line-height: 16px;
+        /* display: block; */
+        position: relative;
+        background-color: #FFFDF2;
+        position: absolute;
+        right: 0px;
+        top: 200px;
+        font-family: 'FoundersGroteskMonoRegular';
+        -webkit-transition-duration: 1000ms;
+        -moz-transition-duration: 1000ms;
+        -o-transition-duration: 1000ms;
+        transition-duration: 1000ms;
+    }
+    .inProgressView{
+        font-family: FoundersGroteskMonoRegular;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 40px;
+        letter-spacing: -0.04em;
+        color: #191515;
+        cursor: none;
+        position: absolute;
+        top: 200px;
+        right: 0px;
+        display: block;
+        -webkit-transition-duration: 1000ms;
+        -moz-transition-duration: 1000ms;
+        -o-transition-duration: 1000ms;
+        transition-duration: 1000ms;
+    }
+    .animInProgress .inProgressView{
+        top: -2px;
+    }
+    .animInProgress .inProgress{
+        top: 6px;
+    }
+    .wipCursorParent .inProgress{
+        display: block;
+    }
+    .wipCursorParent .inProgressView{
+        display: none;
     }
     .line{
         margin-top: 30px;
