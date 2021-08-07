@@ -1,130 +1,252 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-scroll-container>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/locomotive.css" />
     <title>Contact</title>
+    <link rel="shortcut icon" href="media/img/favicon.svg" type="image/svg" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/button.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
   </head>
-  <body class="body animateSlow">
-    <div id="topId"></div>
-  <div class="cursor">
-    <span>DRAG</span>
-  </div>
-  <div class="cursor-follower"></div>
-    <header>
-      <div class="header animate" id="navbar">
-        <div class="logo-wrap">
-          <img src="media/img/logo.svg" class="logo" />
+  <body>
+    <div class="cursor desktopOnly"></div>
+    <div class="cursor-follower desktopOnly"></div>
+    <div class="headerOuter">
+      <div class="headerLeft">
+        <div class="logo">
+          <a href="index.html"><img src="./media/img/logo.svg" alt="logo"></a>
         </div>
-        <nav>
-          <ul class="nav-links">
-            <li class="exampleClass"><a href="#">AGENCY</a></li>
-            <li class="exampleClass"><a href="#">PROJECTS</a></li>
-            <li class="exampleClass"><a href="#">CAREERS</a></li>
-            <li class="exampleClass"><a href="#">CONTACT</a></li>
-          </ul>
-        </nav>
+        <img class="menuActive" src="./media/img/menu.png" alt="menu" />
       </div>
-      <button class="hamburger">
-        <div class="bar"></div>
-      </button>
-    </header>
-    <div class="contianer" data-scroll-container>
-      <section class="one" id="one" data-scroll-section>
-        <h1 id="masterh1">
-          <div class="slideUpParent">
-            <div class="slideUpContainer">
-              <div class="slideUp animate">CONTACT</div>
-            </div>
+      <div class="headerRight">
+        <div class="popClose">
+          <img src="./media/img/close.png" alt="close" />
+        </div>
+        <div class="menuHead menuActive">MENU</div>
+        <div class="menu">
+          <!-- <div class="menuItem"><a href="index.html">HOME</a></div> -->
+          <div class="menuItem"><a href="agency.html">AGENCY</a></div>
+          <div class="menuItem"><a href="project.html">PROJECTS</a></div>
+          <div class="menuItem"><a href="careers.html">CAREERS</a></div>
+          <div class="menuItem active"><a href="#">CONTACT</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="headeroffset"></div>
+    <div class="outer">
+      <div class="top" data-scroll-section>
+        <div class="head">
+          <span>CONTACT</span>
+        </div>
+      </div>
+      <div class="line" data-scroll-section></div>
+      <div class="contactMidSection" data-scroll-section>
+        <div class="left overflowHidden">
+          <span>Hey there, Lets talk. 👋🏻</span>
+        </div>
+        <div class="right">
+          <div class="contactDes overflowHidden">
+            <span>
+              Start a conversation around new business opportunities or media
+              inquiries.
+            </span>
           </div>
-        </h1>
-        <div class="careerWrapParent">
-          <div class="careerWarpChild1">
-            <h3 id="description1" class="animateSlow" data-scroll data-scroll-call="first">
-              <div class="slideUpParent">
-                <div class="slideUpContainer">
-                  <div class="slideUp slideUp3  animate"> Hey there, Lets talk. 👋🏻 </div>
-                </div>
-              </div>
-            </h3>
-            <h3 id="description1" class="animateSlow" data-scroll data-scroll-call="first">
-              <div class="slideUpParent">
-                <div class="slideUpContainer">
-                  <div class="slideUp slideUp3  animate">
-                      Start a conversation around new</br>
-                      business opportunities or media</br>
-                      inquiries.</br>
-                  </div>
-                  </br>
-                  <div class="slideUp  slideUp4 animate">Inquire about open positions here </div>
-                  </br>
-                  <div class="slideUp  slideUp5 animate"><a href="">VIEW CREERS</a></div>
-                </div>
-              </div>
-            </h3>
-            <div>
-            </div>
+          <div class="contactDes overflowHidden">
+            <span> Inquire about open positions here </span>
           </div>
-          <div class="careerWrapChild2">
-            <!-- <form> -->
-              <label for="name">NAME</label>
-              <input class="name" type="text" id="name" name="name">
-              <div class="typeWrap">
-                <label for="type">TYPE</label>
-                <div class="type">
-                  <input  type="radio" value="branding" name="type" id="type">
-                  <label for="name">Branding</label>
-                  <input type="radio" value="marketting" name="type" id="type">
-                  <label for="name">Marketing</label>
-                  <input type="radio" value="uiux" name="type" id="type">
-                  <label for="name">UI/UX</label>
-                  <input type="radio" name="type" value="other" id="type">
-                  <label for="name">other</label>
-                </div>
-                <div class="type">
-                  <input  type="radio" name="type" value="webdevelopment" id="type">
-                  <label for="name">Web Development</label>
-                  <input type="radio" name="type" value="appdevelopment" id="type">
-                  <label for="name">App Development</label>
-                  <input type="radio" name="type" value="production" id="type">
-                  <label for="name">Production</label>
-                </div>
-              </div>
-              <label class="companyLabel" for="comapany">COMPANY</label>
-              <input class="company" type="text" id="company" name="company" placeholder="Your Company">
-
-              <label class="companyLabel" for="comapany">EMAIL</label>
-              <input class="company" type="email" id="email" name="email" placeholder="Email Address*">
-
-              <label class="companyLabel" for="comapany">PHONE</label>
-              <input type="tel" id="phone" name="phone" placeholder="123-45-678" maxlength="10" minlength="8">
-
-              <label class="companyLabel" for="comapany">MESSAGE</label>
-              <textarea id="message" name="textarea" id="message" rows="4" cols="50">
-              </textarea>
-
-              <button onclick="contact()">
-                Submit
-              </button>
-            <!-- </form> -->
+          <div class="contactLink overflowHidden">
+            <a href="#">VIEW CAREERS</a>
           </div>
         </div>
-      </section>
+      </div>
+      <div class="contactForm" data-scroll-section>
+        <div class="fieldOuter">
+          <div class="fieldLabel">Name</div>
+          <div class="fieldInput">
+            <input class="inp" type="text" placeholder="Name" id="name" />
+          </div>
+        </div>
+        <div class="fieldOuter">
+          <div class="fieldLabel">
+            Type <span class="subLabel">Choose all that applies</span>
+          </div>
+          <div class="fieldInput">
+            <div class="checkBoxOuter">
+              <div class="checkBoxWrap" onclick="checkSelect('Branding')">
+                <div class="check">
+                  <div class="checkInner"></div>
+                </div>
+                <div class="checkLabel">Branding</div>
+              </div>
+              <div class="checkBoxWrap" onclick="checkSelect('Marketing')">
+                <div class="check">
+                  <div class="checkInner"></div>
+                </div>
+                <div class="checkLabel">Marketing</div>
+              </div>
+              <div class="checkBoxWrap" onclick="checkSelect('UX + UI')">
+                <div class="check">
+                  <div class="checkInner"></div>
+                </div>
+                <div class="checkLabel">UX + UI</div>
+              </div>
+              <div class="checkBoxWrap" onclick="checkSelect('Other')">
+                <div class="check">
+                  <div class="checkInner"></div>
+                </div>
+                <div class="checkLabel">Other</div>
+              </div>
+              <div
+                class="checkBoxWrap"
+                onclick="checkSelect('Web Development')"
+              >
+                <div class="check">
+                  <div class="checkInner"></div>
+                </div>
+                <div class="checkLabel">Web Development</div>
+              </div>
+              <div
+                class="checkBoxWrap"
+                onclick="checkSelect('App Development')"
+              >
+                <div class="check">
+                  <div class="checkInner"></div>
+                </div>
+                <div class="checkLabel">App Development</div>
+              </div>
+              <div class="checkBoxWrap" onclick="checkSelect('Production')">
+                <div class="check">
+                  <div class="checkInner"></div>
+                </div>
+                <div class="checkLabel">Production</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fieldOuter">
+          <div class="fieldLabel">COMPANY</div>
+          <div class="fieldInput">
+            <input
+              class="inp"
+              type="text"
+              placeholder="Your Company"
+              id="company"
+            />
+          </div>
+        </div>
+        <div class="fieldOuter">
+          <div class="fieldLabel">Email</div>
+          <div class="fieldInput">
+            <input
+              class="inp"
+              type="text"
+              placeholder="Email Address*"
+              id="email"
+            />
+          </div>
+        </div>
+        <div class="fieldOuter">
+          <div class="fieldLabel">Phone</div>
+          <div class="fieldInput">
+            <textarea
+              class="inp"
+              type="text"
+              placeholder="Your mobile with country code"
+              id="phone"
+            ></textarea>
+          </div>
+        </div>
+        <div class="fieldOuter">
+          <div class="fieldLabel">
+            Message <span class="subLabel">Maximum 160 Characters</span>
+          </div>
+          <div class="fieldInput">
+            <textarea
+              class="inp"
+              maxlength="160"
+              type="text"
+              placeholder="What more would you like to add?"
+              id="message"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="btnWrapOut" data-scroll-section>
+        <div class="wrap">
+          <div class="btn" onclick="contact()">
+            <div class="btnBgAnim"></div>
+            <div class="btnText">SEND ENQUIRY</div>
+          </div>
+          <div class="success" id="successText"></div>
+        </div>
+      </div>
     </div>
-
-    <script src="js/jquery-migrate-3.3.2.min.js"></script>
-    <script src="js/locomotive.js"></script>
-    <script src="js/TweenMax.min.js"></script>
-    <script>
-      (function () {
-        var scroll = new LocomotiveScroll();
-      })();
-
-      
-    </script>
-    <script src="js/contact.js"></script>
+    <div class="footerOuterWrap" data-scroll-section>
+      <div class="footerOuter">
+        <div class="footerLeft">
+          <div class="footerLogo">
+            <a href="index.html"><img src="./media/img/logo-footer.svg" alt="logo" /></a>
+          </div>
+          <div class="footerList desktopOnly">
+            <div onclick="toInsta()" class="footerItem">INSTAGRAM</div>
+            <div onclick="toLinkedin()" class="footerItem">LINKEDIN</div>
+            <div onclick="toFacebook()" class="footerItem">FACEBOOK</div>
+          </div>
+        </div>
+        <div class="footerRight">
+          <div class="footerMenu">
+            <div class="footerMenuItem">
+              <a href="agency.html">AGENCY</a>
+            </div>
+            <div class="footerMenuItem">
+              <a href="project.html">PROJECT</a>
+            </div>
+            <div class="footerMenuItem">
+              <a href="careers.html">CAREERS</a>
+            </div>
+            <div class="footerMenuItem active">
+              <a href="#">CONTACT</a>
+            </div>
+          </div>
+          <div class="companyDet">
+            <div class="address desktopOnly">
+              Gradical The Atomic, Kazhakootam, Trivandrum, Kerala
+            </div>
+            <div class="emailPhone desktopOnly">
+              <div onclick="toCall()" >+91 73561 35061</div>
+              <div onclick="toMail()" >hey@gradical.xyz</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="address mobileOnly">
+        Gradical The Atomic, Kazhakootam, Trivandrum, Kerala
+      </div>
+      <div class="emailPhone mobileOnly">
+        <div onclick="toCall()" >+91 73561 35061</div>
+        <div onclick="toMail()" >hey@gradical.xyz</div>
+      </div>
+      <div class="footerList mobileOnly">
+        <div onclick="toInsta()" class="footerItem">INSTAGRAM</div>
+        <div onclick="toLinkedin()" class="footerItem">LINKEDIN</div>
+        <div onclick="toFacebook()" class="footerItem">FACEBOOK</div>
+      </div>
+    </div>
   </body>
+  <script src="js/jquery-migrate-3.3.2.min.js "></script>
+  <script src="js/TweenMax.min.js "></script>
+  <script src="js/gsap-latest-beta.min.js"></script>
+  <script src="js/locomotive-scroll.min.js"></script>
+  <script src=" js/contact2.js "></script>
+  <script src="js/header.js"></script>
+  <script src="js/main.js"></script>
 </html>

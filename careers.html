@@ -1,92 +1,227 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-scroll-container>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/locomotive.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Careers</title>
+    <title>Carrers</title>
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/button.css" />
+    <link rel="stylesheet" href="css/careers.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
   </head>
-  <body class="body animateSlow">
-    <div id="topId"></div>
-  <div class="cursor">DRAG</div>
-    <header>
-      <div class="header animate" id="navbar">
-        <div class="logo-wrap">
-          <img src="media/img/logo.svg" class="logo" />
+  <body>
+    <div class="cursor desktopOnly"></div>
+    <div class="cursor-follower desktopOnly"></div>
+    <div class="headerOuter">
+      <div class="headerLeft">
+        <div class="logo">
+          <a href="index.html"><img src="./media/img/logo.svg" alt="logo"></a>
         </div>
-        <nav>
-          <ul class="nav-links">
-            <li class="exampleClass"><a href="#">AGENCY</a></li>
-            <li class="exampleClass"><a href="#">PROJECTS</a></li>
-            <li class="exampleClass"><a href="#">CAREERS</a></li>
-            <li class="exampleClass"><a href="#">CONTACT</a></li>
-          </ul>
-        </nav>
+        <img class="menuActive" src="./media/img/menu.png" alt="menu" />
       </div>
-      <button class="hamburger">
-        <div class="bar">
+      <div class="headerRight">
+        <div class="popClose">
+          <img src="./media/img/close.png" alt="close" />
         </div>
-      </button>
-    </header>
-    <nav class="mobile-nav">
-      <li><a href="#">AGENCY</a></li>
-      <li><a href="#">PROJECTS</a></li>
-      <li><a href="#">CAREERS</a></li>
-      <li><a href="#">CONTACT</a></li>
-    </nav>
-    <div class="container" data-scroll-container>
-      <section class="ten" id="one" data-scroll-section>
-        <div class="hero10">
-          <h1>
-            <div class="slideUpParent">
-              <div class="careerContainer">
-                <div class="slideUp animate">CAREERS 
+        <div class="menuHead menuActive">MENU</div>
+        <div class="menu">
+          <!-- <div class="menuItem"><a href="index.html">HOME</a></div> -->
+          <div class="menuItem"><a href="agency.html">AGENCY</a></div>
+          <div class="menuItem"><a href="project.html">PROJECTS</a></div>
+          <div class="menuItem active"><a href="#">CAREERS</a></div>
+          <div class="menuItem"><a href="contact.html">CONTACT</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="headeroffset"></div>
+    <div class="outer">
+      <div class="top" data-scroll-section>
+        <div class="head">
+          <span>CAREERS</span>
+        </div>
+      </div>
+      <div class="careerItemWrap" data-scroll-section>
+        <div class="careerItems careerItems0">
+          <div class="careerItemOut" data-scroll data-scroll-call="0">
+            <div class="careerItem carrer0 swipeUpInit">
+              <div class="num">01</div>
+              <div class="lineItem">—</div>
+              <div class="position">Creative Front-End Developer</div>
+            </div>
+          </div>
+          <div class="careerRight">
+            <div class="btnWrapper overflowHiddenNew">
+              <div class="btn swipeUpInit">
+                <div class="btnBgAnim"></div>
+                <div class="btnText">
+                  APPLY NOW
+                  <img
+                    class="blackBtn"
+                    src="./media/img/whiteArrow.png"
+                    alt="arrow"
+                  />
+                  <img
+                    class="whiteBtn"
+                    src="./media/img/blackArrow.png"
+                    alt="arrow"
+                  />
                 </div>
               </div>
             </div>
-            </h1>
+          </div>
         </div>
-        <div class="line"></div>
-        <div class="text-wrap10-1">
-          <button class="open-position-1">OPEN POSITION</button>
-          <div class="slideUpParent">
-            <div class="slideUpContainer">
-              <div class="slideUp animateSlow">
-                <p>01 — JUNIOR UI DESIGNER</p> 
+        <div class="careerItems careerItems1">
+          <div class="careerItemOut" data-scroll data-scroll-call="1">
+            <div class="careerItem carrer1 swipeUpInit">
+              <div class="num">02</div>
+              <div class="lineItem">—</div>
+              <div class="position">Mid-Level Visual Designer</div>
+            </div>
+          </div>
+          <div class="careerRight">
+            <div class="btnWrapper overflowHiddenNew">
+              <div class="btn swipeUpInit">
+                <div class="btnBgAnim"></div>
+                <div class="btnText">
+                  APPLY NOW
+                  <img
+                    class="blackBtn"
+                    src="./media/img/whiteArrow.png"
+                    alt="arrow"
+                  />
+                  <img
+                    class="whiteBtn"
+                    src="./media/img/blackArrow.png"
+                    alt="arrow"
+                  />
+                </div>
               </div>
             </div>
           </div>
-          
         </div>
-        <div class="line"></div>
-        <div class="text-wrap10-2">
-          <button class="open-position-2">OPEN POSITION</button>
-          <p>02 — SOCIAL MEDIA MANAGER</p>
+        <div class="careerItems careerItems2">
+          <div class="careerItemOut" data-scroll data-scroll-call="2">
+            <div class="careerItem carrer2 swipeUpInit">
+              <div class="num">03</div>
+              <div class="lineItem">—</div>
+              <div class="position">Content Writer</div>
+            </div>
+          </div>
+          <div class="careerRight">
+            <div class="btnWrapper overflowHiddenNew">
+              <div class="btn swipeUpInit">
+                <div class="btnBgAnim"></div>
+                <div class="btnText">
+                  APPLY NOW
+                  <img
+                    class="blackBtn"
+                    src="./media/img/whiteArrow.png"
+                    alt="arrow"
+                  />
+                  <img
+                    class="whiteBtn"
+                    src="./media/img/blackArrow.png"
+                    alt="arrow"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="line"></div>
-        <div class="text-wrap10-3">
-          <button class="open-position-3">OPEN POSITION</button>
-          <p>03 — CONTENT WRITER</p>
+        <div class="careerItems careerItems3">
+          <div class="careerItemOut" data-scroll data-scroll-call="3">
+            <div class="careerItem carrer3 swipeUpInit">
+              <div class="num">04</div>
+              <div class="lineItem">—</div>
+              <div class="position">Paid Ads Strategist</div>
+            </div>
+          </div>
+          <div class="careerRight">
+            <div class="btnWrapper overflowHiddenNew">
+              <div class="btn swipeUpInit">
+                <div class="btnBgAnim"></div>
+                <div class="btnText">
+                  APPLY NOW
+                  <img
+                    class="blackBtn"
+                    src="./media/img/whiteArrow.png"
+                    alt="arrow"
+                  />
+                  <img
+                    class="whiteBtn"
+                    src="./media/img/blackArrow.png"
+                    alt="arrow"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="line"></div>
-        <div class="text-wrap10-4">
-          <button class="open-position-4">OPEN POSITION</button>
-          <p>04 — PAID ADS STRATEGIST</p>
-        </div>
-        <div class="line"></div>
-      </section>
+      </div>
     </div>
-
-    <script src="js/jquery-migrate-3.3.2.min.js"></script>
-  <script src="js/swiper.min.js"></script>
-  <script src="js/locomotive.js"></script>
-  <script>
-    (function () {
-      var scroll = new LocomotiveScroll();
-    })();
-  </script>
-  <script src="js/main.js"></script>
+    <div class="footerOuterWrap" data-scroll-section>
+      <div class="footerOuter">
+        <div class="footerLeft">
+          <div class="footerLogo">
+            <a href="index.html"><img src="./media/img/logo-footer.svg" alt="logo" /></a>
+          </div>
+          <div class="footerList desktopOnly">
+            <div class="footerItem">INSTAGRAM</div>
+            <div class="footerItem">LINKEDIN</div>
+            <div class="footerItem">FACEBOOK</div>
+          </div>
+        </div>
+        <div class="footerRight">
+          <div class="footerMenu">
+            <div class="footerMenuItem">
+              <a href="agency.html">AGENCY</a>
+            </div>
+            <div class="footerMenuItem">
+              <a href="project.html">PROJECT</a>
+            </div>
+            <div class="footerMenuItem active">
+              <a href="#">CAREERS</a>
+            </div>
+            <div class="footerMenuItem">
+              <a href="contact.html">CONTACT</a>
+            </div>
+          </div>
+          <div class="companyDet">
+            <div class="address desktopOnly">
+              Gradical The Atomic, Kazhakootam, Trivandrum, Kerala
+            </div>
+            <div class="emailPhone desktopOnly">
+              <div>+91 73561 35061</div>
+              <div>hey@gradical.xyz</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="address mobileOnly">
+        Gradical The Atomic, Kazhakootam, Trivandrum, Kerala
+      </div>
+      <div class="emailPhone mobileOnly">
+        <div>+91 73561 35061</div>
+        <div>hey@gradical.xyz</div>
+      </div>
+      <div class="footerList mobileOnly">
+        <div class="footerItem">INSTAGRAM</div>
+        <div class="footerItem">LINKEDIN</div>
+        <div class="footerItem">FACEBOOK</div>
+      </div>
+    </div>
   </body>
+  <script src="js/jquery-migrate-3.3.2.min.js "></script>
+  <script src="js/TweenMax.min.js "></script>
+  <script src="js/gsap-latest-beta.min.js"></script>
+  <script src="js/locomotive-scroll.min.js"></script>
+  <script src=" js/careers.js "></script>
+  <script src="js/header.js"></script>
 </html>

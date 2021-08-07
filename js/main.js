@@ -25,6 +25,7 @@ function check(element) {
     case '#line1':
       $("#line1").addClass("activeWidth");
       setTimeout(() => {
+        $('.desktopOnly .featureSubAnim').find('.slideUp4').addClass('active');
         $('.card').addClass('swiperActive');
       }, 500);
       break;
@@ -224,6 +225,9 @@ function intiateScrollNew(){
         $('.gotAproject .description span').addClass('active');
         $('.gotAproject .btnContainer .btn').addClass('active');
       },200)
+    }
+    if(func==='welcomeFeature'){
+      $('.mobileOnly').find('.featureSubAnim .slideUp4').addClass('active');
     }
     $('.'+func).find('.'+func+'In').addClass('fullHeight');
     $('.'+func).find('.projectName').addClass('active');
@@ -471,7 +475,7 @@ $(document).ready(function () {
 
 
 function toContact() {
-  window.location = 'contact2.html'
+  window.location = 'contact.html'
 }
 
 function toNotion() {

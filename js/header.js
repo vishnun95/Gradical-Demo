@@ -38,4 +38,10 @@ $(document).ready(function () {
     // $('.footerLogo').click(function(){
     //     window.location = 'index.html';
     // })
+    var isTouch = (('ontouchstart' in window) || (navigator.msMaxTouchPoints > 0));
+    // alert(isTouch)
+    if(isTouch){
+        $('.cursor').hide();
+        $('.cursor-follower').hide();
+    }
 })

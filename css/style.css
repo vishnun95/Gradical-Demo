@@ -348,6 +348,17 @@ nav {
   position: relative;
   /* transition-delay: 2000ms; */
 }
+.featureSubAnim .slideUp4{
+  bottom: -180px;
+  opacity: 0;
+  position: relative;
+    transition-delay: 0ms;
+}
+.featureSubAnim .slideUp4.active{
+  bottom: 0px;
+  opacity: 1;
+  position: relative;
+}
 .slideUp3{
   bottom: -180px;
   color: black;
@@ -938,6 +949,10 @@ nav {
   margin-bottom: 50px;
   position: relative;
   z-index: 1000;
+}
+.overflowHiddenNew span.emoji{
+  display: inline-block;
+  margin-right: 10px;
 }
 @media screen and (max-width: 1240px) and (min-width: 769px) {
   .five-wrap H1 {

@@ -308,6 +308,13 @@ img.diam{
         line-height: 180px;
     }
 }
+@media only screen and (min-width:850px) and (max-width:1250px){
+    .center {
+        justify-content: center;
+        margin-top: 151px;
+        margin-bottom: 100px;
+    }
+}
 @media only screen and (max-width: 950px){
     img.diam{
         width: auto;
@@ -347,9 +354,7 @@ img.diam{
     .image{
         height: 300px;
     }
-    .center{
-        margin-top: 70px;
-    }
+   
     .imageHead{
         font-size: 30px;
         letter-spacing: 0px;
@@ -360,6 +365,9 @@ img.diam{
     }
   }
   @media only screen and (max-width:850px){
+    .center{
+        margin-top: 70px;
+    }
     .bgSection{
         height: 440px;
         width: 54%;
