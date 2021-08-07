@@ -171,8 +171,10 @@ function checkSelect($this){
 
 
 $(document).ready(function () {
-    initiateScroll();
     customCursor();
+    setTimeout(()=>{
+        initiateScroll();
+    },1200)
     let tl = gsap.timeline();
     $("input").on("input", function() {
         if($(this).val()){

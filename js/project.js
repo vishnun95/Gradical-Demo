@@ -164,7 +164,9 @@ function initiateScroll() {
 }
 
 $(document).ready(function (e) {
-    initiateScroll();
+    setTimeout(()=>{
+        initiateScroll();
+    },1200);
     let tl = gsap.timeline();
 
     tl.from(".Head span", {
