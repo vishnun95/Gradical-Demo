@@ -241,7 +241,9 @@ function initiateScroll() {
 
 $(document).ready(function(){
     customCursor();
-    initiateScroll();
+    setTimeout(()=>{
+        initiateScroll();
+    },1000)
     let tl = gsap.timeline();
 
     tl.from(".head span", {

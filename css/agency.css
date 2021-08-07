@@ -2,6 +2,7 @@
 }
 body {
     background: '#f6f6f6';
+    overflow: hidden;
 }
 
 .head {
@@ -309,6 +310,9 @@ img.diam{
     }
 }
 @media only screen and (max-width: 950px){
+    body {
+        overflow: auto;
+    }
     img.diam{
         width: auto;
     }
