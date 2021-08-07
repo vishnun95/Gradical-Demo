@@ -130,6 +130,7 @@ function customCursor() {
 
 
 function initiateScroll() {
+    $('body').removeClass('bodyHidden');
     let tl = gsap.timeline();
     locoScroll = new LocomotiveScroll({
         el: document.querySelector('[data-scroll-container]'),
@@ -172,6 +173,7 @@ function checkSelect($this){
 
 $(document).ready(function () {
     customCursor();
+    $('body').addClass('bodyHidden');
     setTimeout(()=>{
         initiateScroll();
     },1200)

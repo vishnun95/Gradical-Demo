@@ -60,6 +60,7 @@ function customCursor() {
 
 
 function initiateScroll() {
+    $('body').removeClass('bodyHidden');
     let tl = gsap.timeline();
     locoScroll = new LocomotiveScroll({
         el: document.querySelector('[data-scroll-container]'),
@@ -83,6 +84,7 @@ function initiateScroll() {
         // });
         $('.careerItems').addClass('active');
         $('.careerItem').addClass('active');
+        $('.btnWrapper').find('.btn').addClass('active');
 
         
     });
@@ -90,6 +92,7 @@ function initiateScroll() {
 
 
 $(document).ready(function () {
+    $('body').addClass('bodyHidden');
     initiateScroll();
     customCursor();
     let tl = gsap.timeline();

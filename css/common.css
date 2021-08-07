@@ -33,9 +33,12 @@ body {
     padding: 0px 90px;
     background-color: #f6f6f6;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow-x: hidden;
     scroll-behavior: smooth;
     cursor: none;
+}
+body.bodyHidden{
+    overflow:hidden;
 }
 
 .cursor {
@@ -127,12 +130,6 @@ body {
 }
 .mobileOnly{
     display: none;
-}
-@media only screen and (max-width:1100px){
-    body{
-        overflow: auto;
-        overflow-x: hidden;
-    }
 }
 @media only screen and (max-width:950px){
     

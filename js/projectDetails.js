@@ -71,6 +71,7 @@ function customCursor() {
 
 
 function initiateScroll() {
+  $('body').removeClass('bodyHidden');
   let tl = gsap.timeline();
   locoScroll = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
@@ -228,7 +229,7 @@ function getProjectId() {
 }
 
 $(document).ready(function () {
-
+  $('body').addClass('bodyHidden');
   getProjectId();
   let tl = gsap.timeline();
 

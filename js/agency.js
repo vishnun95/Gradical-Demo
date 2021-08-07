@@ -57,6 +57,7 @@ function customCursor() {
     });
 }
 function initiateScroll() {
+    $('body').removeClass('bodyHidden');
     locoScroll = new LocomotiveScroll({
         el: document.querySelector('[data-scroll-container]'),
         smooth: true,
@@ -240,6 +241,7 @@ function initiateScroll() {
 // });
 
 $(document).ready(function(){
+    $('body').addClass('bodyHidden');
     customCursor();
     setTimeout(()=>{
         initiateScroll();

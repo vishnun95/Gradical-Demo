@@ -95,6 +95,7 @@ function swiperImages() {
 }
 
 function initiateScroll() {
+    $('body').removeClass('bodyHidden');
     let tl = gsap.timeline();
     locoScroll = new LocomotiveScroll({
         el: document.querySelector('[data-scroll-container]'),
@@ -164,6 +165,7 @@ function initiateScroll() {
 }
 
 $(document).ready(function (e) {
+    $('body').addClass('bodyHidden');
     setTimeout(()=>{
         initiateScroll();
     },1200);

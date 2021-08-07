@@ -176,6 +176,7 @@ window.onload = function () {
 };
 
 function intiateScrollNew(){
+  $('body').removeClass('bodyHidden');
   locoScroll = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
     elMobile: document.querySelector('[data-scroll-container]'),
@@ -464,6 +465,7 @@ function customCursor() {
 }
 
 $(document).ready(function () {
+  $('body').addClass('bodyHidden');
   swiperImages();
 });
 

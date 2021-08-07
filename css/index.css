@@ -1,4 +1,4 @@
-body{
+body.bodyHidden{
     overflow:hidden;
 }
 .mobileOnly{
@@ -28,7 +28,7 @@ a.bordera{
     border: 1px solid;
     padding: 3px;
     border-radius: 3px;
-    font-size: 14px;
+    font-size: 11px;
     line-height: 16px;
     /* top: 10px; */
     position: relative;
@@ -44,12 +44,6 @@ a.bordera{
 .active {
     bottom: 0px;
     opacity: 1;
-}
-@media only screen and (max-width:1100px){
-    body{
-        overflow: auto;
-        overflow-x: hidden;
-    }
 }
 @media only screen and (max-width:950px){
     body{
