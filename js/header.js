@@ -32,10 +32,10 @@ $(document).ready(function () {
         }
         position = scroll;
     });
-    $('.logo img').click(function(){
-        window.location = 'index.html';
-    })
-    $('.footerLogo').click(function(){
-        window.location = 'index.html';
-    })
+    // $('.logo img').click(function(){
+    //     window.location = 'index.html';
+    // })
+    // $('.footerLogo').click(function(){
+    //     window.location = 'index.html';
+    // })
 })

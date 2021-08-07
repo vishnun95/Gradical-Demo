@@ -82,6 +82,12 @@
 .popClose{
     display: none;
 }
+.logo a{
+    cursor: none;
+}
+.footerLogo a{
+    cursor: none;
+}
 @media only screen and (max-width:950px){
     .headeroffset{
         position: relative;
