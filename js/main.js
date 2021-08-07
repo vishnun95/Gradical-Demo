@@ -357,11 +357,15 @@ function swiperImages() {
         }
         $('.project-img1').find('.imageHolder').css({ 'backgroundImage': 'url(' + baseUrl + data[0]['image']['url'] + ')' })
         swiperInit();
-        intiateScrollNew();
+        setTimeout(()=>{
+          intiateScrollNew();
+        },500)
       }
     },
     error: function (error) {
-      intiateScrollNew();
+      setTimeout(()=>{
+        intiateScrollNew();
+      },500)
       customCursor();
     },
   });
