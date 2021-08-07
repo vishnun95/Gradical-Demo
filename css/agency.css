@@ -141,7 +141,21 @@ body {
     -o-transition-duration: 1200ms;
     transition-duration: 1200ms;
 }
-
+.inImg1{
+    background-image: url('../media/img/crew/Romal.webp');
+}
+.inImg2{
+    background-image: url('../media/img/crew/Vishal.webp');
+}
+.inImg3{
+    background-image: url('../media/img/crew/Amen.webp');
+}
+.inImg4{
+    background-image: url('../media/img/crew/Sreedevi.webp');
+}
+.inImg5{
+    background-image: url('../media/img/crew/Kiron.webp');
+}
 .topMargin {
     position: relative;
     top: 80px;
@@ -297,6 +311,12 @@ body {
 }
 img.diam{
     width: 159px;
+}
+.bgImage1{
+    background-image: url('../media/img/agency-1.gif');
+}
+.bgImage2{
+    background-image: url('../media/img/agency-2.gif');
 }
 @media only screen and (max-width:1100px){
     .awardHead{
