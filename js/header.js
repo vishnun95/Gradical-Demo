@@ -43,5 +43,6 @@ $(document).ready(function () {
     if(isTouch){
         $('.cursor').hide();
         $('.cursor-follower').hide();
+        $('body').addClass('isTab');
     }
 })

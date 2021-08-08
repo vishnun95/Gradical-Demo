@@ -175,6 +175,61 @@ body, body{
 .inProgressView{
     display: none;
 }
+/* tab view */
+.isTab  .projectName{
+    font-size: 30px;
+    margin-top: 10px;
+    line-height: 35px;
+    padding-right: 100px;
+}
+.isTab .inProgress{
+    border: 1px solid;
+    padding: 3px;
+    border-radius: 3px;
+    font-size: 12px;
+    line-height: 16px;
+    /* display: block; */
+    position: relative;
+    background-color: #FFFDF2;
+    position: absolute;
+    right: 0px;
+    top: 200px;
+    font-family: 'FoundersGroteskMonoRegular';
+    -webkit-transition-duration: 1000ms;
+    -moz-transition-duration: 1000ms;
+    -o-transition-duration: 1000ms;
+    transition-duration: 1000ms;
+}
+.isTab .inProgressView{
+    font-family: FoundersGroteskMonoRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: -0.04em;
+    color: #191515;
+    cursor: none;
+    position: absolute;
+    top: 200px;
+    right: 0px;
+    display: block;
+    -webkit-transition-duration: 1000ms;
+    -moz-transition-duration: 1000ms;
+    -o-transition-duration: 1000ms;
+    transition-duration: 1000ms;
+}
+.isTab .animInProgress .inProgressView{
+    top: -2px;
+}
+.isTab .animInProgress .inProgress{
+    top: 6px;
+}
+.isTab .wipCursorParent .inProgress{
+    display: block;
+}
+.isTab .wipCursorParent .inProgressView{
+    display: none;
+}
 @media only screen and (max-width:950px){
     body{
         padding:0px 50px;
