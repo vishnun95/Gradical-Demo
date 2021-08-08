@@ -58,7 +58,7 @@
             </div>
           </div>
           <div class="careerRight">
-            <div class="btnWrapper overflowHiddenNew">
+            <div onclick="toFrontend()" class="btnWrapper overflowHiddenNew">
               <div class="btn swipeUpInit">
                 <div class="btnBgAnim"></div>
                 <div class="btnText">
@@ -87,7 +87,7 @@
             </div>
           </div>
           <div class="careerRight">
-            <div class="btnWrapper overflowHiddenNew">
+            <div onclick="toDesigner()" class="btnWrapper overflowHiddenNew">
               <div class="btn swipeUpInit">
                 <div class="btnBgAnim"></div>
                 <div class="btnText">
@@ -116,7 +116,7 @@
             </div>
           </div>
           <div class="careerRight">
-            <div class="btnWrapper overflowHiddenNew">
+            <div onclick="toContent()" class="btnWrapper overflowHiddenNew">
               <div class="btn swipeUpInit">
                 <div class="btnBgAnim"></div>
                 <div class="btnText">
@@ -145,7 +145,36 @@
             </div>
           </div>
           <div class="careerRight">
-            <div class="btnWrapper overflowHiddenNew">
+            <div onclick="toStrategist()" class="btnWrapper overflowHiddenNew">
+              <div class="btn swipeUpInit">
+                <div class="btnBgAnim"></div>
+                <div class="btnText">
+                  APPLY NOW
+                  <img
+                    class="blackBtn"
+                    src="./media/img/whiteArrow.png"
+                    alt="arrow"
+                  />
+                  <img
+                    class="whiteBtn"
+                    src="./media/img/blackArrow.png"
+                    alt="arrow"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="careerItems careerItems3">
+          <div class="careerItemOut" data-scroll data-scroll-call="3">
+            <div class="careerItem carrer3 swipeUpInit">
+              <div class="num">05</div>
+              <div class="lineItem">—</div>
+              <div class="position">Social Media Manager</div>
+            </div>
+          </div>
+          <div class="careerRight">
+            <div onclick="toMediamanager()" class="btnWrapper overflowHiddenNew">
               <div class="btn swipeUpInit">
                 <div class="btnBgAnim"></div>
                 <div class="btnText">
@@ -174,9 +203,9 @@
             <a href="index.html"><img src="./media/img/logo-footer.svg" alt="logo" /></a>
           </div>
           <div class="footerList desktopOnly">
-            <div class="footerItem">INSTAGRAM</div>
-            <div class="footerItem">LINKEDIN</div>
-            <div class="footerItem">FACEBOOK</div>
+            <div onclick="toInsta()" class="footerItem">INSTAGRAM</div>
+            <div onclick="toLinkedin()" class="footerItem">LINKEDIN</div>
+            <div onclick="toFacebook()" class="footerItem">FACEBOOK</div>
           </div>
         </div>
         <div class="footerRight">
@@ -204,8 +233,8 @@
               Kerala 695582</br>
             </div>
             <div class="emailPhone desktopOnly">
-              <div>+91 73561 35061</div>
-              <div>hey@gradical.xyz</div>
+              <div onclick="toCall()">+91 73561 35061</div>
+              <div onclick="toMail()">hey@gradical.xyz</div>
             </div>
           </div>
         </div>
@@ -219,13 +248,13 @@
         Kerala 695582</br>
       </div>
       <div class="emailPhone mobileOnly">
-        <div>+91 73561 35061</div>
-        <div>hey@gradical.xyz</div>
+        <div onclick="toCall()">+91 73561 35061</div>
+        <div onclick="toMail()">hey@gradical.xyz</div>
       </div>
       <div class="footerList mobileOnly">
-        <div class="footerItem">INSTAGRAM</div>
-        <div class="footerItem">LINKEDIN</div>
-        <div class="footerItem">FACEBOOK</div>
+        <div onclick="toInsta()" class="footerItem">INSTAGRAM</div>
+        <div onclick="toLinkedin()" class="footerItem">LINKEDIN</div>
+        <div onclick="toFacebook()" class="footerItem">FACEBOOK</div>
       </div>
     </div>
   </body>
@@ -235,4 +264,5 @@
   <script src="js/locomotive-scroll.min.js"></script>
   <script src=" js/careers.js "></script>
   <script src="js/header.js"></script>
+  <script src="js/main.js"></script>
 </html>

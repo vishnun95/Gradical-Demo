@@ -68,7 +68,7 @@
                           handle the pace of change.
                         </span>
                     </div>
-                    <div class="btn">
+                    <div onclick="toContact()" class="btn">
                         <div class="btnBgAnim">
                         </div>
                         <div class="btnText">LETS TALK</div>
@@ -116,7 +116,7 @@
                           extraordinary creativity. 
                         </span>
                     </div>
-                    <div class="btn">
+                    <div onclick="toContact()" class="btn">
                         <div class="btnBgAnim">
                         </div>
                         <div class="btnText">LETS TALK</div>
@@ -163,7 +163,7 @@
                           products.
                         </span>
                     </div>
-                    <div class="btn">
+                    <div onclick="toContact()" class="btn">
                         <div class="btnBgAnim">
                         </div>
                         <div class="btnText">LETS TALK</div>
@@ -202,9 +202,9 @@
               <a href="index.html"><img src="./media/img/logo-footer.svg" alt="logo" /></a>
             </div>
             <div class="footerList desktopOnly">
-              <div class="footerItem">INSTAGRAM</div>
-              <div class="footerItem">LINKEDIN</div>
-              <div class="footerItem">FACEBOOK</div>
+              <div onclick="toInsta()" class="footerItem">INSTAGRAM</div>
+              <div onclick="toLinkedin()" class="footerItem">LINKEDIN</div>
+              <div onclick="toFacebook()" class="footerItem">FACEBOOK</div>
             </div>
         </div>
         <div class="footerRight">
@@ -232,8 +232,8 @@
               Kerala 695582</br>
             </div>
             <div class="emailPhone desktopOnly">
-              <div>+91 73561 35061</div>
-              <div>hey@gradical.xyz</div>
+              <div onclick="toCall()">+91 73561 35061</div>
+              <div onclick="toMail()">hey@gradical.xyz</div>
             </div>
           </div>
         </div>
@@ -247,13 +247,13 @@
           Kerala 695582</br>
         </div>
         <div class="emailPhone mobileOnly">
-          <div>+91 73561 35061</div>
-          <div>hey@gradical.xyz</div>
+          <div onclick="toCall()">+91 73561 35061</div>
+          <div onclick="toMail()">hey@gradical.xyz</div>
         </div>
         <div class="footerList mobileOnly">
-          <div class="footerItem">INSTAGRAM</div>
-          <div class="footerItem">LINKEDIN</div>
-          <div class="footerItem">FACEBOOK</div>
+          <div onclick="toInsta()" class="footerItem">INSTAGRAM</div>
+          <div onclick="toLinkedin()" class="footerItem">LINKEDIN</div>
+          <div onclick="toFacebook()" class="footerItem">FACEBOOK</div>
         </div>
       </div>
 </div>
@@ -263,5 +263,6 @@
 <script src="js/locomotive-scroll.min.js"></script>
 <script src=" js/project.js "></script>
 <script src="js/header.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
