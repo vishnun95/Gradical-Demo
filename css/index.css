@@ -258,11 +258,11 @@ a.bordera {
     position: relative;
     z-index: 10;
     max-width: 240px;
-    margin-bottom: 55px;
+    margin-bottom: 25px;
   }
   .gotAprojectImage {
-    width: 174px;
-    height: 180px;
+    width: 170px;
+    height: 176px;
     background: #c4c4c4;
     position: absolute;
     right: 0px;
