@@ -269,6 +269,7 @@ a.bordera {
     top: 0px;
     max-width: 100%;
     background-image: url(../media/img/Mobile-Smallest.gif);
+    background-size: cover;
   }
   #mobileCards .slideUpView {
     top: 180px;
