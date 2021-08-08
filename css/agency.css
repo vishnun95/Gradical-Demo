@@ -15,6 +15,9 @@ body {
   z-index: 2;
   text-align: center;
 }
+.marTopNeg{
+    margin-top: -90px;
+}
 
 .sectionWrap {
   position: relative;
@@ -333,6 +336,7 @@ img.diam {
     margin-top: 151px;
     margin-bottom: 100px;
   }
+
 }
 @media only screen and (max-width: 950px) {
   img.diam {
@@ -417,6 +421,7 @@ img.diam {
     margin: auto;
     top: 0px;
     max-width: 100%;
+    margin-bottom: 30px;
   }
   .center {
     margin-top: 0px;
