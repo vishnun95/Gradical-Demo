@@ -212,6 +212,7 @@ function getProjectId() {
         customCursor();
       }, 300)
       $('.Head').find('span').html(data?.projectName);
+      document.title = data?.projectName;
       $('.bannerImage').css('background-image', 'url(' + baseUrl + data?.image?.url + ')');
       $('.innerImage1').css('background-image', 'url(' + baseUrl + data?.image1?.url + ')');
       $('.innerImage2').css('background-image', 'url(' + baseUrl + data?.image2?.url + ')');
