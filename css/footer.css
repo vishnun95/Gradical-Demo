@@ -1,152 +1,152 @@
-.footerOuter{
-    display: flex;
-    justify-content: space-between; 
+.footerOuter {
+  display: flex;
+  justify-content: space-between;
 }
-.footerOuterWrap{
-    background: #191515;
-    box-sizing: border-box;
-    padding: 132px 90px;
-    left: -90px;
-    position: relative;
-    width: calc(100% + 180px);
+.footerOuterWrap {
+  background: #191515;
+  box-sizing: border-box;
+  padding: 132px 90px;
+  left: -90px;
+  position: relative;
+  width: calc(100% + 180px);
 }
-.footerLogo{
-    margin-bottom: 53px;
+.footerLogo {
+  margin-bottom: 53px;
 }
-.footerItem{
-    font-family: FoundersGroteskMonoRegular;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 40px;
-    letter-spacing: -0.04em;
-    color: #F6F6F6;
-    margin-bottom: 3px;
+.footerItem {
+  font-family: FoundersGroteskMonoRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: -0.04em;
+  color: #f6f6f6;
+  margin-bottom: 3px;
 }
-.footerMenu{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+.footerMenu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
-.footerMenuItem{
-    margin-right:60px;
-    margin-bottom: 55px;
+.footerMenuItem {
+  margin-right: 60px;
+  margin-bottom: 55px;
 }
-.footerMenuItem a{
-    font-family: FoundersGroteskMonoRegular;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 40px;
-    letter-spacing: -0.04em;
-    text-decoration-line: none;
-    color: #F6F6F6;
-    cursor: none;
-    position: relative;
+.footerMenuItem a {
+  font-family: FoundersGroteskMonoRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: -0.04em;
+  text-decoration-line: none;
+  color: #f6f6f6;
+  cursor: none;
+  position: relative;
 }
-.footerMenuItem a::after{
-    width: 0%;
-    opacity: 0;
-    height: 2px;
-    content: '';
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    background-color: white;
-    -webkit-transition-duration: 400ms;
-    -moz-transition-duration: 400ms;
-    -o-transition-duration: 400ms;
-    transition-duration: 400ms;
+.footerMenuItem a::after {
+  width: 0%;
+  opacity: 0;
+  height: 2px;
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-color: white;
+  -webkit-transition-duration: 400ms;
+  -moz-transition-duration: 400ms;
+  -o-transition-duration: 400ms;
+  transition-duration: 400ms;
 }
-.footerMenuItem:hover a::after{
-    width: 100%;
-    opacity: 1;
+.footerMenuItem:hover a::after {
+  width: 100%;
+  opacity: 1;
 }
 
-.active.footerMenuItem a::after{
-    width: 100%;
-    opacity: 1;
+.active.footerMenuItem a::after {
+  width: 100%;
+  opacity: 1;
 }
-.companyDet{
-    display: flex;
-    justify-content: space-between;
+.companyDet {
+  display: flex;
+  justify-content: space-between;
 }
-.address{
-    font-family: FoundersGroteskMonoRegular;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 24px;
-    letter-spacing: -0.04em;
-    color: #F4F4F4;
-    max-width: 114px;
+.address {
+  font-family: FoundersGroteskMonoRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.04em;
+  color: #f4f4f4;
+  max-width: inherit;
 }
-.emailPhone{
-    font-family: FoundersGroteskMonoRegular;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 24px;
-    letter-spacing: -0.04em;
-    color: #F4F4F4;
+.emailPhone {
+  font-family: FoundersGroteskMonoRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.04em;
+  color: #f4f4f4;
 }
-@media only screen and (max-width:950px){
-    .footerOuterWrap{
-        left: -50px;
-        position: relative;
-        width: calc(100% + 100px);
-        padding: 50px 18px;
-    }
-    .footerItem{
-        font-size: 14px;
-        line-height: 14px;
-    }
-    .footerMenuItem{
-        margin-right: 15px;
-    }
-    .footerMenuItem a{
-        font-size: 14px;
-        line-height: 14px;
-    }
-    .footerLogo img{
-        width: 31.74px;
-        height: 25px;
-    }
-    .address{
-        font-size: 14px;
-        line-height: 18px;
-        margin-bottom: 20px;
-    }
-    .emailPhone{
-        font-size: 14px;
-        line-height: 18px;
-        margin-bottom: 20px;
-    }
-    .footerList.mobileOnly{
-        display: flex !important;
-        justify-content: flex-start;
-    }
-    .footerItem{
-        margin-right: 20px;
-    }
+@media only screen and (max-width: 950px) {
+  .footerOuterWrap {
+    left: -50px;
+    position: relative;
+    width: calc(100% + 100px);
+    padding: 50px 18px;
+  }
+  .footerItem {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .footerMenuItem {
+    margin-right: 15px;
+  }
+  .footerMenuItem a {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .footerLogo img {
+    width: 31.74px;
+    height: 25px;
+  }
+  .address {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 20px;
+  }
+  .emailPhone {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 20px;
+  }
+  .footerList.mobileOnly {
+    display: flex !important;
+    justify-content: flex-start;
+  }
+  .footerItem {
+    margin-right: 20px;
+  }
 }
-@media only screen and (max-width:550px){
-    .footerOuterWrap{
-        left: -25px;
-        position: relative;
-        width: calc(100% + 50px);
-    }
+@media only screen and (max-width: 550px) {
+  .footerOuterWrap {
+    left: -25px;
+    position: relative;
+    width: calc(100% + 50px);
+  }
 }
-@media only screen and (max-width:450px){
-    .footerMenuItem a {
-        font-size: 11px;
-        line-height: 14px;
-    }
-    .footerMenuItem {
-        margin-right: 10px;
-    }
-    .footerLogo img {
-        width: 22.74px;
-        height: 25px;
-    }
+@media only screen and (max-width: 450px) {
+  .footerMenuItem a {
+    font-size: 11px;
+    line-height: 14px;
+  }
+  .footerMenuItem {
+    margin-right: 10px;
+  }
+  .footerLogo img {
+    width: 22.74px;
+    height: 25px;
+  }
 }
