@@ -16,6 +16,7 @@
     <link rel="shortcut icon" href="media/img/favicon.svg" type="image/svg" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/agency.css" />
+    <link rel="stylesheet" href="css/application.scss.css">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
@@ -24,6 +25,11 @@
     <link rel="stylesheet" href="css/footer.css" />
   </head>
   <body>
+    <div class="intro intro0">
+      <div id="mount"></div>
+        <script style="width: 60px; height: 45px" autoplay  src="https://code.haiku.ai/scripts/core/HaikuCore.5.1.1.min.js"></script>
+        <script src="https://cdn.haiku.ai/4bfc5a93-bb0b-41ab-962b-22eec55ee006/123a24d240b87f15846395c34219b8fe24d53991/index.embed.js"></script>
+    </div>
     <div class="cursor desktopOnly"></div>
     <div class="cursor-follower desktopOnly"></div>
     <div class="headerOuter">
@@ -333,6 +339,12 @@
         <div onclick="toFacebook()" class="footerItem">FACEBOOK</div>
       </div>
     </div>
+    <script>
+      HaikuComponentEmbed_amennnnn_Splash(
+        document.getElementById('mount'),
+        {loop: false}
+      );
+    </script>
     <script src="js/jquery-migrate-3.3.2.min.js "></script>
     <script src="js/TweenMax.min.js "></script>
     <script src="js/gsap-latest-beta.min.js"></script>
