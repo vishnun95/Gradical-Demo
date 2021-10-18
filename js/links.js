@@ -26,6 +26,10 @@ function toMediamanager() {
   window.open('https://gradical.notion.site/Social-Media-Manager-b0f6c373c0534b0cbd8f9290889bcc7b')
 }
 
+function toMarketingintern() {
+  window.open('https://gradical.notion.site/Marketing-Intern-f2faf32c996241f68dd40d6787d82b1f')
+}
+
 function toMail() {
   window.location.href = "mailto:hey@gradical.xyz"
 }
