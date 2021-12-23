@@ -15,8 +15,8 @@ body {
   z-index: 2;
   text-align: center;
 }
-.marTopNeg{
-    margin-top: -90px;
+.marTopNeg {
+  margin-top: -90px;
 }
 
 .sectionWrap {
@@ -154,7 +154,7 @@ body {
   background-image: url("../media/img/crew/Amen.webp");
 }
 .inImg4 {
-  background-image: url("../media/img/crew/Kiron.webp");
+  background-image: url("../media/img/crew/Asweetiee.webp");
 }
 .inImg5 {
   background-image: url("../media/img/crew/Vishal.webp");
@@ -336,7 +336,6 @@ img.diam {
     margin-top: 151px;
     margin-bottom: 100px;
   }
-
 }
 @media only screen and (max-width: 950px) {
   img.diam {
