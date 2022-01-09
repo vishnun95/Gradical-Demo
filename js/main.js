@@ -5,7 +5,7 @@ var locoScroll;
 var swiperEnded = false;
 var checkIfScrollStopped = false;
 var lastScrollDirection = '';
-var baseUrl = 'https://d1rgwuzou45mfe.cloudfront.net';
+var baseUrl = 'https://d2x37tr42muj2u.cloudfront.net';
 
 function check(element) {
   switch (element) {
