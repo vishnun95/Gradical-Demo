@@ -159,6 +159,12 @@ body {
 .inImg5 {
   background-image: url("../media/img/crew/Vishal.webp");
 }
+.inImg6 {
+  background-image: url("../media/img/crew/Michu.webp");
+}
+.inImg7 {
+  background-image: url("../media/img/crew/Anand.webp");
+}
 .topMargin {
   position: relative;
   top: 80px;
