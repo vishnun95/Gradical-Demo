@@ -1,4 +1,4 @@
-var baseUrl = 'http://174.138.121.68:1337';
+var baseUrl = 'http://172.31.7.188:1337';
 
 function customCursor() {
     var cursor = $(".cursor"),
