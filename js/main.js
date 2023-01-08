@@ -5,7 +5,8 @@ var locoScroll;
 var swiperEnded = false;
 var checkIfScrollStopped = false;
 var lastScrollDirection = '';
-var baseUrl = 'http://174.138.121.68:1337';
+// var baseUrl = 'http://174.138.121.68:1337';
+var baseUrl = 'http://3.110.166.154:1337';
 
 function check(element) {
   switch (element) {
