@@ -60,7 +60,7 @@ function sendMail(contact) {
     }
     //  contact.name + ' raised a query. Please reach him/her on ' + contact.phone + ' or ' + contact.email + '\n '
     $.ajax({
-        url:'http://174.138.121.68:3000/users',
+        url: 'https://d2krj3pr4i8060.cloudfront.net/users',
         type: 'POST',
         data: data,
         success: function (res) {
