@@ -1,5 +1,6 @@
 var locoScroll;
-var baseUrl = 'http://174.138.121.68:1337';
+// var baseUrl = 'http://174.138.121.68:1337';
+var baseUrl = 'http://3.110.166.154:1337'
 
 
 function customCursor() {
