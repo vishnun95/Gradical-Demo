@@ -1,4 +1,4 @@
-var baseUrl = 'http://174.138.121.68:1337';
+var baseUrl = 'https://d1rgwuzou45mfe.cloudfront.net';
 var locoScroll;
 var swiper;
 
