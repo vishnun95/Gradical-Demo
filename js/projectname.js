@@ -1,4 +1,4 @@
-var baseUrl = 'http://172.31.7.188:1337';
+var baseUrl = 'https://d1rgwuzou45mfe.cloudfront.net';
 
 function customCursor() {
     var cursor = $(".cursor"),
