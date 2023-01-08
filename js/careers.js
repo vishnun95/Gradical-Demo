@@ -1,6 +1,6 @@
 // var baseUrl = 'http://174.138.121.68:1337';
 // var baseUrl = 'http://3.110.166.154:1337'
-var baseUrl = 'https://d1rgwuzou45mfe.cloudfront.net'
+var baseUrl = 'https://d1rgwuzou45mfe.cloudfront.net';
 var locoScroll;
 var swiper;
 
