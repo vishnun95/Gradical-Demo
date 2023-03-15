@@ -1,5 +1,6 @@
 var baseUrl = 'https://d1rgwuzou45mfe.cloudfront.net';
-var emailBaseURL = 'https://d1rgwuzou45mfe.cloudfront.net'; //send mail 
+// var emailBaseURL = 'http://174.138.121.68:3000'; //send mail 
+var emailBaseURL = 'https://d2krj3pr4i8060.cloudfront.net';
 
 var locoScroll;
 var swiper;
@@ -59,7 +60,7 @@ function sendMail(contact) {
     }
     //  contact.name + ' raised a query. Please reach him/her on ' + contact.phone + ' or ' + contact.email + '\n '
     $.ajax({
-        url:'https://d2krj3pr4i8060.cloudfront.net/users',
+        url: 'https://d2krj3pr4i8060.cloudfront.net/users',
         type: 'POST',
         data: data,
         success: function (res) {
