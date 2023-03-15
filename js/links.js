@@ -10,8 +10,8 @@ function toFrontend() {
   window.open('https://gradical.notion.site/Creative-Front-End-Developer-fe0cd2ec050645a1849a41ad5529475c') 
 }
 
-function toDesigner() {
-  window.open('https://gradical.notion.site/Mid-Level-Visual-Designer-be4682eeb7c34217b9855f20c8fe3239')
+function toMarketingintern() {
+  window.open('https://www.notion.so/gradical/Marketing-Intern-f2faf32c996241f68dd40d6787d82b1f?pvs=4')
 }
 
 function toContent() {
@@ -26,9 +26,9 @@ function toMediamanager() {
   window.open('https://gradical.notion.site/Social-Media-Manager-b0f6c373c0534b0cbd8f9290889bcc7b')
 }
 
-function toMarketingintern() {
-  window.open('https://gradical.notion.site/Marketing-Intern-f2faf32c996241f68dd40d6787d82b1f')
-}
+// function toMarketingintern() {
+//   window.open('https://gradical.notion.site/Marketing-Intern-f2faf32c996241f68dd40d6787d82b1f')
+// }
 
 function toMail() {
   window.location.href = "mailto:hey@gradical.xyz"
