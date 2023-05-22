@@ -1,4 +1,4 @@
-var emailBaseURL = 'https://d1rgwuzou45mfe.cloudfront.net'; //send mail 
+var emailBaseURL = 'https://d466zlemro9wi.cloudfront.net'; //send mail 
 var baseUrl = 'https://d1rgwuzou45mfe.cloudfront.net'; // api call contact
 
 

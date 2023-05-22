@@ -1,5 +1,5 @@
 // var baseUrl = 'https://d1rgwuzou45mfe.cloudfront.net';
-var baseUrl = 'https://d2x37tr42muj2u.cloudfront.net';
+var baseUrl = 'https://d2t8qrdrj0iymv.cloudfront.net/admin/';
 var locoScroll;
 
 function customCursor() {
