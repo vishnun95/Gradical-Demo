@@ -1,6 +1,5 @@
-var baseUrl = 'https://d1rgwuzou45mfe.cloudfront.net';
-// var emailBaseURL = 'http://174.138.121.68:3000'; //send mail 
-var emailBaseURL = 'https://d2krj3pr4i8060.cloudfront.net';
+var baseUrl = 'https://d2t8qrdrj0iymv.cloudfront.net';
+var emailBaseURL = 'https://d466zlemro9wi.cloudfront.net';
 
 var locoScroll;
 var swiper;
