@@ -6,7 +6,7 @@ var swiperEnded = false;
 var checkIfScrollStopped = false;
 var lastScrollDirection = '';
 // var baseUrl = 'https://d1rgwuzou45mfe.cloudfront.net'; previous
-var baseUrl = 'https://d2t8qrdrj0iymv.cloudfront.net/admin/'; // New
+var baseUrl = 'https://d2t8qrdrj0iymv.cloudfront.net'; // New
 
 function check(element) {
   switch (element) {

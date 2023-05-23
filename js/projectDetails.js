@@ -1,4 +1,4 @@
-var baseUrl = 'https://d2t8qrdrj0iymv.cloudfront.net/admin/';
+var baseUrl = 'https://d2t8qrdrj0iymv.cloudfront.net';
 var locoScroll;
 var swiper;
 

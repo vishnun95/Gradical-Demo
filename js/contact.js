@@ -1,5 +1,5 @@
 var emailBaseURL = 'https://d466zlemro9wi.cloudfront.net'; //send mail 
-var baseUrl = 'https://d1rgwuzou45mfe.cloudfront.net'; // api call contact
+var baseUrl = 'https://d2t8qrdrj0iymv.cloudfront.net'; // api call contact
 
 
 function contact() {
