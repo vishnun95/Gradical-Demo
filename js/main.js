@@ -5,7 +5,7 @@ var locoScroll;
 var swiperEnded = false;
 var checkIfScrollStopped = false;
 var lastScrollDirection = '';
-var baseUrl = 'http://ec2-54-157-198-158.compute-1.amazonaws.com:1337'; // New
+var baseUrl = 'https://d3qyeuqifjyryi.cloudfront.net'; // New
 
 function check(element) {
   switch (element) {
